@@ -31,22 +31,19 @@ namespace SportsStore.Controllers
             var startDate = fromDate?.Date ?? DateTime.MinValue.Date;
             var endDate = toDate?.Date ?? DateTime.MaxValue.Date;
 
-            // 🧾 Đơn hàng
-            var orderData = await _context.Orders
-                .Where(o => o.OrderDate >= startDate && o.OrderDate <= endDate)
-                .Select(o => new
-                {
-                    Date = o.OrderDate.Date,
-                    Total = o.Lines.Sum(l => l.Quantity * l.Product.Price)
-                })
-                .ToListAsync();
+         // 🧾 Đơn hàng
+var orderData = await _context.Orders
+    .Where(o => o.OrderDate >= startDate && o.OrderDate <= endDate)
+    .Include(o => o.Lines)
+        .ThenInclude(l => l.Product)
+    .ToListAsync();
 
-            var groupedOrders = orderData
-                .GroupBy(x => x.Date)
-                .ToDictionary(
-                    g => g.Key,
-                    g => g.Sum(x => x.Total)
-                );
+var groupedOrders = orderData
+    .GroupBy(o => o.OrderDate.Date)
+    .ToDictionary(
+        g => g.Key,
+        g => g.Sum(o => o.Lines.Sum(l => l.Quantity * l.Product.Price))
+    );
 
             // 🎓 Thuê gia sư
             var tutorData = await _context.TutorBookings

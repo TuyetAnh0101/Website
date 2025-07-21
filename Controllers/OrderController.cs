@@ -28,52 +28,56 @@ namespace SportsStore.Controllers
 
         public ViewResult Checkout() => View(new Order());
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Checkout(Order order)
+       [HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> Checkout(Order order)
+{
+    var user = await userManager.GetUserAsync(User);
+    if (user == null)
+    {
+        return RedirectToAction("Login", "Account", new { returnUrl = "/Order/Checkout" });
+    }
+
+    if (!cart.Lines.Any())
+    {
+        ModelState.AddModelError("", "Giỏ hàng của bạn đang trống.");
+        return View(order);
+    }
+
+    var purchaseLines = cart.Lines.Where(l => !l.IsRental).ToList();
+    var rentalLines = cart.Lines.Where(l => l.IsRental).ToList();
+
+    if (purchaseLines.Any())
+    {
+        order.UserId = user.Id;
+        order.Lines = purchaseLines;
+
+        // ✅ Tính tổng tiền và gán vào cột TotalAmount
+        order.TotalAmount = purchaseLines.Sum(line => line.LineTotal);
+
+        // Lưu đơn hàng mua
+        orderRepository.SaveOrder(order);
+    }
+
+    if (rentalLines.Any())
+    {
+        foreach (var line in rentalLines)
         {
-            var user = await userManager.GetUserAsync(User);
-            if (user == null)
+            var rental = new Rental
             {
-                return RedirectToAction("Login", "Account", new { returnUrl = "/Order/Checkout" });
-            }
-
-            if (!cart.Lines.Any())
-            {
-                ModelState.AddModelError("", "Giỏ hàng của bạn đang trống.");
-                return View(order);
-            }
-
-            var purchaseLines = cart.Lines.Where(l => !l.IsRental).ToList();
-            var rentalLines = cart.Lines.Where(l => l.IsRental).ToList();
-
-            if (purchaseLines.Any())
-            {
-                order.UserId = user.Id;
-                order.Lines = purchaseLines;
-                orderRepository.SaveOrder(order);
-            }
-
-            if (rentalLines.Any())
-            {
-                foreach (var line in rentalLines)
-                {
-                    var rental = new Rental
-                    {
-                        UserId = user.Id,
-                        BookTitle = line.Product.Name,
-                        StartDate = System.DateTime.Today,
-                        EndDate = System.DateTime.Today.AddDays(line.RentalDays),
-                        IsReturned = false
-                    };
-                    rentalRepository.SaveRental(rental);
-                }
-            }
-
-            cart.Clear();
-
-            return RedirectToPage("/Completed");
+                UserId = user.Id,
+                BookTitle = line.Product.Name,
+                StartDate = System.DateTime.Today,
+                EndDate = System.DateTime.Today.AddDays(line.RentalDays),
+                IsReturned = false
+            };
+            rentalRepository.SaveRental(rental);
         }
+    }
+
+    cart.Clear();
+    return RedirectToPage("/Completed");
+}
 
         public async Task<IActionResult> MyOrders()
         {

@@ -129,13 +129,19 @@
         <div class="order-summary">
             @foreach (var line in Cart.Lines)
             {
+                var isRental = line.IsRental;
+                var price = isRental ? (line.Product.RentPrice ?? 0) : line.Product.Price;
+                var label = isRental ? "Thuê" : "Mua";
+                var unit = isRental ? $" × {line.RentalDays} ngày" : "";
+                var lineTotal = line.LineTotal;
+
                 <div class="order-item">
                     <img src="/images/@(line.Product.Image ?? "default.jpg")" alt="@line.Product.Name" />
                     <div>
-                        <div>@line.Product.Name</div>
-                        <small>@line.Quantity × @line.Product.Price.ToString("N0") đ</small>
+                        <div>@line.Product.Name (@label)</div>
+                        <small>@line.Quantity × @price.ToString("N0") đ @Html.Raw(unit)</small>
                     </div>
-                    <div class="ms-auto">@((line.Quantity * line.Product.Price).ToString("N0")) đ</div>
+                    <div class="ms-auto">@lineTotal.ToString("N0") đ</div>
                 </div>
             }
             <hr />

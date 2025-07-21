@@ -16,7 +16,7 @@ namespace SportsStore.Controllers
 
       public async Task<IActionResult> Index(int? categoryId, string? search, string? filterMode, string? priceRange, string? condition, int? rentDuration, int page = 1)
 {
-    int pageSize = 6;
+    int pageSize = 12;
 
     // Truy vấn sản phẩm với include Category
     var productsQuery = _context.Products.Include(p => p.Category).AsQueryable();
