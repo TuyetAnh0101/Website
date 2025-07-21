@@ -32,5 +32,7 @@ namespace SportsStore.Models.ViewModels
         [Display(Name = "Ngày sinh")]
         [DataType(DataType.Date)]
         public DateTime? BirthDate { get; set; }
+        public bool IsAdmin { get; set; }
+
     }
 }

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SportsStore.Models;
 using Microsoft.AspNetCore.Identity;
+using SportsStore.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,9 +35,16 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
 
 // Repository
+// Repository
 builder.Services.AddScoped<IStoreRepository, EFStoreRepository>();
 builder.Services.AddScoped<IOrderRepository, EFOrderRepository>();
-builder.Services.AddScoped<IRentalRepository, EFRentalRepository>(); // nếu có thuê
+builder.Services.AddScoped<IRentalRepository, EFRentalRepository>(); 
+builder.Services.AddScoped<IEmailSender, EmailSender>();
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(); // ghi log ra terminal
+builder.Logging.SetMinimumLevel(LogLevel.Information);
+
+
 
 // ✅ HttpClient cho Blazor
 builder.Services.AddScoped(sp =>

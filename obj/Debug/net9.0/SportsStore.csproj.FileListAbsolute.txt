@@ -349,3 +349,6 @@ C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.genrunt
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\ref\SportsStore.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.sourcelink.json
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\wlc6u5beyp-gng8gkrtyj.gz
+C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\MailKit.dll
+C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\MimeKit.dll
