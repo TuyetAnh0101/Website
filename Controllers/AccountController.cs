@@ -34,147 +34,147 @@ namespace SportsStore.Controllers
         public ViewResult Login(string returnUrl = "/") =>
             View(new LoginModel { ReturnUrl = returnUrl });
 
-[HttpPost]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> Login(LoginModel model)
-{
-    if (!ModelState.IsValid)
-        return View(model);
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> Login(LoginModel model)
+            {
+                if (!ModelState.IsValid)
+                    return View(model);
 
-    var user = await _userManager.FindByNameAsync(model.Name);
-    if (user == null)
-    {
-        ModelState.AddModelError("", "Tên đăng nhập không tồn tại.");
-        return View(model);
-    }
-    var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, lockoutOnFailure: false);
-    if (result.Succeeded)
-    {
-        var roles = await _userManager.GetRolesAsync(user);
+                var user = await _userManager.FindByNameAsync(model.Name);
+                if (user == null)
+                {
+                    ModelState.AddModelError("", "Tên đăng nhập không tồn tại.");
+                    return View(model);
+                }
+                var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, lockoutOnFailure: false);
+                if (result.Succeeded)
+                {
+                    var roles = await _userManager.GetRolesAsync(user);
 
-        if (roles.Contains("Admin"))
-            return Redirect("/Admin");
+                    if (roles.Contains("Admin"))
+                        return Redirect("/Admin");
 
-        if (roles.Contains("User"))
-            return Redirect(model.ReturnUrl ?? "/Account");
+                    if (roles.Contains("User"))
+                        return Redirect(model.ReturnUrl ?? "/Account");
 
-        // Nếu không có vai trò phù hợp, đăng xuất và báo lỗi
-        await _signInManager.SignOutAsync();
-        ModelState.AddModelError("", "Tài khoản không có vai trò hợp lệ.");
-        return View(model);
-    }
+                    // Nếu không có vai trò phù hợp, đăng xuất và báo lỗi
+                    await _signInManager.SignOutAsync();
+                    ModelState.AddModelError("", "Tài khoản không có vai trò hợp lệ.");
+                    return View(model);
+                }
 
-    ModelState.AddModelError("", "Mật khẩu không đúng.");
-    return View(model);
-}
+                ModelState.AddModelError("", "Mật khẩu không đúng.");
+                return View(model);
+            }
 
-        // ========== LOGOUT ==========
-        [Authorize]
-        public async Task<IActionResult> Logout(string returnUrl = "/")
-        {
-            await _signInManager.SignOutAsync();
-            return Redirect(returnUrl);
-        }
+                    // ========== LOGOUT ==========
+                    [Authorize]
+                    public async Task<IActionResult> Logout(string returnUrl = "/")
+                    {
+                        await _signInManager.SignOutAsync();
+                        return Redirect(returnUrl);
+                    }
 
-        // ========== REGISTER ==========
-        [HttpGet]
-        [AllowAnonymous]
-        public IActionResult Register() => View();
+                    // ========== REGISTER ==========
+                    [HttpGet]
+                    [AllowAnonymous]
+                    public IActionResult Register() => View();
 
-[HttpPost]
-[AllowAnonymous]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> Register(RegisterModel model)
-{
-    if (!ModelState.IsValid) return View(model);
+            [HttpPost]
+            [AllowAnonymous]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> Register(RegisterModel model)
+            {
+                if (!ModelState.IsValid) return View(model);
 
-    var user = new ApplicationUser
-    {
-        UserName = model.Name,
-        Email = model.Email,
-        FullName = model.FullName,
-        Address = model.Address,
-        BirthDate = model.BirthDate,
-        IsAdmin = model.IsAdmin,
-        EmailConfirmed = false // Bắt buộc xác nhận qua email
-    };
+                var user = new ApplicationUser
+                {
+                    UserName = model.Name,
+                    Email = model.Email,
+                    FullName = model.FullName,
+                    Address = model.Address,
+                    BirthDate = model.BirthDate,
+                    IsAdmin = model.IsAdmin,
+                    EmailConfirmed = false // Bắt buộc xác nhận qua email
+                };
 
-    var result = await _userManager.CreateAsync(user, model.Password);
-    if (result.Succeeded)
-    {
-        var roleName = user.IsAdmin ? "Admin" : "User";
-        if (!await _roleManager.RoleExistsAsync(roleName))
-            await _roleManager.CreateAsync(new IdentityRole(roleName));
+                var result = await _userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    var roleName = user.IsAdmin ? "Admin" : "User";
+                    if (!await _roleManager.RoleExistsAsync(roleName))
+                        await _roleManager.CreateAsync(new IdentityRole(roleName));
 
-        await _userManager.AddToRoleAsync(user, roleName);
+                    await _userManager.AddToRoleAsync(user, roleName);
 
-        // ✅ Gửi email xác nhận
-        var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-        var confirmationLink = Url.Action("ConfirmEmail", "Account", 
-            new { userId = user.Id, token = token }, Request.Scheme);
+                    // ✅ Gửi email xác nhận
+                    var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    var confirmationLink = Url.Action("ConfirmEmail", "Account", 
+                        new { userId = user.Id, token = token }, Request.Scheme);
 
-        await _emailSender.SendEmailAsync(user.Email, "Xác nhận Email", 
-            $"Vui lòng xác nhận tài khoản của bạn bằng cách bấm vào liên kết sau: <a href='{confirmationLink}'>Xác nhận Email</a>");
+                    await _emailSender.SendEmailAsync(user.Email, "Xác nhận Email", 
+                        $"Vui lòng xác nhận tài khoản của bạn bằng cách bấm vào liên kết sau: <a href='{confirmationLink}'>Xác nhận Email</a>");
 
-        return View("RegisterConfirmation"); // View báo người dùng kiểm tra email
-    }
+                    return View("RegisterConfirmation"); // View báo người dùng kiểm tra email
+                }
 
-    foreach (var error in result.Errors)
-        ModelState.AddModelError("", error.Description);
+                foreach (var error in result.Errors)
+                    ModelState.AddModelError("", error.Description);
 
-    return View(model);
-}
+                return View(model);
+            }
 
-[HttpGet]
-[AllowAnonymous]
-public async Task<IActionResult> ConfirmEmail(string userId, string token)
-{
-    if (userId == null || token == null)
-        return RedirectToAction("Index", "Home");
+            [HttpGet]
+            [AllowAnonymous]
+            public async Task<IActionResult> ConfirmEmail(string userId, string token)
+            {
+                if (userId == null || token == null)
+                    return RedirectToAction("Index", "Home");
 
-    var user = await _userManager.FindByIdAsync(userId);
-    if (user == null)
-        return NotFound($"Không tìm thấy người dùng có ID: {userId}");
+                var user = await _userManager.FindByIdAsync(userId);
+                if (user == null)
+                    return NotFound($"Không tìm thấy người dùng có ID: {userId}");
 
-    var result = await _userManager.ConfirmEmailAsync(user, token);
-    if (result.Succeeded)
-        return View("ConfirmEmailSuccess");
+                var result = await _userManager.ConfirmEmailAsync(user, token);
+                if (result.Succeeded)
+                    return View("ConfirmEmailSuccess");
 
-    return View("Error");
-}
+                return View("Error");
+            }
 
-        [HttpGet]
-        [AllowAnonymous]
-        public IActionResult ForgotPassword() => View();
+                    [HttpGet]
+                    [AllowAnonymous]
+                    public IActionResult ForgotPassword() => View();
 
-[HttpPost]
-[AllowAnonymous]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
-{
-    if (!ModelState.IsValid)
-    {
-        return View(model);
-    }
+            [HttpPost]
+            [AllowAnonymous]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+            {
+                if (!ModelState.IsValid)
+                {
+                    return View(model);
+                }
 
-    var user = await _userManager.FindByEmailAsync(model.Email);
-    if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
-    {
-        return RedirectToAction("ForgotPasswordConfirmation");
-    }
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+                {
+                    return RedirectToAction("ForgotPasswordConfirmation");
+                }
 
-    var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-    var resetUrl = Url.Action("ResetPassword", "Account", new { token, email = model.Email }, Request.Scheme);
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var resetUrl = Url.Action("ResetPassword", "Account", new { token, email = model.Email }, Request.Scheme);
 
-    string subject = "Đặt lại mật khẩu";
-    string message = $"Bạn nhận được email này vì bạn (hoặc ai đó) đã yêu cầu đặt lại mật khẩu cho tài khoản. " +
-                     $"Vui lòng nhấn vào <a href='{resetUrl}'>đây</a> để đặt lại mật khẩu.<br/>" +
-                     "Nếu bạn không yêu cầu, vui lòng bỏ qua email này.";
+                string subject = "Đặt lại mật khẩu";
+                string message = $"Bạn nhận được email này vì bạn (hoặc ai đó) đã yêu cầu đặt lại mật khẩu cho tài khoản. " +
+                                $"Vui lòng nhấn vào <a href='{resetUrl}'>đây</a> để đặt lại mật khẩu.<br/>" +
+                                "Nếu bạn không yêu cầu, vui lòng bỏ qua email này.";
 
-    await _emailSender.SendEmailAsync(model.Email, subject, message);
+                await _emailSender.SendEmailAsync(model.Email, subject, message);
 
-    return RedirectToAction("ForgotPasswordConfirmation");
-}
+                return RedirectToAction("ForgotPasswordConfirmation");
+            }
 
 
 
