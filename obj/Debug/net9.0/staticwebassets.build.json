@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g+1jhUwvujUrs75xqozVx85Szgi8ZrCh4dwbDT2q0co=",
+  "Hash": "wqgbTDkuqL6tlC0zZzRlfwxNH3cdEMntj/DrJo1Gwjw=",
   "Source": "SportsStore",
   "BasePath": "_content/SportsStore",
   "Mode": "Default",
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "C:\\Users\\Lenovo\\.nuget\\packages\\chartjs.blazor\\1.1.0\\staticwebassets\\moment-with-locales.min.js"
     },
     {
-      "Identity": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-9c2y1erxe6.gz",
+      "Identity": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-gng8gkrtyj.gz",
       "SourceId": "SportsStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/SportsStore",
-      "RelativePath": "js/chart-utils#[.{fingerprint=9c2y1erxe6}]?.js.gz",
+      "RelativePath": "js/chart-utils#[.{fingerprint=gng8gkrtyj}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\js\\chart-utils.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qtzekpyoay",
-      "Integrity": "3mT9kr5ZmCA/W0YkyE/jnLFhi9Mg3spg+vyrmBQ34Mc=",
+      "Fingerprint": "gxlss0mcdr",
+      "Integrity": "BFoBJIj9UA8KrCdtqsi85kSYbqlnnUGmxOmYod9x1NA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\js\\chart-utils.js"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9c2y1erxe6",
-      "Integrity": "WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U=",
+      "Fingerprint": "gng8gkrtyj",
+      "Integrity": "TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\chart-utils.js"
@@ -2095,13 +2095,13 @@
       ]
     },
     {
-      "Route": "js/chart-utils.9c2y1erxe6.js",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-9c2y1erxe6.gz",
+      "Route": "js/chart-utils.gng8gkrtyj.js",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-gng8gkrtyj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001589825119"
+          "Quality": "0.001236093943"
         }
       ],
       "ResponseHeaders": [
@@ -2111,15 +2111,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "628"
+          "Value": "808"
         },
         {
           "Name": "ETag",
-          "Value": "\"3mT9kr5ZmCA/W0YkyE/jnLFhi9Mg3spg+vyrmBQ34Mc=\""
+          "Value": "\"BFoBJIj9UA8KrCdtqsi85kSYbqlnnUGmxOmYod9x1NA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Jul 2025 13:40:29 GMT"
+          "Value": "Mon, 21 Jul 2025 03:05:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2139,13 +2139,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U=\""
+          "Value": "W/\"TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9c2y1erxe6"
+          "Value": "gng8gkrtyj"
         },
         {
           "Name": "label",
@@ -2153,12 +2153,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U="
+          "Value": "sha256-TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo="
         }
       ]
     },
     {
-      "Route": "js/chart-utils.9c2y1erxe6.js",
+      "Route": "js/chart-utils.gng8gkrtyj.js",
       "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\js\\chart-utils.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2168,7 +2168,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1802"
+          "Value": "3183"
         },
         {
           "Name": "Content-Type",
@@ -2176,11 +2176,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U=\""
+          "Value": "\"TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Jul 2025 13:40:29 GMT"
+          "Value": "Mon, 21 Jul 2025 03:05:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2190,7 +2190,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9c2y1erxe6"
+          "Value": "gng8gkrtyj"
         },
         {
           "Name": "label",
@@ -2198,13 +2198,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U="
+          "Value": "sha256-TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo="
         }
       ]
     },
     {
-      "Route": "js/chart-utils.9c2y1erxe6.js.gz",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-9c2y1erxe6.gz",
+      "Route": "js/chart-utils.gng8gkrtyj.js.gz",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-gng8gkrtyj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2213,7 +2213,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "628"
+          "Value": "808"
         },
         {
           "Name": "Content-Type",
@@ -2221,11 +2221,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3mT9kr5ZmCA/W0YkyE/jnLFhi9Mg3spg+vyrmBQ34Mc=\""
+          "Value": "\"BFoBJIj9UA8KrCdtqsi85kSYbqlnnUGmxOmYod9x1NA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Jul 2025 13:40:29 GMT"
+          "Value": "Mon, 21 Jul 2025 03:05:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2243,7 +2243,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9c2y1erxe6"
+          "Value": "gng8gkrtyj"
         },
         {
           "Name": "label",
@@ -2251,18 +2251,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3mT9kr5ZmCA/W0YkyE/jnLFhi9Mg3spg+vyrmBQ34Mc="
+          "Value": "sha256-BFoBJIj9UA8KrCdtqsi85kSYbqlnnUGmxOmYod9x1NA="
         }
       ]
     },
     {
       "Route": "js/chart-utils.js",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-9c2y1erxe6.gz",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-gng8gkrtyj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001589825119"
+          "Quality": "0.001236093943"
         }
       ],
       "ResponseHeaders": [
@@ -2272,15 +2272,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "628"
+          "Value": "808"
         },
         {
           "Name": "ETag",
-          "Value": "\"3mT9kr5ZmCA/W0YkyE/jnLFhi9Mg3spg+vyrmBQ34Mc=\""
+          "Value": "\"BFoBJIj9UA8KrCdtqsi85kSYbqlnnUGmxOmYod9x1NA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Jul 2025 13:40:29 GMT"
+          "Value": "Mon, 21 Jul 2025 03:05:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2300,13 +2300,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U=\""
+          "Value": "W/\"TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U="
+          "Value": "sha256-TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo="
         }
       ]
     },
@@ -2321,7 +2321,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1802"
+          "Value": "3183"
         },
         {
           "Name": "Content-Type",
@@ -2329,11 +2329,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U=\""
+          "Value": "\"TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Jul 2025 13:40:29 GMT"
+          "Value": "Mon, 21 Jul 2025 03:05:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2343,13 +2343,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WclpuKJqbmQ4ykmVU59LwXRBFkTLcsjDkAkmEWCPY5U="
+          "Value": "sha256-TNYmtakffvUigahXziqvhOrmNRZ8+Ejia1k8Bm9xbMo="
         }
       ]
     },
     {
       "Route": "js/chart-utils.js.gz",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-9c2y1erxe6.gz",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\wlc6u5beyp-gng8gkrtyj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2358,7 +2358,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "628"
+          "Value": "808"
         },
         {
           "Name": "Content-Type",
@@ -2366,11 +2366,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3mT9kr5ZmCA/W0YkyE/jnLFhi9Mg3spg+vyrmBQ34Mc=\""
+          "Value": "\"BFoBJIj9UA8KrCdtqsi85kSYbqlnnUGmxOmYod9x1NA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Jul 2025 13:40:29 GMT"
+          "Value": "Mon, 21 Jul 2025 03:05:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2388,7 +2388,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3mT9kr5ZmCA/W0YkyE/jnLFhi9Mg3spg+vyrmBQ34Mc="
+          "Value": "sha256-BFoBJIj9UA8KrCdtqsi85kSYbqlnnUGmxOmYod9x1NA="
         }
       ]
     },

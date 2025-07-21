@@ -11,15 +11,18 @@ var builder = WebApplication.CreateBuilder(args);
 // MVC, Razor, Blazor
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-builder.Services.AddServerSideBlazor();
 
-// Kết nối CSDL chính (sản phẩm, đơn hàng, tài khoản,...)
+// ✅ Cấu hình Blazor Server với lỗi chi tiết
+builder.Services.AddServerSideBlazor()
+    .AddCircuitOptions(options => { options.DetailedErrors = true; });
+
+// Kết nối CSDL chính
 builder.Services.AddDbContext<StoreDbContext>(opts =>
 {
     opts.UseSqlServer(builder.Configuration["ConnectionStrings:SportsStoreConnection"]);
 });
 
-// Cấu hình Identity dùng chung StoreDbContext
+// Cấu hình Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<StoreDbContext>()
     .AddDefaultTokenProviders();
@@ -33,18 +36,15 @@ builder.Services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
 // Repository
 builder.Services.AddScoped<IStoreRepository, EFStoreRepository>();
 builder.Services.AddScoped<IOrderRepository, EFOrderRepository>();
-builder.Services.AddScoped<IRentalRepository, EFRentalRepository>(); // nếu có thuê sách
+builder.Services.AddScoped<IRentalRepository, EFRentalRepository>(); // nếu có thuê
 
-// ✅ Cấu hình HttpClient có BaseAddress đúng cho Blazor
+// ✅ HttpClient cho Blazor
 builder.Services.AddScoped(sp =>
 {
-    var navigationManager = sp.GetRequiredService<Microsoft.AspNetCore.Components.NavigationManager>();
-    return new HttpClient { BaseAddress = new Uri(navigationManager.BaseUri) };
+    var nav = sp.GetRequiredService<Microsoft.AspNetCore.Components.NavigationManager>();
+    return new HttpClient { BaseAddress = new Uri(nav.BaseUri) };
 });
 
-// ===================
-// ỨNG DỤNG
-// ===================
 var app = builder.Build();
 
 // ===================
@@ -81,16 +81,16 @@ app.MapControllerRoute("pagination",
 
 app.MapDefaultControllerRoute();
 app.MapRazorPages();
-app.MapBlazorHub();
 
-// Điều hướng fallback cho admin
+// ✅ Đặt đúng thứ tự: BlazorHub trước fallback
+app.MapBlazorHub();
 app.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
 
 // ===================
 // SEED DỮ LIỆU
 // ===================
-SeedData.EnsurePopulated(app); // Dữ liệu sản phẩm
-await IdentitySeedData.EnsurePopulatedAsync(app); // Dữ liệu tài khoản admin
+SeedData.EnsurePopulated(app); // Sản phẩm
+await IdentitySeedData.EnsurePopulatedAsync(app); // Tài khoản admin
 
 // ===================
 // CHẠY ỨNG DỤNG

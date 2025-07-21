@@ -347,4 +347,5 @@ C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\refint\SportsStore.
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.pdb
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.genruntimeconfig.cache
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\ref\SportsStore.dll
-C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\wlc6u5beyp-9c2y1erxe6.gz
+C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.sourcelink.json
+C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\wlc6u5beyp-gng8gkrtyj.gz

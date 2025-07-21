@@ -42,7 +42,7 @@ else
                     <td>@b.StartTime?.ToString("dd/MM/yyyy HH:mm")</td>
                     <td>@b.DurationHours</td>
                     <td>@b.NumberOfDays</td>
-                    <td>@(b.TotalPrice?.ToString("N0") ?? "-") đ</td>
+                    <td>@b.TotalPrice.ToString("N0") đ</td>
                     <td>@(b.IsConfirmed ? "✔️" : "❌")</td>
                     <td>@(b.IsPaid ? "✔️" : "❌")</td>
                     <td>

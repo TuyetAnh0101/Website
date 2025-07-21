@@ -5,6 +5,7 @@ using SportsStore.Models.ViewModels;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SportsStore.Controllers
 {
@@ -20,44 +21,62 @@ namespace SportsStore.Controllers
         }
 
         [HttpGet("revenue")]
-        public IActionResult GetRevenueStats(DateTime? fromDate, DateTime? toDate)
+        public async Task<IActionResult> GetRevenueStats(DateTime? fromDate, DateTime? toDate)
         {
-            var startDate = fromDate?.Date ?? DateTime.MinValue;
-            var endDate = toDate?.Date ?? DateTime.MaxValue;
+            if (fromDate.HasValue && toDate.HasValue && fromDate > toDate)
+            {
+                return BadRequest("Ngày bắt đầu không được lớn hơn ngày kết thúc.");
+            }
 
-            var orderData = _context.Orders
-                .Include(o => o.Lines)
-                    .ThenInclude(cl => cl.Product)
-                .Where(o => o.OrderDate.Date >= startDate && o.OrderDate.Date <= endDate)
+            var startDate = fromDate?.Date ?? DateTime.MinValue.Date;
+            var endDate = toDate?.Date ?? DateTime.MaxValue.Date;
+
+            // 🧾 Đơn hàng
+            var orderData = await _context.Orders
+                .Where(o => o.OrderDate >= startDate && o.OrderDate <= endDate)
                 .Select(o => new
                 {
                     Date = o.OrderDate.Date,
-                    Total = o.Lines.Sum(cl => cl.Quantity * cl.Product.Price)
+                    Total = o.Lines.Sum(l => l.Quantity * l.Product.Price)
                 })
+                .ToListAsync();
+
+            var groupedOrders = orderData
                 .GroupBy(x => x.Date)
                 .ToDictionary(
                     g => g.Key,
                     g => g.Sum(x => x.Total)
                 );
 
-            var tutorData = _context.TutorBookings
-                .Where(tb => tb.BookingDate.Date >= startDate && tb.BookingDate.Date <= endDate)
-                .GroupBy(tb => tb.BookingDate.Date)
+            // 🎓 Thuê gia sư
+            var tutorData = await _context.TutorBookings
+                .Where(tb => tb.BookingDate >= startDate && tb.BookingDate <= endDate && tb.IsPaid)
+                .Select(tb => new
+                {
+                    Date = tb.BookingDate.Date,
+                    Total = tb.TotalPrice  
+                })
+                .ToListAsync();
+
+            var groupedTutor = tutorData
+                .GroupBy(x => x.Date)
                 .ToDictionary(
                     g => g.Key,
-                    g => g.Sum(tb => tb.TotalPrice ?? 0)
+                    g => g.Sum(x => x.Total)
                 );
 
-            var allDates = orderData.Keys
-                .Union(tutorData.Keys)
+            // 📅 Tổng hợp ngày
+            var allDates = groupedOrders.Keys
+                .Union(groupedTutor.Keys)
                 .Distinct()
                 .OrderBy(d => d);
 
+            // 📊 Dữ liệu cuối cùng
             var result = allDates.Select(date => new RevenueStats
             {
                 Date = date,
-                OrderRevenue = orderData.ContainsKey(date) ? orderData[date] : 0,
-                TutorRevenue = tutorData.ContainsKey(date) ? tutorData[date] : 0
+                OrderRevenue = groupedOrders.ContainsKey(date) ? groupedOrders[date] : 0m,
+                TutorRevenue = groupedTutor.ContainsKey(date) ? groupedTutor[date] : 0m
             }).ToList();
 
             return Ok(result);

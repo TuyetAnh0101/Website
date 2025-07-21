@@ -3,7 +3,9 @@
 <h2>Thanh toán đặt lịch</h2>
 
 <p><strong>Gia sư:</strong> @Model.Tutor?.Name</p>
-<p><strong>Tổng giá:</strong> @string.Format("{0:N0} đ", Model.TotalPrice ?? 0)</p>
+
+<p><strong>Tổng giá:</strong> @string.Format("{0:N0} đ", Model.TotalPrice)
+</p>
 
 <form asp-action="ProcessPayment" method="post">
     @Html.AntiForgeryToken()

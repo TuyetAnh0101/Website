@@ -54,8 +54,10 @@ namespace SportsStore.Models
         [Display(Name = "Thời gian kết thúc")]
         public DateTime? EndTime => StartTime?.AddHours(DurationHours * NumberOfDays);
 
+        // ✅ Sửa thành thuộc tính lưu được
         [Display(Name = "Tổng giá")]
-        public decimal? TotalPrice => Tutor != null ? Tutor.HourlyRate * DurationHours * NumberOfDays : null;
+        [Column(TypeName = "decimal(10, 2)")]
+        public decimal TotalPrice { get; set; }
 
         // --- Thông tin thanh toán ---
         [Display(Name = "Đã thanh toán")]

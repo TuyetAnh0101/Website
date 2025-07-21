@@ -4,7 +4,7 @@
 @using SportsStore.Models.ViewModels
 @using Microsoft.JSInterop
 
-<h3>Thống kê doanh thu</h3>
+<h3>📊 Thống kê doanh thu</h3>
 
 <div class="row mb-3">
     <div class="col-md-3">
@@ -36,7 +36,8 @@
 
     private async Task LoadRevenueStats()
     {
-        string url = $"/admin/stats/revenue?start={startDate:yyyy-MM-dd}&end={endDate:yyyy-MM-dd}";
+        // ✅ Đổi tham số: fromDate / toDate đúng với controller
+        string url = $"/admin/stats/revenue?fromDate={startDate:yyyy-MM-dd}&toDate={endDate:yyyy-MM-dd}";
         var stats = await Http.GetFromJsonAsync<List<RevenueStats>>(url);
         await JS.InvokeVoidAsync("drawRevenueChart", stats);
     }
@@ -44,44 +45,4 @@
     [Inject] public HttpClient Http { get; set; }
 }
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    window.drawRevenueChart = (data) => {
-        const labels = data.map(x => new Date(x.date).toLocaleDateString());
-        const orderData = data.map(x => x.orderRevenue);
-        const tutorData = data.map(x => x.tutorRevenue);
-        const totalRevenue = data.map(x => x.orderRevenue + x.tutorRevenue);
-
-        const ctx = document.getElementById('revenueChart').getContext('2d');
-        if (window.revenueChartInstance) {
-            window.revenueChartInstance.destroy();
-        }
-
-        window.revenueChartInstance = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: labels,
-                datasets: [
-                    {
-                        label: 'Đơn hàng',
-                        data: orderData,
-                        backgroundColor: 'rgba(54, 162, 235, 0.6)'
-                    },
-                    {
-                        label: 'Thuê gia sư',
-                        data: tutorData,
-                        backgroundColor: 'rgba(255, 99, 132, 0.6)'
-                    },
-                    {
-                        label: 'Tổng doanh thu',
-                        data: totalRevenue,
-                        type: 'line',
-                        borderColor: '#28a745',
-                        fill: false,
-                        tension: 0.4
-                    }
-                ]
-            }
-        });
-    };
-</script>
-
+<script src="js/chart-utils.js"></script>

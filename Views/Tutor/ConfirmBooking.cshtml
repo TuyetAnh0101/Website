@@ -4,25 +4,34 @@
     ViewData["Title"] = "Xác nhận đặt lịch";
 }
 
-<h2>Xác nhận đặt lịch thuê gia sư</h2>
+<h2 class="mb-3">Xác nhận đặt lịch thuê gia sư</h2>
 
-<div>
+<div class="card shadow-sm p-3 mb-4 bg-light">
     <p><strong>Gia sư:</strong> @Model.Tutor?.Name</p>
     <p><strong>Số giờ thuê mỗi ngày:</strong> @Model.DurationHours</p>
     <p><strong>Số ngày thuê:</strong> @Model.NumberOfDays</p>
     <p><strong>Ngày bắt đầu:</strong> @Model.StartTime?.ToString("dd/MM/yyyy")</p>
-    <p><strong>Ghi chú:</strong> @Model.Notes</p>
-    <p><strong>Tổng giá dự kiến:</strong> @string.Format("{0:N0} đ", Model.TotalPrice ?? 0)</p>
+    <p><strong>Ghi chú:</strong> @(string.IsNullOrWhiteSpace(Model.Notes) ? "Không có" : Model.Notes)</p>
+    <p><strong>Tổng giá dự kiến:</strong> @string.Format("{0:N0} đ", Model.TotalPrice)</p>
 </div>
 
 <form asp-action="ConfirmBooking" method="post">
     @Html.AntiForgeryToken()
+
+    <!-- Hidden fields để giữ dữ liệu -->
     <input type="hidden" asp-for="TutorId" />
     <input type="hidden" asp-for="DurationHours" />
     <input type="hidden" asp-for="NumberOfDays" />
     <input type="hidden" asp-for="StartTime" />
     <input type="hidden" asp-for="Notes" />
-
-    <button type="submit" class="btn btn-success">Xác nhận đặt</button>
-    <a asp-action="Details" asp-route-id="@Model.TutorId" class="btn btn-secondary">Hủy</a>
+    <input type="hidden" asp-for="TotalPrice" />
+    
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-success">
+            <i class="fas fa-check-circle me-1"></i> Xác nhận đặt
+        </button>
+        <a asp-action="Details" asp-route-id="@Model.TutorId" class="btn btn-secondary">
+            <i class="fas fa-times-circle me-1"></i> Hủy
+        </a>
+    </div>
 </form>
