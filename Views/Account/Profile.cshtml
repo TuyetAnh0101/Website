@@ -1,0 +1,29 @@
+@model SportsStore.Models.ViewModels.ProfileModel
+@{
+    ViewData["Title"] = "Hồ sơ cá nhân";
+    Layout = "_ProfileLayout";
+}
+
+<h4 class="text-success mb-4">
+    <i class="fa fa-id-badge me-2"></i>Thông tin cá nhân
+</h4>
+
+<div class="mb-4 text-center">
+    <img src="@(!string.IsNullOrEmpty(Model.AvatarUrl) ? Model.AvatarUrl : "/images/default-avatar.png")"
+         alt="Avatar"
+         class="rounded-circle border"
+         style="width: 120px; height: 120px; object-fit: cover;" />
+</div>
+
+<table class="table table-bordered">
+    <tr><th>Tên đăng nhập</th><td>@Model.UserName</td></tr>
+    <tr><th>Họ tên</th><td>@Model.FullName</td></tr>
+    <tr><th>Email</th><td>@Model.Email</td></tr>
+    <tr><th>Số điện thoại</th><td>@Model.PhoneNumber</td></tr>
+    <tr><th>Ngày sinh</th><td>@Model.BirthDate?.ToString("dd/MM/yyyy")</td></tr>
+    <tr><th>Địa chỉ</th><td>@Model.Address</td></tr>
+</table>
+
+<a href="/Account/Edit" class="btn btn-success mt-3">
+    <i class="fa fa-edit me-1"></i>Chỉnh sửa thông tin
+</a>

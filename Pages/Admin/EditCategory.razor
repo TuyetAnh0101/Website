@@ -1,0 +1,83 @@
+@page "/admin/categories/editcategory"
+@page "/admin/categories/editcategory/{id:int}"
+@layout AdminLayout
+@inject StoreDbContext Context
+@inject NavigationManager NavManager
+
+<h4 class="mb-4">
+    <i class="fas fa-tag me-2"></i>
+    @(id == 0 ? "Thêm danh mục mới" : "Chỉnh sửa danh mục")
+</h4>
+
+<EditForm Model="category" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Tên danh mục</label>
+        <InputText class="form-control" @bind-Value="category.Name" />
+    </div>
+
+    <div class="form-check mb-3">
+        <InputCheckbox class="form-check-input" @bind-Value="category.AllowRent" />
+        <label class="form-check-label">Cho phép thuê</label>
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        <i class="fas fa-save me-1"></i> Lưu
+    </button>
+    <button type="button" class="btn btn-secondary ms-2" @onclick="BackToList">
+        <i class="fas fa-arrow-left me-1"></i> Quay lại
+    </button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int? id { get; set; }
+
+    private Category category = new();
+
+    protected override void OnInitialized()
+    {
+        if (id.HasValue && id.Value != 0)
+        {
+            var existing = Context.Categories.FirstOrDefault(c => c.CategoryId == id.Value);
+            if (existing != null)
+            {
+                category = new Category
+                {
+                    CategoryId = existing.CategoryId,
+                    Name = existing.Name,
+                    AllowRent = existing.AllowRent
+                };
+            }
+        }
+    }
+
+    private void HandleValidSubmit()
+    {
+        if (category.CategoryId == 0)
+        {
+            // Thêm mới
+            Context.Categories.Add(category);
+        }
+        else
+        {
+            // Cập nhật
+            var existing = Context.Categories.FirstOrDefault(c => c.CategoryId == category.CategoryId);
+            if (existing != null)
+            {
+                existing.Name = category.Name;
+                existing.AllowRent = category.AllowRent;
+            }
+        }
+
+        Context.SaveChanges();
+        NavManager.NavigateTo("/admin/categories");
+    }
+
+    private void BackToList()
+    {
+        NavManager.NavigateTo("/admin/categories");
+    }
+}

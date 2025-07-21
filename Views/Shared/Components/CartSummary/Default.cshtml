@@ -1,0 +1,31 @@
+@model Cart
+
+@{
+    var rentCount = Model.Lines.Count(x => x.IsRental);
+    var buyCount = Model.Lines.Count(x => !x.IsRental);
+    var rentTotal = Model.Lines.Where(x => x.IsRental).Sum(x => x.LineTotal);
+    var buyTotal = Model.Lines.Where(x => !x.IsRental).Sum(x => x.LineTotal);
+}
+
+<div class="d-flex align-items-center gap-2">
+    @if (Model.Lines.Any())
+    {
+        <small class="text-white">
+            <strong>Giỏ hàng:</strong>
+            Mua: @buyCount – @buyTotal.ToString("N0") đ |
+            Thuê: @rentCount – @rentTotal.ToString("N0") đ
+        </small>
+    }
+
+    <a class="btn btn-sm text-white position-relative"
+       asp-page="/Cart"
+       asp-route-returnurl="@ViewContext.HttpContext.Request.Path + ViewContext.HttpContext.Request.QueryString">
+        <img src="/images/cart-custom.png" style="width: 24px;" />
+        @if (Model.Lines.Any())
+        {
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                @(Model.Lines.Sum(x => x.Quantity))
+            </span>
+        }
+    </a>
+</div>

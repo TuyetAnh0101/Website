@@ -1,0 +1,25 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace SportsStore.Models.ViewModels
+{
+    public class TutorProfileModel
+    {
+        public int Id { get; set; }
+
+        [Display(Name = "Họ tên")]
+        [Required(ErrorMessage = "Vui lòng nhập họ tên.")]
+        public string FullName { get; set; }
+
+        [Display(Name = "Môn dạy")]
+        [Required(ErrorMessage = "Vui lòng nhập môn dạy.")]
+        public string Subject { get; set; }
+
+        [Display(Name = "Kinh nghiệm")]
+        [Required(ErrorMessage = "Vui lòng nhập kinh nghiệm.")]
+        public string Experience { get; set; }
+
+        [Display(Name = "Giới thiệu bản thân")]
+        [Required(ErrorMessage = "Vui lòng nhập giới thiệu bản thân.")]
+        public string Description { get; set; }
+    }
+}

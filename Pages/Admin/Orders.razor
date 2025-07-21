@@ -1,0 +1,50 @@
+@page "/admin/orders"
+@using SportsStore.Models
+@using Microsoft.EntityFrameworkCore
+@inherits OwningComponentBase<IOrderRepository>
+
+<h3 class="mb-4">Quản lý đơn hàng</h3>
+
+<OrderTable TableTitle="Đơn chưa giao" Orders="UnshippedOrders" ButtonLabel="Giao hàng" OrderSelected="ShipOrder" />
+<OrderTable TableTitle="Đơn đã giao" Orders="ShippedOrders" ButtonLabel="Hoàn tác" OrderSelected="ResetOrder" />
+
+<button class="btn btn-info mt-3" @onclick="UpdateData">Làm mới danh sách</button>
+
+@code {
+    public IOrderRepository Repository => Service;
+
+    public IEnumerable<Order> AllOrders { get; set; } = Enumerable.Empty<Order>();
+    public IEnumerable<Order> UnshippedOrders { get; set; } = Enumerable.Empty<Order>();
+    public IEnumerable<Order> ShippedOrders { get; set; } = Enumerable.Empty<Order>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await UpdateData();
+    }
+
+    public async Task UpdateData()
+    {
+        AllOrders = await Repository.Orders
+            .Include(o => o.Lines)
+            .ThenInclude(l => l.Product)
+            .AsNoTracking()
+            .ToListAsync();
+
+        UnshippedOrders = AllOrders.Where(o => !o.Shipped).OrderByDescending(o => o.OrderID);
+        ShippedOrders = AllOrders.Where(o => o.Shipped).OrderByDescending(o => o.OrderID);
+    }
+
+    public async Task ShipOrder(int id) => await UpdateOrder(id, true);
+    public async Task ResetOrder(int id) => await UpdateOrder(id, false);
+
+    private async Task UpdateOrder(int id, bool shipValue)
+    {
+        var order = await Repository.Orders.FirstOrDefaultAsync(o => o.OrderID == id);
+        if (order != null)
+        {
+            order.Shipped = shipValue;
+            Repository.SaveOrder(order);
+            await UpdateData();
+        }
+    }
+}

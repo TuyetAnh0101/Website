@@ -1,0 +1,93 @@
+@page "/admin/tutorbookings"
+@layout AdminLayout
+@inject StoreDbContext Context
+@inject NavigationManager NavManager
+
+<h4 class="mb-4"><i class="fas fa-chalkboard-teacher me-2"></i>Quản lý lịch thuê gia sư</h4>
+
+@if (bookings == null)
+{
+    <p>Đang tải...</p>
+}
+else if (!bookings.Any())
+{
+    <div class="alert alert-info">Chưa có lịch thuê nào.</div>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead class="table-success">
+            <tr>
+                <th>ID</th>
+                <th>Gia sư</th>
+                <th>Khách hàng</th>
+                <th>Ngày đặt</th>
+                <th>Thời gian bắt đầu</th>
+                <th>Số giờ/ngày</th>
+                <th>Số ngày</th>
+                <th>Tổng giá</th>
+                <th>Đã xác nhận</th>
+                <th>Thanh toán</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in bookings)
+            {
+                <tr>
+                    <td>@b.TutorBookingId</td>
+                    <td>@b.Tutor?.Name</td>
+                    <td>@b.CustomerName</td>
+                    <td>@b.BookingDate.ToString("dd/MM/yyyy")</td>
+                    <td>@b.StartTime?.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@b.DurationHours</td>
+                    <td>@b.NumberOfDays</td>
+                    <td>@(b.TotalPrice?.ToString("N0") ?? "-") đ</td>
+                    <td>@(b.IsConfirmed ? "✔️" : "❌")</td>
+                    <td>@(b.IsPaid ? "✔️" : "❌")</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary" @onclick="() => ConfirmBooking(b.TutorBookingId)">
+                            <i class="fas fa-check"></i>
+                        </button>
+                        <button class="btn btn-sm btn-danger ms-1" @onclick="() => DeleteBooking(b.TutorBookingId)">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<TutorBooking> bookings = new();
+
+    protected override void OnInitialized()
+    {
+        bookings = Context.TutorBookings
+            .OrderByDescending(b => b.BookingDate)
+            .ToList();
+    }
+
+    void ConfirmBooking(int id)
+    {
+        var booking = Context.TutorBookings.FirstOrDefault(b => b.TutorBookingId == id);
+        if (booking != null)
+        {
+            booking.IsConfirmed = true;
+            Context.SaveChanges();
+            bookings = Context.TutorBookings.ToList();
+        }
+    }
+
+    void DeleteBooking(int id)
+    {
+        var booking = Context.TutorBookings.FirstOrDefault(b => b.TutorBookingId == id);
+        if (booking != null)
+        {
+            Context.TutorBookings.Remove(booking);
+            Context.SaveChanges();
+            bookings = Context.TutorBookings.ToList();
+        }
+    }
+}

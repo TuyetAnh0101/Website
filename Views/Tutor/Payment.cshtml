@@ -1,0 +1,15 @@
+@model SportsStore.Models.TutorBooking
+
+<h2>Thanh toán đặt lịch</h2>
+
+<p><strong>Gia sư:</strong> @Model.Tutor?.Name</p>
+<p><strong>Tổng giá:</strong> @string.Format("{0:N0} đ", Model.TotalPrice ?? 0)</p>
+
+<form asp-action="ProcessPayment" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="bookingId" value="@Model.TutorBookingId" />
+
+    <!-- Thêm các thông tin thanh toán tại đây, ví dụ chọn phương thức thanh toán -->
+
+    <button type="submit" class="btn btn-primary">Thanh toán</button>
+</form>

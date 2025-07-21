@@ -1,0 +1,85 @@
+@page "/admin/tutors"
+@layout AdminLayout
+@inject StoreDbContext Context
+@inject NavigationManager NavManager
+@using SportsStore.Models
+
+<h4 class="mb-4"><i class="fas fa-user-graduate me-2"></i> Quản lý gia sư</h4>
+
+<button class="btn btn-success mb-3" @onclick="CreateTutor">
+    <i class="fas fa-plus me-1"></i> Thêm gia sư
+</button>
+
+@if (tutors.Count == 0)
+{
+    <div class="alert alert-warning">Hiện chưa có gia sư nào.</div>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead class="table-success">
+            <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Môn học</th>
+                <th>Giá/Giờ</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tutor in tutors)
+            {
+                <tr>
+                    <td>@tutor.TutorId</td>
+                    <td>@tutor.Name</td>
+                    <td>@tutor.Subject</td>
+                    <td>@tutor.HourlyRate.ToString("C")</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary me-1" @onclick="() => EditTutor(tutor.TutorId)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => ConfirmDelete(tutor.TutorId)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Tutor> tutors = new();
+    private int deleteId = 0;
+
+    protected override void OnInitialized()
+    {
+        LoadTutors();
+    }
+
+    void LoadTutors()
+    {
+        tutors = Context.Tutors.ToList();
+    }
+
+    void CreateTutor()
+    {
+        NavManager.NavigateTo("/admin/tutors/editor");
+    }
+
+    void EditTutor(int id)
+    {
+        NavManager.NavigateTo($"/admin/tutors/editor/{id}");
+    }
+
+    void ConfirmDelete(int id)
+    {
+        var tutor = Context.Tutors.FirstOrDefault(t => t.TutorId == id);
+        if (tutor != null)
+        {
+            Context.Tutors.Remove(tutor);
+            Context.SaveChanges();
+            LoadTutors();
+        }
+    }
+}

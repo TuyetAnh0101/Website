@@ -1,0 +1,100 @@
+@model IEnumerable<SportsStore.Models.ViewModels.RentalViewModel>
+
+@{
+    ViewData["Title"] = "Lịch sử thuê sách của bạn";
+    Layout = "_ProfileLayout";
+}
+
+<div class="container-fluid">
+    <h4 class="text-success mb-4">
+        <i class="fa fa-book me-2"></i>Lịch sử thuê sách
+    </h4>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">Bạn chưa thuê cuốn sách nào.</div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Tên sách</th>
+                        <th>Ngày bắt đầu</th>
+                        <th>Ngày kết thúc</th>
+                        <th>Còn lại</th>
+                        <th>Trạng thái</th>
+                        <th>Thông báo</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var r in Model)
+                    {
+                        <tr>
+                            <td class="fw-semibold">@r.BookTitle</td>
+                            <td>@r.StartDate.ToString("dd/MM/yyyy")</td>
+                            <td>@r.EndDate.ToString("dd/MM/yyyy")</td>
+                            <td>
+                                @if (r.IsReturned)
+                                {
+                                    <span>-</span>
+                                }
+                                else
+                                {
+                                    <span class="text-primary">@r.RemainingDays ngày</span>
+                                }
+                            </td>
+                            <td>
+                                <span class="badge @(r.IsReturned ? "bg-secondary" : (r.IsDelivered ? "bg-success" : "bg-warning"))">
+                                    @r.StatusText
+                                </span>
+                            </td>
+                            <td>
+                                @if (r.IsOverdue)
+                                {
+                                    <span class="text-danger fw-bold">Đã quá hạn!</span>
+                                }
+                                else if (r.IsReturned)
+                                {
+                                    <span class="text-muted">Đã trả</span>
+                                }
+                                else
+                                {
+                                    <span>-</span>
+                                }
+                            </td>
+                            <td>
+                                @if (!r.IsDelivered)
+                                {
+                                    <form asp-action="CancelRental" method="post" class="d-inline">
+                                        <input type="hidden" name="rentalId" value="@r.Id" />
+                                        <button type="submit" class="btn btn-sm btn-danger"
+                                            onclick="return confirm('Bạn có chắc muốn hủy đơn thuê này?');">
+                                            Hủy
+                                        </button>
+                                    </form>
+                                }
+                                else if (r.IsDelivered && !r.IsReturned)
+                                {
+                                    <form asp-action="ConfirmReturn" method="post" class="d-inline">
+                                        <input type="hidden" name="rentalId" value="@r.Id" />
+                                        <button type="submit" class="btn btn-sm btn-primary"
+                                            onclick="return confirm('Xác nhận đã trả hàng?');">
+                                            Xác nhận trả
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Không khả dụng</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

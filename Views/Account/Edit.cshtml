@@ -1,0 +1,62 @@
+@model SportsStore.Models.ViewModels.EditProfileModel
+
+@{
+    ViewData["Title"] = "Chỉnh sửa hồ sơ";
+    Layout = "_ProfileLayout";
+}
+
+<h4 class="text-primary mb-4">
+    <i class="fa fa-pen me-2"></i>Chỉnh sửa thông tin cá nhân
+</h4>
+
+@if (!string.IsNullOrEmpty(Model.AvatarUrl))
+{
+    <div class="text-center mb-4">
+        <img src="@Model.AvatarUrl"
+             alt="Avatar"
+             class="rounded-circle shadow border"
+             style="width: 120px; height: 120px; object-fit: cover;" />
+    </div>
+}
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="FullName" class="form-label">Họ tên</label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PhoneNumber" class="form-label">Số điện thoại</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="BirthDate" class="form-label">Ngày sinh</label>
+        <input asp-for="BirthDate" type="date" class="form-control" />
+        <span asp-validation-for="BirthDate" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Address" class="form-label">Địa chỉ</label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ảnh đại diện (chọn file)</label>
+        <input type="file" name="AvatarFile" class="form-control" accept="image/*" />
+    </div>
+
+    <div class="d-flex justify-content-start mt-3">
+        <button type="submit" class="btn btn-success">
+            <i class="fa fa-save me-1"></i> Lưu
+        </button>
+        <a href="/Account/Profile" class="btn btn-secondary ms-3">Hủy</a>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

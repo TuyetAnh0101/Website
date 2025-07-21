@@ -1,0 +1,74 @@
+@model IEnumerable<SportsStore.Models.Order>
+@{
+    ViewData["Title"] = "Đơn hàng của tôi";
+    Layout = "_ProfileLayout";
+}
+
+<div class="container-fluid">
+    <h4 class="text-success mb-4"><i class="fa fa-box me-2"></i>Đơn hàng của tôi</h4>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">Bạn chưa có đơn hàng nào.</div>
+    }
+    else
+    {
+        foreach (var order in Model)
+        {
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                    <div>
+                        <div><strong>Mã đơn:</strong> #@order.OrderID</div>
+                        <div><strong>Ngày đặt:</strong> @order.OrderDate.ToString("dd/MM/yyyy HH:mm")</div>
+                    </div>
+                    <div class="text-end">
+                        <span class="badge bg-@(order.Shipped ? "success" : "warning")">
+                            @(order.Shipped ? "Đã giao" : "Đang xử lý")
+                        </span>
+                        <div class="mt-2">
+                            <a href="@Url.Action("Details", "Order", new { id = order.OrderID })"
+                               class="btn btn-sm btn-outline-primary">
+                                <i class="fa fa-eye me-1"></i>Chi tiết
+                            </a>
+
+                            @if (!order.Shipped)
+                            {
+                                <form asp-action="Cancel" asp-controller="Order" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@order.OrderID" />
+                                    <button type="submit" class="btn btn-sm btn-outline-danger ms-2"
+                                            onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?')">
+                                        <i class="fa fa-times me-1"></i>Hủy đơn
+                                    </button>
+                                </form>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    @foreach (var line in order.Lines)
+                    {
+                        <div class="d-flex align-items-center mb-3 border-bottom pb-2">
+                            <img src="@line.Product.Image" alt="@line.Product.Name"
+                                 class="rounded" style="width: 60px; height: 60px; object-fit: cover;" />
+                            <div class="ms-3 flex-grow-1">
+                                <h6 class="mb-1">@line.Product.Name</h6>
+                                <small class="text-muted">Số lượng: @line.Quantity</small>
+                            </div>
+                            <div class="text-end fw-bold text-success">
+                                @string.Format("{0:N0} đ", line.Product.Price * line.Quantity)
+                            </div>
+                        </div>
+                    }
+
+                    <div class="text-end mt-3">
+                        <strong>Tổng tiền:</strong>
+                        <span class="text-danger fw-bold ms-2">
+                            @string.Format("{0:N0} đ", order.Lines.Sum(l => l.Product.Price * l.Quantity))
+                        </span>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

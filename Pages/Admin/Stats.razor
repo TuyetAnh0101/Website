@@ -1,0 +1,87 @@
+@page "/admin/stats"
+@inject IJSRuntime JS
+@using System.Net.Http.Json
+@using SportsStore.Models.ViewModels
+@using Microsoft.JSInterop
+
+<h3>Thống kê doanh thu</h3>
+
+<div class="row mb-3">
+    <div class="col-md-3">
+        <label for="startDate">Từ ngày:</label>
+        <input type="date" class="form-control" @bind="startDate" />
+    </div>
+    <div class="col-md-3">
+        <label for="endDate">Đến ngày:</label>
+        <input type="date" class="form-control" @bind="endDate" />
+    </div>
+    <div class="col-md-3 align-self-end">
+        <button class="btn btn-primary" @onclick="LoadRevenueStats">Lọc thống kê</button>
+    </div>
+</div>
+
+<canvas id="revenueChart" width="800" height="400"></canvas>
+
+@code {
+    private DateTime startDate = DateTime.Today.AddDays(-7);
+    private DateTime endDate = DateTime.Today;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadRevenueStats();
+        }
+    }
+
+    private async Task LoadRevenueStats()
+    {
+        string url = $"/admin/stats/revenue?start={startDate:yyyy-MM-dd}&end={endDate:yyyy-MM-dd}";
+        var stats = await Http.GetFromJsonAsync<List<RevenueStats>>(url);
+        await JS.InvokeVoidAsync("drawRevenueChart", stats);
+    }
+
+    [Inject] public HttpClient Http { get; set; }
+}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    window.drawRevenueChart = (data) => {
+        const labels = data.map(x => new Date(x.date).toLocaleDateString());
+        const orderData = data.map(x => x.orderRevenue);
+        const tutorData = data.map(x => x.tutorRevenue);
+        const totalRevenue = data.map(x => x.orderRevenue + x.tutorRevenue);
+
+        const ctx = document.getElementById('revenueChart').getContext('2d');
+        if (window.revenueChartInstance) {
+            window.revenueChartInstance.destroy();
+        }
+
+        window.revenueChartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Đơn hàng',
+                        data: orderData,
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                    },
+                    {
+                        label: 'Thuê gia sư',
+                        data: tutorData,
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)'
+                    },
+                    {
+                        label: 'Tổng doanh thu',
+                        data: totalRevenue,
+                        type: 'line',
+                        borderColor: '#28a745',
+                        fill: false,
+                        tension: 0.4
+                    }
+                ]
+            }
+        });
+    };
+</script>
+

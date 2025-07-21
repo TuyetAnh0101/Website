@@ -1,0 +1,50 @@
+@model SportsStore.Models.Order
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng #" + Model.OrderID;
+    Layout = "_ProfileLayout";
+}
+
+<div class="container-fluid">
+    <h4 class="text-success mb-4"><i class="fa fa-file-invoice me-2"></i>Chi tiết đơn hàng #@Model.OrderID</h4>
+
+    <div class="mb-3">
+        <strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy HH:mm")<br />
+        <strong>Gói quà:</strong> @(Model.GiftWrap ? "Có" : "Không")<br />
+        <strong>Trạng thái:</strong>
+        <span class="badge bg-@(Model.Shipped ? "success" : "warning")">
+            @(Model.Shipped ? "Đã giao" : "Đang xử lý")
+        </span>
+    </div>
+
+    <hr />
+
+    <h5 class="text-secondary mb-3">Danh sách sản phẩm</h5>
+    @foreach (var line in Model.Lines)
+    {
+        <div class="d-flex align-items-center mb-3">
+            <img src="@line.Product.Image" alt="@line.Product.Name"
+                 class="rounded" style="width: 70px; height: 70px; object-fit: cover;" />
+            <div class="ms-3 flex-grow-1">
+                <h6 class="mb-1">@line.Product.Name</h6>
+                <small>Số lượng: @line.Quantity</small>
+            </div>
+            <div class="text-end fw-bold text-success">
+                @string.Format("{0:N0} đ", line.Product.Price * line.Quantity)
+            </div>
+        </div>
+    }
+
+    <hr />
+    <div class="d-flex justify-content-between fw-bold">
+        <div>Tổng cộng:</div>
+        <div class="text-success">
+            @string.Format("{0:N0} đ", Model.Lines.Sum(l => l.Product.Price * l.Quantity))
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a href="@Url.Action("MyOrders", "Order")" class="btn btn-outline-secondary">
+            <i class="fa fa-arrow-left me-2"></i>Quay lại danh sách đơn hàng
+        </a>
+    </div>
+</div>

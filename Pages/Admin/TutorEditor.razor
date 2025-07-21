@@ -1,0 +1,97 @@
+@page "/admin/tutors/editor"
+@page "/admin/tutors/editor/{Id:int}"
+@layout AdminLayout
+@inject StoreDbContext Context
+@inject NavigationManager NavManager
+@using SportsStore.Models
+@using Microsoft.AspNetCore.Components.Forms
+
+<h4 class="mb-4">@TitleText Gia sư</h4>
+
+<EditForm Model="tutor" OnValidSubmit="SaveTutor">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <input type="hidden" name="TutorId" value="@tutor.TutorId" />
+    <div class="mb-3">
+        <label class="form-label">Tên gia sư</label>
+        <InputText class="form-control" @bind-Value="tutor.Name" />
+        <ValidationMessage For="@(() => tutor.Name)" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Môn học</label>
+        <InputText class="form-control" @bind-Value="tutor.Subject" />
+        <ValidationMessage For="@(() => tutor.Subject)" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Giá/Giờ</label>
+        <InputNumber class="form-control" @bind-Value="tutor.HourlyRate" />
+        <ValidationMessage For="@(() => tutor.HourlyRate)" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Bằng cấp</label>
+        <InputText class="form-control" @bind-Value="tutor.Degree" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Kinh nghiệm</label>
+        <InputText class="form-control" @bind-Value="tutor.Experience" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Mô tả</label>
+        <InputTextArea class="form-control" @bind-Value="tutor.Description" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Số điện thoại</label>
+        <InputText class="form-control" @bind-Value="tutor.PhoneNumber" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <InputText class="form-control" @bind-Value="tutor.Email" />
+    </div>
+
+    <div class="mt-3">
+        <button class="btn btn-success me-2" type="submit">Lưu</button>
+        <button class="btn btn-secondary" type="button" @onclick="Back">Hủy</button>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter] public int? Id { get; set; }
+    private Tutor tutor = new();
+
+    protected override void OnInitialized()
+    {
+        if (Id.HasValue)
+        {
+            var existing = Context.Tutors.FirstOrDefault(t => t.TutorId == Id);
+            if (existing != null)
+                tutor = existing;
+        }
+    }
+
+    void SaveTutor()
+    {
+        if (tutor.TutorId == 0)
+        {
+            Context.Tutors.Add(tutor);
+        }
+        else
+        {
+            Context.Tutors.Update(tutor);
+        }
+
+        Context.SaveChanges();
+        NavManager.NavigateTo("/admin/tutors");
+    }
+
+    string TitleText => Id.HasValue ? "Chỉnh sửa" : "Thêm mới";
+
+    void Back() => NavManager.NavigateTo("/admin/tutors");
+}

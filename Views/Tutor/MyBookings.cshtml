@@ -1,0 +1,50 @@
+@model List<SportsStore.Models.TutorBooking>
+
+@{
+    Layout = "_ProfileLayout";
+    ViewData["Title"] = "Lịch sử thuê gia sư";
+}
+
+<h2 class="mb-4">Lịch sử thuê gia sư của bạn</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-info">Bạn chưa thuê gia sư nào.</div>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>Gia sư</th>
+                <th>Môn học</th>
+                <th>Ngày học</th>
+                <th>Số giờ</th>
+                <th>Ghi chú</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@(booking.Tutor?.Name ?? "Không có")</td>
+                <td>@(booking.Tutor?.Subject ?? "Không có")</td>
+                <td>@booking.BookingDate.ToString("dd/MM/yyyy")</td>
+                <td>@booking.DurationHours</td>
+                <td>@booking.Notes</td>
+                <td>
+                    @if (booking.IsConfirmed)
+                    {
+                        <span class="badge bg-success">Đã xác nhận</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning text-dark">Chờ xác nhận</span>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

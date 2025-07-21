@@ -1,0 +1,27 @@
+@model IEnumerable<SportsStore.Models.Tutor>
+
+@{
+    ViewData["Title"] = "Danh sách gia sư";
+}
+
+<h2 class="mb-4">Danh sách gia sư</h2>
+
+<div class="row">
+    @foreach (var tutor in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <a href="/Tutor/Details/@tutor.TutorId" class="text-decoration-none text-dark">
+                    <img src="@(string.IsNullOrEmpty(tutor.Image) ? "/images/default-tutor.png" : tutor.Image)"
+                         class="card-img-top"
+                         style="height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">@tutor.Name</h5>
+                        <p class="card-text">@tutor.Subject</p>
+                        <p class="card-text text-success fw-bold">@string.Format("{0:N0} đ/giờ", tutor.HourlyRate)</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    }
+</div>

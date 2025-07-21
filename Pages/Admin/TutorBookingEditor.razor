@@ -1,0 +1,156 @@
+@page "/admin/tutorbookingeditor"
+@page "/admin/tutorbookings/editor/{Id:int}"
+@layout AdminLayout
+@using Microsoft.AspNetCore.Components.Forms
+
+@inject StoreDbContext Context
+@inject NavigationManager NavManager
+
+<h4 class="mb-3">
+    <i class="fas fa-edit me-2"></i>@(isEdit ? "Chỉnh sửa lịch thuê" : "Thêm lịch thuê mới")
+</h4>
+
+<EditForm Model="@booking" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    
+    <div class="mb-3">
+        <label class="form-label">Gia sư</label>
+        <InputSelect class="form-select" @bind-Value="booking.TutorId">
+            <option value="">-- Chọn gia sư --</option>
+            @foreach (var tutor in tutors)
+            {
+                <option value="@tutor.TutorId">@tutor.Name</option>
+            }
+        </InputSelect>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tên khách hàng</label>
+        <InputText class="form-control" @bind-Value="booking.CustomerName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Số điện thoại</label>
+        <InputText class="form-control" @bind-Value="booking.CustomerPhone" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ngày bắt đầu</label>
+        <InputDate class="form-control" @bind-Value="booking.StartTime" />
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Số giờ thuê mỗi ngày</label>
+            <InputNumber class="form-control" @bind-Value="booking.DurationHours" />
+        </div>
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Số ngày thuê</label>
+            <InputNumber class="form-control" @bind-Value="booking.NumberOfDays" />
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ghi chú</label>
+        <InputTextArea class="form-control" @bind-Value="booking.Notes" />
+    </div>
+
+    <div class="form-check mb-3">
+        <InputCheckbox class="form-check-input" @bind-Value="booking.IsConfirmed" />
+        <label class="form-check-label">Đã xác nhận</label>
+    </div>
+
+    <div class="form-check mb-3">
+        <InputCheckbox class="form-check-input" @bind-Value="booking.IsPaid" />
+        <label class="form-check-label">Đã thanh toán</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2">
+        <i class="fas fa-save me-1"></i>Lưu
+    </button>
+<button type="button" class="btn btn-secondary" @onclick='@(() => NavManager.NavigateTo("/admin/tutorbookings"))'>
+    Hủy
+</button>
+
+</EditForm>
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    private bool isEdit => Id.HasValue;
+    private TutorBooking booking = new();
+    private List<Tutor> tutors = new();
+
+    protected override void OnInitialized()
+    {
+        tutors = Context.Tutors.ToList();
+
+        if (Id != null)
+        {
+            var existing = Context.TutorBookings.FirstOrDefault(b => b.TutorBookingId == Id);
+            if (existing != null)
+            {
+                booking = new TutorBooking
+                {
+                    TutorBookingId = existing.TutorBookingId,
+                    TutorId = existing.TutorId,
+                    CustomerName = existing.CustomerName,
+                    CustomerPhone = existing.CustomerPhone,
+                    DurationHours = existing.DurationHours,
+                    NumberOfDays = existing.NumberOfDays,
+                    Notes = existing.Notes,
+                    IsConfirmed = existing.IsConfirmed,
+                    IsPaid = existing.IsPaid,
+                    StartTime = existing.StartTime,
+                    UserId = existing.UserId,
+                    BookingDate = existing.BookingDate,
+                    PaymentDate = existing.PaymentDate,
+                    PaymentMethod = existing.PaymentMethod,
+                    PaymentTransactionId = existing.PaymentTransactionId
+                };
+            }
+        }
+        else
+        {
+            booking.BookingDate = DateTime.Now;
+            booking.StartTime = DateTime.Now;
+        }
+    }
+
+    void HandleValidSubmit()
+    {
+        if (isEdit)
+        {
+            var existing = Context.TutorBookings.FirstOrDefault(b => b.TutorBookingId == booking.TutorBookingId);
+            if (existing != null)
+            {
+                existing.TutorId = booking.TutorId;
+                existing.CustomerName = booking.CustomerName;
+                existing.CustomerPhone = booking.CustomerPhone;
+                existing.DurationHours = booking.DurationHours;
+                existing.NumberOfDays = booking.NumberOfDays;
+                existing.Notes = booking.Notes;
+                existing.IsConfirmed = booking.IsConfirmed;
+                existing.IsPaid = booking.IsPaid;
+                existing.StartTime = booking.StartTime;
+                existing.PaymentMethod = booking.PaymentMethod;
+                existing.PaymentDate = booking.PaymentDate;
+                existing.PaymentTransactionId = booking.PaymentTransactionId;
+
+                Context.SaveChanges();
+            }
+        }
+        else
+        {
+            booking.UserId = "admin"; // TODO: Nếu có login thì lấy từ user hiện tại
+            booking.BookingDate = DateTime.Now;
+
+            Context.TutorBookings.Add(booking);
+            Context.SaveChanges();
+        }
+
+        NavManager.NavigateTo("/admin/tutorbookings");
+    }
+}

@@ -1,0 +1,82 @@
+@model ProductsListViewModel
+
+<!-- DANH SÁCH SẢN PHẨM -->
+<div class="row">
+    @foreach (var p in Model?.Products ?? Enumerable.Empty<Product>())
+    {
+        <div class="col-6 col-sm-4 col-md-3 mb-1 px-1">
+            <div class="card h-100 shadow-sm" style="padding: 4px;">
+                <img src="/images/@(string.IsNullOrEmpty(p.Image) ? "default.jpg" : p.Image)"
+                     class="card-img-top" style="height: 80px; object-fit: cover;" />
+
+                <div class="card-body p-1 d-flex flex-column" style="font-size: 10px;">
+                    <div class="fw-bold text-success mb-1" style="font-size: 11px;">@p.Name</div>
+
+                    @if (p.IsForSale)
+                    {
+                        <div class="text-muted mb-1" style="font-size: 10px;">
+                            Bán: @p.Price.ToString("N0") đ
+                        </div>
+                    }
+
+                    @if (p.IsForRent && p.Category?.Name == "Giáo trình cũ")
+                    {
+                        <div class="text-muted mb-1" style="font-size: 10px;">
+                            Thuê: @p.RentPrice?.ToString("N0") đ/ngày
+                        </div>
+                    }
+
+                    <small class="text-secondary">SL: @p.Quantity</small>
+
+                    <div class="mt-auto pt-1">
+                        @if (p.IsForRent && p.Category?.Name == "Giáo trình cũ")
+                        {
+                            <form method="post" asp-page="/Cart" class="d-flex gap-1 align-items-center">
+                                <input type="hidden" name="productId" value="@p.ProductID" />
+                                <input type="hidden" name="isRental" value="true" />
+                                <input type="hidden" name="returnUrl"
+                                       value="@ViewContext.HttpContext.Request.Path + ViewContext.HttpContext.Request.QueryString" />
+
+                                <input type="number" name="rentalDays" class="form-control form-control-sm"
+                                       placeholder="Ngày" min="1" required style="width: 35px; font-size: 10px;" />
+                                <button class="btn btn-outline-primary btn-sm" type="submit" style="padding: 2px 6px; font-size: 10px;">
+                                    <i class="fa fa-calendar-plus"></i>
+                                </button>
+                            </form>
+                        }
+
+                        @if (p.IsForSale)
+                        {
+                            <form method="post" asp-page="/Cart" class="mt-1">
+                                <input type="hidden" name="productId" value="@p.ProductID" />
+                                <input type="hidden" name="returnUrl"
+                                       value="@ViewContext.HttpContext.Request.Path + ViewContext.HttpContext.Request.QueryString" />
+                                <button class="btn btn-outline-success btn-sm w-100" type="submit" style="padding: 2px 4px; font-size: 10px;">
+                                    <i class="fa fa-cart-plus"></i>
+                                </button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- PHÂN TRANG -->
+<div class="d-flex justify-content-end mt-2">
+    <div page-model="@Model?.PagingInfo"
+         page-action="Index"
+         page-classes-enabled="true"
+         page-class="btn btn-sm"
+         page-class-normal="btn-outline-dark"
+         page-class-selected="btn-success"
+         page-url-categoryId="@Model?.CurrentCategoryId"
+         page-url-search="@Model?.CurrentSearch"
+         page-url-filterMode="@Model?.CurrentFilterMode"
+         page-url-priceRange="@Model?.CurrentPriceRange"
+         page-url-condition="@Model?.CurrentCondition"
+         page-url-rentDuration="@Model?.CurrentRentDuration"
+         class="btn-group">
+    </div>
+</div>

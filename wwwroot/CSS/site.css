@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #1e8141;
+    --dark-color: #0f2e22;
+    --header-bg: #eaeaea;
+}
+.horizontal-product-list {
+    padding-bottom: 10px;
+}
+.horizontal-product-list::-webkit-scrollbar {
+    height: 8px;
+}
+.horizontal-product-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+.banner-img {
+    height: 200px ;
+    object-fit: cover;
+}
+
+
+#mainBannerCarousel {
+    max-height: 200px;
+}
+
+#mainBannerCarousel .carousel-inner {
+    max-height: 200px;
+}
+
+#mainBannerCarousel .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Body */
+body {
+    background: #ffffff;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    font-size: 10px; /* Giảm tiếp từ 12px xuống 10px */
+}
+
+/* Header chính */
+.main-header {
+    background-color: var(--header-bg);
+    color: #333;
+    padding: 4px 0;
+}
+
+.main-header .logo {
+    font-size: 13px; /* Giảm tiếp */
+    margin-right: 6px;
+}
+
+.main-header a {
+    font-size: 10px;
+    margin-right: 6px;
+}
+
+/* Card sản phẩm */
+.product-card {
+    border-radius: 4px;
+    padding: 4px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.06);
+}
+
+.product-card img {
+    max-height: 80px; /* Giảm tiếp từ 100px */
+}
+
+.product-card h5 {
+    font-size: 10px;
+    margin: 4px 0;
+    height: 24px;
+}
+
+.product-card .price {
+    font-size: 11px;
+}
+
+.product-card .old-price {
+    font-size: 9px;
+}
+
+/* Hover */
+.product-card:hover {
+    transform: translateY(-1px);
+}
+
+/* Sub Header */
+.sub-header {
+    padding: 6px 0;
+}
+
+.sub-header .store-name {
+    font-size: 13px;
+}
+
+/* Sidebar danh mục */
+.product-sidebar {
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.product-sidebar h6 {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.product-sidebar .category-card {
+    gap: 4px;
+    padding: 4px 6px;
+}
+
+.product-sidebar .category-card img {
+    height: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 15px 8px;
+    font-size: 10px;
+}
+
+/* Tutor Banner */
+.tutor-banner {
+    padding: 4px 8px;
+}
+
+.tutor-banner .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+}
+
+/* Icon user */
+img[alt="user icon"] {
+    width: 16px;
+    height: 16px;
+}
+
+/* Responsive nhỏ */
+@media (max-width: 768px) {
+    .product-sidebar {
+        padding: 4px;
+    }
+
+    .product-sidebar .category-card {
+        padding: 3px 4px;
+        gap: 4px;
+    }
+
+    .main-header .logo {
+        font-size: 12px;
+    }
+
+    .sub-header .store-name {
+        font-size: 12px;
+    }
+}
+
+/* Animation giữ nguyên */
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(1px, 1px) rotate(1deg); }
+    50% { transform: translate(-1px, -2px) rotate(-1deg); }
+    75% { transform: translate(1px, 1px) rotate(1deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}

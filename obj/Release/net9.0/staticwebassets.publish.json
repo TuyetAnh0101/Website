@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "7QO9AZmc6k8hhFUKj3awB4jU7XqMI7E2t33dL89egx8=",
+  "Source": "SportsStore",
+  "BasePath": "_content/SportsStore",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SportsStore\\wwwroot",
+      "Source": "SportsStore",
+      "ContentRoot": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\",
+      "BasePath": "_content/SportsStore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\baner.png",
+      "SourceId": "SportsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\",
+      "BasePath": "_content/SportsStore",
+      "RelativePath": "images/baner#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afhtzcym41",
+      "Integrity": "iq8Yv3zuBGu1snTWBPCcv7LeO1o5HuoGRiLyxeLUT0A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\baner.png"
+    },
+    {
+      "Identity": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\cart-custom.png",
+      "SourceId": "SportsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\",
+      "BasePath": "_content/SportsStore",
+      "RelativePath": "images/cart-custom#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j3gr4su595",
+      "Integrity": "Px5M6zU6WhQkllM5L5j3olbK8spUhgxgabOinXocdCc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cart-custom.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/baner.afhtzcym41.png",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\baner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1862741"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iq8Yv3zuBGu1snTWBPCcv7LeO1o5HuoGRiLyxeLUT0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 09:39:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afhtzcym41"
+        },
+        {
+          "Name": "label",
+          "Value": "images/baner.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iq8Yv3zuBGu1snTWBPCcv7LeO1o5HuoGRiLyxeLUT0A="
+        }
+      ]
+    },
+    {
+      "Route": "images/baner.png",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\baner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1862741"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iq8Yv3zuBGu1snTWBPCcv7LeO1o5HuoGRiLyxeLUT0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 09:39:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iq8Yv3zuBGu1snTWBPCcv7LeO1o5HuoGRiLyxeLUT0A="
+        }
+      ]
+    },
+    {
+      "Route": "images/cart-custom.j3gr4su595.png",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\cart-custom.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Px5M6zU6WhQkllM5L5j3olbK8spUhgxgabOinXocdCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 07:04:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j3gr4su595"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cart-custom.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Px5M6zU6WhQkllM5L5j3olbK8spUhgxgabOinXocdCc="
+        }
+      ]
+    },
+    {
+      "Route": "images/cart-custom.png",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\cart-custom.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Px5M6zU6WhQkllM5L5j3olbK8spUhgxgabOinXocdCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 07:04:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Px5M6zU6WhQkllM5L5j3olbK8spUhgxgabOinXocdCc="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RESTUDYSTORE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+   <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- HEADER -->
+    <div class="main-header bg-primary text-white py-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <a href="/" class="fw-medium text-white text-decoration-none">Trang chủ</a>
+                <a href="/khuyen-mai" class="fw-medium text-white text-decoration-none">Khuyến mãi</a>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <vc:cart-summary />
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a href="/account/profile" class="text-white">
+                        <img src="https://img.icons8.com/ios-filled/30/ffffff/user.png" alt="user icon" />
+                    </a>
+                }
+                else
+                {
+                    <a href="/account/login" class="text-white">
+                        <img src="https://img.icons8.com/ios-filled/30/ffffff/user.png" alt="user icon" />
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- SUB-HEADER -->
+    <div class="sub-header bg-light">
+        <div class="container py-2 d-flex justify-content-between align-items-center flex-wrap">
+            <h2 class="store-name m-0" style="font-size: 18px;">RESTUDY STORE</h2>
+            <input type="text" class="form-control form-control-sm w-auto" placeholder="Tìm kiếm..." />
+        </div>
+    </div>
+
+ <!-- MAIN CONTENT -->
+<div class="container py-4 flex-grow-1">
+  <div id="mainBannerCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
+    <div class="carousel-inner rounded overflow-hidden">
+        <div class="carousel-item active">
+           <img src="~/images/baner1.png" class="d-block w-100 banner-img" alt="Banner 1">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/banner2.jpg" class="d-block w-100 banner-img" alt="Banner 2">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/banner3.jpg" class="d-block w-100 banner-img" alt="Banner 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Trước</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sau</span>
+    </button>
+</div>
+    <!-- NỘI DUNG CHÍNH: DANH MỤC + SẢN PHẨM -->
+    <div class="row">
+        <!-- DANH MỤC DỌC -->
+        <div class="col-md-3">
+            <div class="product-sidebar bg-white shadow-sm rounded p-3 mb-4">
+                <h6 class="fw-bold mb-3 text-primary">
+                    <i class="fa fa-bars me-2"></i> Danh mục sản phẩm
+                </h6>
+                <div class="d-flex flex-column gap-2">
+                    <a href="/Home/Index?categoryId=1" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
+                        <img src="https://img.icons8.com/ios-filled/40/1e8141/book.png" alt="Giáo trình cũ" />
+                        <span>Giáo trình cũ</span>
+                    </a>
+                    <a href="/Home/Index?categoryId=2" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
+                        <img src="https://img.icons8.com/ios-filled/40/1e8141/pencil.png" alt="Dụng cụ học tập" />
+                        <span>Dụng cụ học tập</span>
+                    </a>
+                    <a href="/Home/Index?categoryId=3" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
+                        <img src="https://img.icons8.com/ios-filled/40/1e8141/backpack.png" alt="Balo & Túi xách" />
+                        <span>Balo & Túi xách</span>
+                    </a>
+                    <a href="/Home/Index?categoryId=5" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
+                        <img src="https://img.icons8.com/ios-filled/40/1e8141/open-book--v2.png" alt="Sách - Truyện Tranh" />
+                        <span>Sách - Truyện Tranh</span>
+                    </a>
+                    <a href="/Home/Index?categoryId=6" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
+                        <img src="https://img.icons8.com/ios-filled/40/1e8141/paint-palette.png" alt="Dụng Cụ Vẽ - VPP" />
+                        <span>Dụng Cụ Vẽ - VPP</span>
+                    </a>
+                    <a href="/Home/Index?categoryId=7" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
+                        <img src="https://img.icons8.com/ios-filled/40/1e8141/drawing-tablet.png" alt="Bảng Vẽ - Phụ Kiện Số" />
+                        <span>Bảng Vẽ - Phụ Kiện Số</span>
+                    </a>
+                    <a href="/Home/Index?categoryId=8" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
+                        <img src="https://img.icons8.com/ios-filled/40/1e8141/grocery-store.png" alt="Bách Hóa Online" />
+                        <span>Bách Hóa Online</span>
+                    </a>
+                    <a href="/Home/Index?categoryId=9" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
+                        <img src="https://img.icons8.com/ios-filled/40/1e8141/gift.png" alt="Quà Tặng - Đồ Chơi" />
+                        <span>Quà Tặng - Đồ Chơi</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- KHU VỰC HIỂN THỊ SẢN PHẨM -->
+        <div class="col-md-9">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-3 mt-auto">
+        <div class="container text-center">
+            <p class="fw-bold mb-2">© 2025 RestudyStore – Website học tập đa dịch vụ</p>
+            <p>Email: support@restudystore.com | Hotline: 0909 123 456</p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3 text-decoration-none">Chính sách</a>
+                <a href="#" class="text-white me-3 text-decoration-none">Bảo mật</a>
+                <a href="#" class="text-white text-decoration-none">Điều khoản</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GIA SƯ BANNER -->
+    <div class="tutor-banner position-fixed" style="bottom: 20px; right: 20px; background:#007bff; color:#fff; border-radius: 30px; padding: 10px 15px; cursor:pointer; box-shadow: 0 0 10px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; z-index: 1050;">
+        <div class="label fw-semibold">Bạn cần tìm gia sư?</div>
+        <a href="/Tutor/ListTutors" class="icon text-white" style="font-size: 24px;">
+            <i class="fa fa-chalkboard-teacher"></i>
+        </a>
+    </div>
+<script>
+    const carouselElement = document.querySelector('#mainBannerCarousel');
+    const carousel = new bootstrap.Carousel(carouselElement, {
+        interval: 5000,
+        ride: 'carousel'
+    });
+</script>
+    @RenderSection("Scripts", required: false)
+   
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <style>
+    #mainBannerCarousel {
+        max-height: 200px;
+    }
+
+    #mainBannerCarousel .carousel-inner {
+        max-height: 200px;
+    }
+
+    #mainBannerCarousel .carousel-item img {
+        height: 200px !important;
+        max-height: 200px !important;
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
+ </body>
+</html>
+

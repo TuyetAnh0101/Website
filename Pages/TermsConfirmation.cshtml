@@ -1,0 +1,29 @@
+@page
+@model SportsStore.Pages.TermsConfirmationModel
+
+@{
+    ViewData["Title"] = "Xác nhận điều khoản thuê";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Điều khoản và điều kiện khi thuê sản phẩm</h2>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <ul>
+                <li>Bạn đồng ý hoàn trả sản phẩm đúng hạn như đã ghi trên đơn thuê.</li>
+                <li>Nếu trả trễ, bạn có thể bị tính phí phạt theo quy định hiện hành.</li>
+                <li>Trường hợp không trả hàng hoặc mất hàng, chúng tôi có quyền gửi thông báo nợ xấu.</li>
+                <li>Phí trễ hạn và các khoản phí khác sẽ được thông báo và yêu cầu thanh toán đầy đủ.</li>
+                <li>Bạn chịu trách nhiệm bảo quản sản phẩm trong suốt thời gian thuê.</li>
+            </ul>
+        </div>
+    </div>
+
+  <form method="post" asp-page-handler="Accept">
+    <button type="submit" class="btn btn-success">Tôi đồng ý với các điều khoản trên</button>
+    <a asp-page="/Cart" class="btn btn-secondary ms-3">Quay lại giỏ hàng</a>
+</form>
+
+</div>
