@@ -31,5 +31,8 @@ namespace SportsStore.Models.ViewModels
 
         // **Thêm danh sách gia sư**
         public IEnumerable<Tutor>? Tutors { get; set; }
+        // Thêm vào cuối class
+        public IEnumerable<Category>? Categories { get; set; }
+
     }
 }

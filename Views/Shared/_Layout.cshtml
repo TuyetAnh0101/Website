@@ -1,3 +1,5 @@
+@inject SportsStore.Models.IStoreRepository repo
+@{ ViewBag.Categories = repo.Categories.ToList(); }
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -36,55 +38,65 @@
         </div>
     </div>
 
- <!-- SUB-HEADER -->
-<div class="sub-header bg-light">
-    <div class="container py-2 d-flex justify-content-between align-items-center flex-wrap">
-        <h2 class="store-name m-0" style="font-size: 18px;">RESTUDY STORE</h2>
+<!-- SUB-HEADER -->
+<div class="sub-header bg-light border-bottom">
+    <div class="container py-3 d-flex flex-column flex-md-row justify-content-between align-items-center flex-wrap">
+        <h2 class="store-name m-0 mb-2 mb-md-0" style="font-size: 18px;">RESTUDY STORE</h2>
 
-        <form asp-controller="Products" asp-action="Index" method="get" class="d-flex align-items-center">
-            <input type="text" name="search" class="form-control form-control-sm me-2" placeholder="Tìm kiếm..." value="@Context.Request.Query["search"]" />
-            <button type="submit" class="btn btn-sm btn-primary me-2">Tìm</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#filterForm">Lọc</button>
+        <form asp-controller="Home" asp-action="Index" method="get" class="form-inline w-100 d-flex flex-wrap gap-2 justify-content-md-end position-relative">
+            <!-- Nhóm tìm kiếm + nút lọc -->
+            <div class="input-group" style="min-width: 250px; max-width: 400px; flex-grow: 1;">
+                <input type="text" name="search" placeholder="Tìm sản phẩm..." class="form-control" />
+                <button class="btn btn-outline-secondary" type="button" onclick="toggleAdvancedFilters()" title="Bộ lọc nâng cao">
+                    <i class="fas fa-filter"></i>
+                </button>
+            </div>
+
+            <!-- Bộ lọc nâng cao (ẩn mặc định) -->
+            <div id="advanced-filters" class="d-none w-100 flex-wrap gap-2 mt-2">
+                <select name="categoryId" class="form-control">
+                    <option value="">--Danh mục--</option>
+                    @foreach (var category in ViewBag.Categories as List<Category>)
+                    {
+                        <option value="@category.CategoryId">@category.Name</option>
+                    }
+                </select>
+
+                <select name="condition" class="form-control">
+                    <option value="">--Tình trạng--</option>
+                    <option value="100">Mới 100%</option>
+                    <option value="90">Mới 90%</option>
+                    <option value="80">Mới 80%</option>
+                    <option value="70">Mới 70%</option>
+                </select>
+
+                <select name="rentDuration" class="form-control">
+                    <option value="">--Thời hạn thuê--</option>
+                    <option value="7">1 tuần</option>
+                    <option value="30">1 tháng</option>
+                    <option value="90">3 tháng</option>
+                </select>
+            </div>
+
+            <!-- Nút tìm -->
+            <button type="submit" class="btn btn-primary mt-2 mt-md-0">Tìm</button>
         </form>
     </div>
-
-    <!-- Form lọc ẩn -->
-    <div class="container">
-        <div class="collapse mt-2" id="filterForm">
-            <form asp-controller="Products" asp-action="Index" method="get" class="row g-2">
-                <div class="col-md-3">
-                    <select name="filterMode" class="form-select form-select-sm">
-                        <option value="">-- Mua hoặc thuê --</option>
-                        <option value="buy">Mua</option>
-                        <option value="rent">Thuê</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <select name="priceRange" class="form-select form-select-sm">
-                        <option value="">-- Khoảng giá --</option>
-                        <option value="lt50">&lt; 50.000đ</option>
-                        <option value="50to200">50.000 - 200.000đ</option>
-                        <option value="gt200">&gt; 200.000đ</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <select name="condition" class="form-select form-select-sm">
-                        <option value="">-- Điều kiện sản phẩm --</option>
-                        <option value="80">≥ 80%</option>
-                        <option value="90">≥ 90%</option>
-                        <option value="95">≥ 95%</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <input type="number" name="rentDuration" class="form-control form-control-sm" placeholder="Số ngày thuê tối thiểu" min="1" />
-                </div>
-                <div class="col-12 d-flex justify-content-end">
-                    <button type="submit" class="btn btn-sm btn-success">Áp dụng lọc</button>
-                </div>
-            </form>
-        </div>
-    </div>
 </div>
+<script>
+    function toggleAdvancedFilters() {
+        const filterDiv = document.getElementById("advanced-filters");
+        if (filterDiv.classList.contains("d-none")) {
+            filterDiv.classList.remove("d-none");
+            filterDiv.classList.add("d-flex");
+        } else {
+            filterDiv.classList.remove("d-flex");
+            filterDiv.classList.add("d-none");
+        }
+    }
+</script>
+
+
  <!-- MAIN CONTENT -->
 <div class="container py-4 flex-grow-1">
   <div id="mainBannerCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
@@ -207,4 +219,3 @@
 </style>
  </body>
 </html>
-

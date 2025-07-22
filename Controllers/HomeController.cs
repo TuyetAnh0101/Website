@@ -14,7 +14,7 @@ namespace SportsStore.Controllers
             _context = context;
         }
 
-public async Task<IActionResult> Index(int? categoryId, string? search, string? priceRange, string? condition, int? rentDuration, int page = 1)
+   public async Task<IActionResult> Index(int? categoryId, string? search, string? priceRange, string? condition, int? rentDuration, int page = 1)
 {
     int pageSize = 12;
 
@@ -80,8 +80,11 @@ public async Task<IActionResult> Index(int? categoryId, string? search, string? 
         Tutors = tutors
     };
 
+    // Truyền danh mục xuống view để hiển thị dropdown
+    ViewBag.Categories = await _context.Categories.OrderBy(c => c.Name).ToListAsync();
+    ViewBag.CurrentCategoryId = categoryId;
+
     return View(viewModel);
 }
-
     }
 }
