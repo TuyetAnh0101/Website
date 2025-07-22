@@ -1,0 +1,123 @@
+@model SportsStore.Models.ViewModels.ProductDetailsViewModel
+
+@{
+    ViewData["Title"] = Model.Product.Name;
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Ảnh sản phẩm -->
+        <div class="col-md-6">
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @for (int i = 0; i < Model.ProductImages.Count; i++)
+                    {
+                        <div class="carousel-item @(i == 0 ? "active" : "")">
+                            <img src="~/images/@Model.ProductImages[i].ImageUrl"
+                                class="d-block w-100"
+                                style="max-height: 500px; object-fit: contain;"
+                                alt="Ảnh sản phẩm" />
+                        </div>
+                    }
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                     style="background-color: rgba(0,0,0,0.5); border-radius: 50%; width: 40px; height: 40px;"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                    style="background-color: rgba(0,0,0,0.5); border-radius: 50%; width: 40px; height: 40px;"></span>
+            </button>
+    </div>
+</div>
+
+
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-6">
+            <h2>@Model.Product.Name</h2>
+            <p><strong>Giá:</strong> @Model.Product.Price.ToString("N0") VND</p>
+            <p><strong>Loại:</strong> @Model.Product.Category?.Name</p>
+            <p><strong>Mô tả:</strong> @Model.Product.Description</p>
+
+        <form method="post" asp-page="/Cart" class="d-flex gap-2 align-items-center mb-2">
+            <input type="hidden" name="productId" value="@Model.Product.ProductID" />
+            <input type="hidden" name="returnUrl" 
+                value="@ViewContext.HttpContext.Request.Path + ViewContext.HttpContext.Request.QueryString" />
+            <div class="d-flex gap-2">
+                <button type="submit" name="mode" value="buy" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                <button type="submit" name="mode" value="buy" class="btn btn-danger">Mua ngay</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<!-- Đánh giá sản phẩm -->
+<div class="container mt-4">
+    <h4>Đánh giá của khách hàng</h4>
+    @if (Model.Reviews != null && Model.Reviews.Any())
+    {
+        @foreach (var review in Model.Reviews)
+        {
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h6 class="card-title">@review.CustomerName</h6>
+                    <p class="card-text">@review.Comment</p>
+                    <small class="text-muted">@review.Date.ToString("dd/MM/yyyy")</small>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Chưa có đánh giá nào.</p>
+    }
+</div>
+
+<hr />
+
+<!-- Sản phẩm liên quan dạng carousel -->
+<div class="container mt-4">
+    <h4>Sản phẩm liên quan</h4>
+    <div id="relatedProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            @{
+                int itemsPerSlide = 4;
+                int totalItems = Model.RelatedProducts.Count();
+                int totalSlides = (int)Math.Ceiling((double)totalItems / itemsPerSlide);
+
+                for (int slideIndex = 0; slideIndex < totalSlides; slideIndex++)
+                {
+                    var productsInSlide = Model.RelatedProducts.Skip(slideIndex * itemsPerSlide).Take(itemsPerSlide).ToList();
+                    <div class="carousel-item @(slideIndex == 0 ? "active" : "")">
+                        <div class="row">
+                            @foreach (var item in productsInSlide)
+                            {
+                                <div class="col-md-3">
+                                    <div class="card mb-4">
+                                        <img src="@item.Image" class="card-img-top" alt="Ảnh" style="height: 200px; object-fit: cover;" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">@item.Name</h5>
+                                            <p class="card-text">@item.Price.ToString("N0") VND</p>
+                                            <a asp-controller="Home" asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-primary">Xem chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+

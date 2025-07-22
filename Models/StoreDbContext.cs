@@ -17,5 +17,7 @@ namespace SportsStore.Models
         public DbSet<Tutor> Tutors { get; set; }
         public DbSet<TutorBooking> TutorBookings { get; set; }
         public DbSet<CartLine> CartLines { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; } = null!;
+        public DbSet<ProductReview> ProductReviews { get; set; }
     }
 }

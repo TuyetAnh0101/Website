@@ -7,11 +7,20 @@ namespace SportsStore.Models
         IQueryable<Product> Products { get; }
         IQueryable<Category> Categories { get; }
 
-        void SaveProduct(Product p);
         void CreateProduct(Product p);
+        void SaveProduct(Product p);
         void DeleteProduct(Product p);
 
-        // Bổ sung tiện ích lọc theo category
+        // Lấy sản phẩm theo category
         IQueryable<Product> GetProductsByCategory(int categoryId);
+
+        // Quản lý ảnh phụ cho sản phẩm
+        IQueryable<ProductImage> ProductImages { get; }
+
+        void AddProductImage(ProductImage image);
+        void DeleteProductImage(long imageId);            
+        ProductImage? GetProductImageById(long imageId);
+
+        IQueryable<ProductImage> GetImagesByProductId(long productId);
     }
 }

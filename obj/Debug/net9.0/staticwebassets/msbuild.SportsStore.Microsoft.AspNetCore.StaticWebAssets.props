@@ -12,47 +12,65 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4nthbhal0x</Fingerprint>
-      <Integrity>UF+BxJRQ7dJcdzbR2zEl3SROMnsCpgbLk1JCd1jVPZ8=</Integrity>
+      <Fingerprint>3fc4aktvvq</Fingerprint>
+      <Integrity>IT7Cfhu3YLLRv7ahvnfyBUtTmoFaxRPRAXLGChVu4jk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\site.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\baner.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Banner1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>SportsStore</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/SportsStore</BasePath>
-      <RelativePath>images/baner.png</RelativePath>
+      <RelativePath>images/Banner1.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>afhtzcym41</Fingerprint>
-      <Integrity>iq8Yv3zuBGu1snTWBPCcv7LeO1o5HuoGRiLyxeLUT0A=</Integrity>
+      <Fingerprint>m92dt3tfos</Fingerprint>
+      <Integrity>Rvpcp+KHPMPvhe5yN0y7kD1j/XaEy9B5zLLMB2P0zPo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\baner.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Banner1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Baner1.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Banner2.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>SportsStore</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/SportsStore</BasePath>
-      <RelativePath>images/Baner1.png</RelativePath>
+      <RelativePath>images/Banner2.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1w2e23niiv</Fingerprint>
-      <Integrity>ISRGDTs3xjQ9fBqXybCq/dof6hgqqJrHWkj09tg7th0=</Integrity>
+      <Fingerprint>2k8giwu2f2</Fingerprint>
+      <Integrity>UsHUciILhBs9VdWj1h7/TusMEIPOJMJZgyR1x9q+fJo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Baner1.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Banner2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Banner3.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SportsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SportsStore</BasePath>
+      <RelativePath>images/Banner3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>z4pltnvca3</Fingerprint>
+      <Integrity>faTAK0f/9uP7McwtEI62rH2LxxJ+XhcHucdRFaYUngM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Banner3.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cart-custom.png'))">
       <SourceType>Package</SourceType>

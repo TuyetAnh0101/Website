@@ -1,5 +1,8 @@
 @inject SportsStore.Models.IStoreRepository repo
-@{ ViewBag.Categories = repo.Categories.ToList(); }
+@{
+    ViewBag.Categories = repo.Categories.ToList();
+}
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -7,12 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - RESTUDYSTORE</title>
 
+    <!-- Bootstrap & FontAwesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-   <link href="~/css/site.css" rel="stylesheet" />
-</head>
-<body class="d-flex flex-column min-vh-100">
 
+    <!-- Custom CSS -->
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
     <!-- HEADER -->
     <div class="main-header bg-primary text-white py-2">
         <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -38,139 +44,105 @@
         </div>
     </div>
 
-<!-- SUB-HEADER -->
-<div class="sub-header bg-light border-bottom">
-    <div class="container py-3 d-flex flex-column flex-md-row justify-content-between align-items-center flex-wrap">
-        <h2 class="store-name m-0 mb-2 mb-md-0" style="font-size: 18px;">RESTUDY STORE</h2>
+    <!-- SUB HEADER -->
+    <div class="sub-header bg-light border-bottom">
+        <div class="container py-3 d-flex flex-column flex-md-row justify-content-between align-items-center flex-wrap">
+            <h2 class="store-name m-0 mb-2 mb-md-0" style="font-size: 18px;">RESTUDY STORE</h2>
+            <form asp-controller="Home" asp-action="Index" method="get" class="form-inline w-100 d-flex flex-wrap gap-2 justify-content-md-end position-relative">
+                <!-- Tìm kiếm -->
+                <div class="input-group" style="min-width: 250px; max-width: 400px; flex-grow: 1;">
+                    <input type="text" name="search" placeholder="Tìm sản phẩm..." class="form-control" />
+                    <button class="btn btn-outline-secondary" type="button" onclick="toggleAdvancedFilters()" title="Bộ lọc nâng cao">
+                        <i class="fas fa-filter"></i>
+                    </button>
+                </div>
 
-        <form asp-controller="Home" asp-action="Index" method="get" class="form-inline w-100 d-flex flex-wrap gap-2 justify-content-md-end position-relative">
-            <!-- Nhóm tìm kiếm + nút lọc -->
-            <div class="input-group" style="min-width: 250px; max-width: 400px; flex-grow: 1;">
-                <input type="text" name="search" placeholder="Tìm sản phẩm..." class="form-control" />
-                <button class="btn btn-outline-secondary" type="button" onclick="toggleAdvancedFilters()" title="Bộ lọc nâng cao">
-                    <i class="fas fa-filter"></i>
-                </button>
-            </div>
+                <!-- Bộ lọc nâng cao -->
+                <div id="advanced-filters" class="d-none w-100 flex-wrap gap-2 mt-2">
+                    <select name="categoryId" class="form-control">
+                        <option value="">--Danh mục--</option>
+                        @foreach (var category in ViewBag.Categories as List<Category>)
+                        {
+                            <option value="@category.CategoryId">@category.Name</option>
+                        }
+                    </select>
 
-            <!-- Bộ lọc nâng cao (ẩn mặc định) -->
-            <div id="advanced-filters" class="d-none w-100 flex-wrap gap-2 mt-2">
-                <select name="categoryId" class="form-control">
-                    <option value="">--Danh mục--</option>
-                    @foreach (var category in ViewBag.Categories as List<Category>)
-                    {
-                        <option value="@category.CategoryId">@category.Name</option>
-                    }
-                </select>
+                    <select name="condition" class="form-control">
+                        <option value="">--Tình trạng--</option>
+                        <option value="100">Mới 100%</option>
+                        <option value="90">Mới 90%</option>
+                        <option value="80">Mới 80%</option>
+                        <option value="70">Mới 70%</option>
+                    </select>
 
-                <select name="condition" class="form-control">
-                    <option value="">--Tình trạng--</option>
-                    <option value="100">Mới 100%</option>
-                    <option value="90">Mới 90%</option>
-                    <option value="80">Mới 80%</option>
-                    <option value="70">Mới 70%</option>
-                </select>
+                    <select name="rentDuration" class="form-control">
+                        <option value="">--Thời hạn thuê--</option>
+                        <option value="7">1 tuần</option>
+                        <option value="30">1 tháng</option>
+                        <option value="90">3 tháng</option>
+                    </select>
+                </div>
 
-                <select name="rentDuration" class="form-control">
-                    <option value="">--Thời hạn thuê--</option>
-                    <option value="7">1 tuần</option>
-                    <option value="30">1 tháng</option>
-                    <option value="90">3 tháng</option>
-                </select>
-            </div>
-
-            <!-- Nút tìm -->
-            <button type="submit" class="btn btn-primary mt-2 mt-md-0">Tìm</button>
-        </form>
-    </div>
-</div>
-<script>
-    function toggleAdvancedFilters() {
-        const filterDiv = document.getElementById("advanced-filters");
-        if (filterDiv.classList.contains("d-none")) {
-            filterDiv.classList.remove("d-none");
-            filterDiv.classList.add("d-flex");
-        } else {
-            filterDiv.classList.remove("d-flex");
-            filterDiv.classList.add("d-none");
-        }
-    }
-</script>
-
-
- <!-- MAIN CONTENT -->
-<div class="container py-4 flex-grow-1">
-  <div id="mainBannerCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
-    <div class="carousel-inner rounded overflow-hidden">
-        <div class="carousel-item active">
-           <img src="~/images/baner1.png" class="d-block w-100 banner-img" alt="Banner 1">
-        </div>
-        <div class="carousel-item">
-            <img src="~/images/banner2.jpg" class="d-block w-100 banner-img" alt="Banner 2">
-        </div>
-        <div class="carousel-item">
-            <img src="~/images/banner3.jpg" class="d-block w-100 banner-img" alt="Banner 3">
+                <!-- Nút tìm -->
+                <button type="submit" class="btn btn-primary mt-2 mt-md-0">Tìm</button>
+            </form>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Trước</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Sau</span>
-    </button>
-</div>
-    <!-- NỘI DUNG CHÍNH: DANH MỤC + SẢN PHẨM -->
-    <div class="row">
-        <!-- DANH MỤC DỌC -->
-        <div class="col-md-3">
-            <div class="product-sidebar bg-white shadow-sm rounded p-3 mb-4">
-                <h6 class="fw-bold mb-3 text-primary">
-                    <i class="fa fa-bars me-2"></i> Danh mục sản phẩm
-                </h6>
-                <div class="d-flex flex-column gap-2">
-                    <a href="/Home/Index?categoryId=1" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
-                        <img src="https://img.icons8.com/ios-filled/40/1e8141/book.png" alt="Giáo trình cũ" />
-                        <span>Giáo trình cũ</span>
-                    </a>
-                    <a href="/Home/Index?categoryId=2" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
-                        <img src="https://img.icons8.com/ios-filled/40/1e8141/pencil.png" alt="Dụng cụ học tập" />
-                        <span>Dụng cụ học tập</span>
-                    </a>
-                    <a href="/Home/Index?categoryId=3" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
-                        <img src="https://img.icons8.com/ios-filled/40/1e8141/backpack.png" alt="Balo & Túi xách" />
-                        <span>Balo & Túi xách</span>
-                    </a>
-                    <a href="/Home/Index?categoryId=5" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
-                        <img src="https://img.icons8.com/ios-filled/40/1e8141/open-book--v2.png" alt="Sách - Truyện Tranh" />
-                        <span>Sách - Truyện Tranh</span>
-                    </a>
-                    <a href="/Home/Index?categoryId=6" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
-                        <img src="https://img.icons8.com/ios-filled/40/1e8141/paint-palette.png" alt="Dụng Cụ Vẽ - VPP" />
-                        <span>Dụng Cụ Vẽ - VPP</span>
-                    </a>
-                    <a href="/Home/Index?categoryId=7" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
-                        <img src="https://img.icons8.com/ios-filled/40/1e8141/drawing-tablet.png" alt="Bảng Vẽ - Phụ Kiện Số" />
-                        <span>Bảng Vẽ - Phụ Kiện Số</span>
-                    </a>
-                    <a href="/Home/Index?categoryId=8" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
-                        <img src="https://img.icons8.com/ios-filled/40/1e8141/grocery-store.png" alt="Bách Hóa Online" />
-                        <span>Bách Hóa Online</span>
-                    </a>
-                    <a href="/Home/Index?categoryId=9" class="category-card d-flex align-items-center gap-2 p-2 rounded text-decoration-none text-dark">
-                        <img src="https://img.icons8.com/ios-filled/40/1e8141/gift.png" alt="Quà Tặng - Đồ Chơi" />
-                        <span>Quà Tặng - Đồ Chơi</span>
-                    </a>
+
+    <!-- BANNER CAROUSEL -->
+    <div class="container py-4 flex-grow-1">
+        <div id="mainBannerCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
+            <div class="carousel-inner rounded overflow-hidden">
+                <div class="carousel-item active">
+                    <img src="~/images/Banner1.jpg" class="d-block w-100 banner-img" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/Banner2.jpg" class="d-block w-100 banner-img" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/Banner3.jpg" class="d-block w-100 banner-img" alt="Banner 3">
                 </div>
             </div>
-        </div>
-
-        <!-- KHU VỰC HIỂN THỊ SẢN PHẨM -->
-        <div class="col-md-9">
-            @RenderBody()
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Trước</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sau</span>
+            </button>
         </div>
     </div>
-</div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container py-4 flex-grow-1">
+        <div class="row">
+            <!-- DANH MỤC DỌC -->
+            <div class="col-md-3">
+                <div class="product-sidebar bg-white shadow-sm rounded p-3 mb-4">
+                    <h6 class="fw-bold mb-3 text-primary text-uppercase fs-6">
+                        Danh mục sản phẩm
+                    </h6>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="/Home/Index?categoryId=1" class="category-card px-3 py-2 text-decoration-none">Giáo trình cũ</a>
+                        <a href="/Home/Index?categoryId=2" class="category-card px-3 py-2 text-decoration-none">Dụng cụ học tập</a>
+                        <a href="/Home/Index?categoryId=3" class="category-card px-3 py-2 text-decoration-none">Balo & Túi xách</a>
+                        <a href="/Home/Index?categoryId=5" class="category-card px-3 py-2 text-decoration-none">Sách - Truyện Tranh</a>
+                        <a href="/Home/Index?categoryId=6" class="category-card px-3 py-2 text-decoration-none">Dụng Cụ Vẽ - VPP</a>
+                        <a href="/Home/Index?categoryId=7" class="category-card px-3 py-2 text-decoration-none">Bảng Vẽ - Phụ Kiện Số</a>
+                        <a href="/Home/Index?categoryId=8" class="category-card px-3 py-2 text-decoration-none">Bách Hóa Online</a>
+                        <a href="/Home/Index?categoryId=9" class="category-card px-3 py-2 text-decoration-none">Quà Tặng - Đồ Chơi</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HIỂN THỊ SẢN PHẨM -->
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="bg-dark text-white py-3 mt-auto">
         <div class="container text-center">
@@ -191,31 +163,44 @@
             <i class="fa fa-chalkboard-teacher"></i>
         </a>
     </div>
-<script>
-    const carouselElement = document.querySelector('#mainBannerCarousel');
-    const carousel = new bootstrap.Carousel(carouselElement, {
-        interval: 5000,
-        ride: 'carousel'
-    });
-</script>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Carousel auto play
+        const carouselElement = document.querySelector('#mainBannerCarousel');
+        const carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 5000,
+            ride: 'carousel'
+        });
+
+        // Toggle filter
+        function toggleAdvancedFilters() {
+            const filterDiv = document.getElementById("advanced-filters");
+            filterDiv.classList.toggle("d-none");
+            filterDiv.classList.toggle("d-flex");
+        }
+    </script>
+
     @RenderSection("Scripts", required: false)
-   
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
- <style>
-    #mainBannerCarousel {
-        max-height: 200px;
-    }
 
-    #mainBannerCarousel .carousel-inner {
-        max-height: 200px;
-    }
+    <!-- Extra Inline Styles -->
+    <style>
+        #mainBannerCarousel {
+            max-height: 200px;
+        }
 
-    #mainBannerCarousel .carousel-item img {
-        height: 200px !important;
-        max-height: 200px !important;
-        width: 100%;
-        object-fit: cover;
-    }
-</style>
- </body>
+        #mainBannerCarousel .carousel-inner {
+            max-height: 200px;
+        }
+
+        #mainBannerCarousel .carousel-item img {
+            height: 200px !important;
+            max-height: 200px !important;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</body>
 </html>

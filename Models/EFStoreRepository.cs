@@ -12,13 +12,17 @@ namespace SportsStore.Models
             context = ctx;
         }
 
-        public IQueryable<Product> Products => context.Products.Include(p => p.Category);
+        public IQueryable<Product> Products => context.Products
+            .Include(p => p.Category)
+            .Include(p => p.ProductImages); // Load ảnh phụ
+
         public IQueryable<Category> Categories => context.Categories;
 
         public IQueryable<Product> GetProductsByCategory(int categoryId)
         {
             return context.Products
                 .Include(p => p.Category)
+                .Include(p => p.ProductImages)
                 .Where(p => p.CategoryId == categoryId);
         }
 
@@ -30,6 +34,10 @@ namespace SportsStore.Models
 
         public void DeleteProduct(Product p)
         {
+            // Xóa hình ảnh phụ trước
+            var images = context.ProductImages.Where(img => img.ProductID == p.ProductID);
+            context.ProductImages.RemoveRange(images);
+
             context.Remove(p);
             context.SaveChanges();
         }
@@ -38,5 +46,34 @@ namespace SportsStore.Models
         {
             context.SaveChanges();
         }
+
+        // ✅ Quản lý ảnh phụ
+        public void AddProductImage(ProductImage image)
+        {
+            context.ProductImages.Add(image);
+            context.SaveChanges();
+        }
+
+        public void DeleteProductImage(long imageId)
+        {
+            var image = context.ProductImages.Find(imageId);
+            if (image != null)
+            {
+                context.ProductImages.Remove(image);
+                context.SaveChanges();
+            }
+        }
+
+        public ProductImage? GetProductImageById(long imageId)
+        {
+            return context.ProductImages.Find(imageId);
+        }
+
+        public IQueryable<ProductImage> GetImagesByProductId(long productId)
+        {
+            return context.ProductImages.Where(img => img.ProductID == productId);
+        }
+
+        public IQueryable<ProductImage> ProductImages => context.ProductImages;
     }
 }

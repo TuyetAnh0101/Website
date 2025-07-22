@@ -17,7 +17,23 @@
     height: 200px ;
     object-fit: cover;
 }
+.category-card {
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    color: #333;
+}
 
+.category-card:hover {
+    background-color: #e9f2ff;
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.category-card.active {
+    background-color: #0d6efd;
+    color: #fff !important;
+    font-weight: 700;
+}
 
 #mainBannerCarousel {
     max-height: 200px;
@@ -168,3 +184,4 @@ img[alt="user icon"] {
     75% { transform: translate(1px, 1px) rotate(1deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
+

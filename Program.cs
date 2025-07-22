@@ -89,6 +89,8 @@ app.MapControllerRoute("pagination",
 
 app.MapDefaultControllerRoute();
 app.MapRazorPages();
+app.UseStaticFiles();
+
 
 // ✅ Đặt đúng thứ tự: BlazorHub trước fallback
 app.MapBlazorHub();

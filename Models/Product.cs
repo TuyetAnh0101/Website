@@ -40,5 +40,6 @@ namespace SportsStore.Models
 
         [Range(1, 365, ErrorMessage = "Rent duration must be between 1 and 365 days")]
         public int? RentDurationDays { get; set; }
+        public List<ProductImage> ProductImages { get; set; } = new();
     }
 }

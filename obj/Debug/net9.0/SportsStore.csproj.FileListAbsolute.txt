@@ -178,8 +178,10 @@ C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\SportsStore.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\SportsStore.pdb
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Azure.Core.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Azure.Identity.dll
+C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\ChartJs.Blazor.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Humanizer.dll
+C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\MailKit.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -220,6 +222,7 @@ C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Microsoft.IdentityM
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Microsoft.JSInterop.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\MimeKit.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\System.ClientModel.dll
@@ -324,6 +327,7 @@ C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.csproj.
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.MvcApplicationPartsAssemblyInfo.cache
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.RazorAssemblyInfo.cache
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.RazorAssemblyInfo.cs
+C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.sourcelink.json
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\scopedcss\bundle\SportsStore.styles.css
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\kkwjpfsf8x-rd7kpyao0h.gz
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\9pozex28tv-rxs4m3fo3f.gz
@@ -331,7 +335,7 @@ C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\l7flew2g
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\q71a8qrays-zyqspy8l5n.gz
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\uxbqkokfu0-lzs9hmhw5n.gz
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\137ic4jcgc-ft71q750bt.gz
-C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\lrlmqv6ncz-4nthbhal0x.gz
+C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\wlc6u5beyp-gng8gkrtyj.gz
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\staticwebassets.build.json
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\staticwebassets.development.json
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -347,8 +351,4 @@ C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\refint\SportsStore.
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.pdb
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.genruntimeconfig.cache
 C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\ref\SportsStore.dll
-C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\SportsStore.sourcelink.json
-C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\wlc6u5beyp-gng8gkrtyj.gz
-C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
-C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\MailKit.dll
-C:\Restudy\RestudySln\SportsSln\SportsStore\bin\Debug\net9.0\MimeKit.dll
+C:\Restudy\RestudySln\SportsSln\SportsStore\obj\Debug\net9.0\compressed\lrlmqv6ncz-3fc4aktvvq.gz

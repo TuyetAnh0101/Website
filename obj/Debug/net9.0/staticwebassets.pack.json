@@ -5,12 +5,16 @@
       "PackagePath": "staticwebassets\\CSS\\site.css"
     },
     {
-      "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\Baner1.png",
-      "PackagePath": "staticwebassets\\images\\Baner1.png"
+      "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\Banner1.jpg",
+      "PackagePath": "staticwebassets\\images\\Banner1.jpg"
     },
     {
-      "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\baner.png",
-      "PackagePath": "staticwebassets\\images\\baner.png"
+      "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\Banner2.jpg",
+      "PackagePath": "staticwebassets\\images\\Banner2.jpg"
+    },
+    {
+      "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\Banner3.jpg",
+      "PackagePath": "staticwebassets\\images\\Banner3.jpg"
     },
     {
       "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\cart-custom.png",

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SportsStore.Models;
 
@@ -11,9 +12,11 @@ using SportsStore.Models;
 namespace SportsStore.Migrations
 {
     [DbContext(typeof(StoreDbContext))]
-    partial class StoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250722061904_AddProductImages")]
+    partial class AddProductImages
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -416,38 +419,6 @@ namespace SportsStore.Migrations
                     b.ToTable("ProductImages");
                 });
 
-            modelBuilder.Entity("SportsStore.Models.ProductReview", b =>
-                {
-                    b.Property<int>("ProductReviewId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductReviewId"));
-
-                    b.Property<string>("Comment")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ProductID")
-                        .HasColumnType("int");
-
-                    b.Property<long?>("ProductID1")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("ProductReviewId");
-
-                    b.HasIndex("ProductID1");
-
-                    b.ToTable("ProductReviews");
-                });
-
             modelBuilder.Entity("SportsStore.Models.Rental", b =>
                 {
                     b.Property<int>("Id")
@@ -688,19 +659,10 @@ namespace SportsStore.Migrations
             modelBuilder.Entity("SportsStore.Models.ProductImage", b =>
                 {
                     b.HasOne("SportsStore.Models.Product", "Product")
-                        .WithMany("ProductImages")
+                        .WithMany("Images")
                         .HasForeignKey("ProductID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("SportsStore.Models.ProductReview", b =>
-                {
-                    b.HasOne("SportsStore.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductID1");
 
                     b.Navigation("Product");
                 });
@@ -760,7 +722,7 @@ namespace SportsStore.Migrations
 
             modelBuilder.Entity("SportsStore.Models.Product", b =>
                 {
-                    b.Navigation("ProductImages");
+                    b.Navigation("Images");
                 });
 
             modelBuilder.Entity("SportsStore.Models.Tutor", b =>
