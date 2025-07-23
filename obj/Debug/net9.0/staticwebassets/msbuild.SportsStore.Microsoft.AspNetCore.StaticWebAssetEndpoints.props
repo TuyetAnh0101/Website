@@ -1,16 +1,28 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/SportsStore/CSS/site.3fc4aktvvq.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3fc4aktvvq"},{"Name":"integrity","Value":"sha256-IT7Cfhu3YLLRv7ahvnfyBUtTmoFaxRPRAXLGChVu4jk="},{"Name":"label","Value":"_content/SportsStore/CSS/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3292"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IT7Cfhu3YLLRv7ahvnfyBUtTmoFaxRPRAXLGChVu4jk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Jul 2025 09:12:14 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/CSS/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IT7Cfhu3YLLRv7ahvnfyBUtTmoFaxRPRAXLGChVu4jk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3292"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IT7Cfhu3YLLRv7ahvnfyBUtTmoFaxRPRAXLGChVu4jk=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Jul 2025 09:12:14 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YbEzWAEvXTouqE0\u002BR2\u002Bw52upBqYjJV4kF0Fvkraa37A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5782"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YbEzWAEvXTouqE0\u002BR2\u002Bw52upBqYjJV4kF0Fvkraa37A=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Jul 2025 06:34:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/CSS/site.piscy15917.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"piscy15917"},{"Name":"integrity","Value":"sha256-YbEzWAEvXTouqE0\u002BR2\u002Bw52upBqYjJV4kF0Fvkraa37A="},{"Name":"label","Value":"_content/SportsStore/CSS/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5782"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YbEzWAEvXTouqE0\u002BR2\u002Bw52upBqYjJV4kF0Fvkraa37A=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Jul 2025 06:34:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/account.c10i7mxh46.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\account.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c10i7mxh46"},{"Name":"integrity","Value":"sha256-UGCGXtLs/vaCKdu4cLE7VEa/9MeNelzlqMtnIe3ph1c="},{"Name":"label","Value":"_content/SportsStore/images/account.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3343"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022UGCGXtLs/vaCKdu4cLE7VEa/9MeNelzlqMtnIe3ph1c=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Jul 2025 05:40:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/account.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\account.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UGCGXtLs/vaCKdu4cLE7VEa/9MeNelzlqMtnIe3ph1c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3343"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022UGCGXtLs/vaCKdu4cLE7VEa/9MeNelzlqMtnIe3ph1c=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Jul 2025 05:40:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/Banner1.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Banner1.jpg'))</AssetFile>

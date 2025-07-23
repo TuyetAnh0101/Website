@@ -22,6 +22,7 @@ else
                 <th>Số giờ</th>
                 <th>Ghi chú</th>
                 <th>Trạng thái</th>
+                <th>Tổng giá</th> @* ✅ Thêm cột *@
             </tr>
         </thead>
         <tbody>
@@ -42,6 +43,11 @@ else
                         {
                             <span class="badge bg-warning text-dark">Chờ xác nhận</span>
                         }
+                    </td>
+                    <td>
+                        <span class="text-danger fw-semibold">
+                            @string.Format("{0:N0} đ", booking.TotalPrice)
+                        </span>
                     </td>
                 </tr>
             }

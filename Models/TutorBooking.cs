@@ -71,7 +71,10 @@ namespace SportsStore.Models
         [Display(Name = "Ngày thanh toán")]
         public DateTime? PaymentDate { get; set; }
 
-        [StringLength(100)]
+        public void CalculateTotalPrice(decimal hourlyRate)
+        {
+            TotalPrice = hourlyRate * DurationHours * NumberOfDays;
+        }
         public string? PaymentTransactionId { get; set; }
     }
 }

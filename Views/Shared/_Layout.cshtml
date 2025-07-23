@@ -13,82 +13,103 @@
     <!-- Bootstrap & FontAwesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <!-- HEADER -->
-    <div class="main-header bg-primary text-white py-2">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center gap-4">
-                <a href="/" class="fw-medium text-white text-decoration-none">Trang chủ</a>
-                <a href="/khuyen-mai" class="fw-medium text-white text-decoration-none">Khuyến mãi</a>
-            </div>
-            <div class="d-flex align-items-center gap-3">
-                <vc:cart-summary />
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <a href="/account/profile" class="text-white">
-                        <img src="https://img.icons8.com/ios-filled/30/ffffff/user.png" alt="user icon" />
-                    </a>
-                }
-                else
-                {
-                    <a href="/account/login" class="text-white">
-                        <img src="https://img.icons8.com/ios-filled/30/ffffff/user.png" alt="user icon" />
-                    </a>
-                }
-            </div>
+        <body class="d-flex flex-column min-vh-100">
+            <!-- HEADER -->
+            <div class="main-header text-dark py-2">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="/" class="fw-medium text-decoration-none" style="font-size:14px; color:#0f2e22;">Trang chủ</a>
+                        <a href="/khuyen-mai" class="fw-medium text-decoration-none" style="font-size:14px; color:#0f2e22;">Khuyến mãi</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+            <vc:cart-summary />
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a href="/account/profile" class="text-white d-flex align-items-center">
+                    <img src="~/images/account.png" alt="user icon" style="width: 30px; height: 30px;" />
+                </a>
+            }
+            else
+            {
+                <a href="/account/login" class="text-white d-flex align-items-center">
+                    <img src="~/images/account.png" alt="user icon" style="width: 30px; height: 30px;" />
+                </a>
+            }
+        </div>
         </div>
     </div>
 
-    <!-- SUB HEADER -->
-    <div class="sub-header bg-light border-bottom">
-        <div class="container py-3 d-flex flex-column flex-md-row justify-content-between align-items-center flex-wrap">
-            <h2 class="store-name m-0 mb-2 mb-md-0" style="font-size: 18px;">RESTUDY STORE</h2>
-            <form asp-controller="Home" asp-action="Index" method="get" class="form-inline w-100 d-flex flex-wrap gap-2 justify-content-md-end position-relative">
-                <!-- Tìm kiếm -->
-                <div class="input-group" style="min-width: 250px; max-width: 400px; flex-grow: 1;">
-                    <input type="text" name="search" placeholder="Tìm sản phẩm..." class="form-control" />
-                    <button class="btn btn-outline-secondary" type="button" onclick="toggleAdvancedFilters()" title="Bộ lọc nâng cao">
-                        <i class="fas fa-filter"></i>
-                    </button>
-                </div>
+<!-- SUB HEADER -->
+<div class="sub-header bg-light border-bottom">
+    <div class="container py-3 d-flex flex-row justify-content-between align-items-center flex-wrap" id="sub-header-container">
+       <h2 class="store-name m-0 mb-2 mb-md-0" style="font-size:28px !important;">RESTUDY STORE</h2>
+        <form asp-controller="Home" asp-action="Index" method="get" 
+              class="form-inline w-100 d-flex flex-wrap gap-2 justify-content-md-end position-relative"
+              id="search-form" style="max-width: 600px;">
+            <!-- Tìm kiếm -->
+            <div class="input-group" style="min-width: 250px; max-width: 400px; flex-grow: 1;">
+                <input type="text" name="search" placeholder="Tìm sản phẩm..." class="form-control" />
+                <button class="btn btn-outline-secondary" type="button" onclick="toggleAdvancedFilters()" title="Bộ lọc nâng cao">
+                    <i class="fas fa-filter"></i>
+                </button>
+            </div>
 
-                <!-- Bộ lọc nâng cao -->
-                <div id="advanced-filters" class="d-none w-100 flex-wrap gap-2 mt-2">
-                    <select name="categoryId" class="form-control">
-                        <option value="">--Danh mục--</option>
-                        @foreach (var category in ViewBag.Categories as List<Category>)
-                        {
-                            <option value="@category.CategoryId">@category.Name</option>
-                        }
-                    </select>
+            <!-- Bộ lọc nâng cao -->
+            <div id="advanced-filters" class="d-none w-100 flex-wrap gap-2 mt-2">
+                <select name="categoryId" class="form-control">
+                    <option value="">--Danh mục--</option>
+                    @foreach (var category in ViewBag.Categories as List<Category>)
+                    {
+                        <option value="@category.CategoryId">@category.Name</option>
+                    }
+                </select>
 
-                    <select name="condition" class="form-control">
-                        <option value="">--Tình trạng--</option>
-                        <option value="100">Mới 100%</option>
-                        <option value="90">Mới 90%</option>
-                        <option value="80">Mới 80%</option>
-                        <option value="70">Mới 70%</option>
-                    </select>
+                <select name="condition" class="form-control">
+                    <option value="">--Tình trạng--</option>
+                    <option value="100">Mới 100%</option>
+                    <option value="90">Mới 90%</option>
+                    <option value="80">Mới 80%</option>
+                    <option value="70">Mới 70%</option>
+                </select>
 
-                    <select name="rentDuration" class="form-control">
-                        <option value="">--Thời hạn thuê--</option>
-                        <option value="7">1 tuần</option>
-                        <option value="30">1 tháng</option>
-                        <option value="90">3 tháng</option>
-                    </select>
-                </div>
+                <select name="rentDuration" class="form-control">
+                    <option value="">--Thời hạn thuê--</option>
+                    <option value="7">1 tuần</option>
+                    <option value="30">1 tháng</option>
+                    <option value="90">3 tháng</option>
+                </select>
+            </div>
 
-                <!-- Nút tìm -->
-                <button type="submit" class="btn btn-primary mt-2 mt-md-0">Tìm</button>
-            </form>
-        </div>
+            <!-- Nút tìm -->
+            <button type="submit" class="btn btn-primary mt-2 mt-md-0">Tìm</button>
+        </form>
     </div>
+</div>
+<style>
+    /* Giữ flex-row ở màn hình lớn */
+    #sub-header-container {
+        flex-direction: row;
+    }
 
+    /* Responsive: màn hình nhỏ thì xuống dòng */
+    @@media (max-width: 767.98px) {
+        #sub-header-container {
+            flex-direction: column;
+            align-items: flex-start; /* cho tiêu đề canh trái */
+        }
+        #sub-header-container h2.store-name {
+            margin-bottom: 10px;
+        }
+        #search-form {
+            max-width: 100% !important;
+        }
+    }
+</style>
     <!-- BANNER CAROUSEL -->
     <div class="container py-4 flex-grow-1">
         <div id="mainBannerCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
@@ -120,19 +141,17 @@
             <!-- DANH MỤC DỌC -->
             <div class="col-md-3">
                 <div class="product-sidebar bg-white shadow-sm rounded p-3 mb-4">
-                    <h6 class="fw-bold mb-3 text-primary text-uppercase fs-6">
-                        Danh mục sản phẩm
-                    </h6>
-                    <div class="d-flex flex-column gap-2">
-                        <a href="/Home/Index?categoryId=1" class="category-card px-3 py-2 text-decoration-none">Giáo trình cũ</a>
-                        <a href="/Home/Index?categoryId=2" class="category-card px-3 py-2 text-decoration-none">Dụng cụ học tập</a>
-                        <a href="/Home/Index?categoryId=3" class="category-card px-3 py-2 text-decoration-none">Balo & Túi xách</a>
-                        <a href="/Home/Index?categoryId=5" class="category-card px-3 py-2 text-decoration-none">Sách - Truyện Tranh</a>
-                        <a href="/Home/Index?categoryId=6" class="category-card px-3 py-2 text-decoration-none">Dụng Cụ Vẽ - VPP</a>
-                        <a href="/Home/Index?categoryId=7" class="category-card px-3 py-2 text-decoration-none">Bảng Vẽ - Phụ Kiện Số</a>
-                        <a href="/Home/Index?categoryId=8" class="category-card px-3 py-2 text-decoration-none">Bách Hóa Online</a>
-                        <a href="/Home/Index?categoryId=9" class="category-card px-3 py-2 text-decoration-none">Quà Tặng - Đồ Chơi</a>
-                    </div>
+                    <h6 class="text-uppercase fw-bold text-dark fs-5 mb-3">Danh mục</h6>
+                        <div class="d-flex flex-column gap-2">
+                            <a href="/Home/Index?categoryId=1" class="category-card px-3 py-2 text-decoration-none fs-6 fw-semibold">Giáo trình cũ</a>
+                            <a href="/Home/Index?categoryId=2" class="category-card px-3 py-2 text-decoration-none fs-6 fw-semibold">Dụng cụ học tập</a>
+                            <a href="/Home/Index?categoryId=3" class="category-card px-3 py-2 text-decoration-none fs-6 fw-semibold">Balo & Túi xách</a>
+                            <a href="/Home/Index?categoryId=5" class="category-card px-3 py-2 text-decoration-none fs-6 fw-semibold">Sách - Truyện Tranh</a>
+                            <a href="/Home/Index?categoryId=6" class="category-card px-3 py-2 text-decoration-none fs-6 fw-semibold">Dụng Cụ Vẽ - VPP</a>
+                            <a href="/Home/Index?categoryId=7" class="category-card px-3 py-2 text-decoration-none fs-6 fw-semibold">Bảng Vẽ - Phụ Kiện Số</a>
+                            <a href="/Home/Index?categoryId=8" class="category-card px-3 py-2 text-decoration-none fs-6 fw-semibold">Bách Hóa Online</a>
+                            <a href="/Home/Index?categoryId=9" class="category-card px-3 py-2 text-decoration-none fs-6 fw-semibold">Quà Tặng - Đồ Chơi</a>
+                        </div>
                 </div>
             </div>
 
@@ -142,65 +161,166 @@
             </div>
         </div>
     </div>
+<!-- FOOTER -->
+<footer class="bg-dark text-white pt-5 pb-4 mt-auto shadow-lg">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Logo + Giới thiệu -->
+            <div class="col-md-4">
+                <h3 class="mb-3 text-uppercase fw-bold text-primary" style="letter-spacing: 2px;">RESTUDY STORE</h3>
+                <p class="text-light">Website học tập đa dịch vụ hàng đầu, cung cấp giáo trình cũ, dụng cụ học tập và nhiều sản phẩm hỗ trợ học tập khác.</p>
+                <p><i class="fas fa-map-marker-alt me-2 text-primary"></i>123 Đường ABC, Quận XYZ, TP. HCM</p>
+                <p><i class="fas fa-phone-alt me-2 text-primary"></i>Hotline: 0909 123 456</p>
+                <p><i class="fas fa-envelope me-2 text-primary"></i>Email: support@restudystore.com</p>
+            </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white py-3 mt-auto">
-        <div class="container text-center">
-            <p class="fw-bold mb-2">© 2025 RestudyStore – Website học tập đa dịch vụ</p>
-            <p>Email: support@restudystore.com | Hotline: 0909 123 456</p>
-            <div class="mt-2">
-                <a href="#" class="text-white me-3 text-decoration-none">Chính sách</a>
-                <a href="#" class="text-white me-3 text-decoration-none">Bảo mật</a>
-                <a href="#" class="text-white text-decoration-none">Điều khoản</a>
+            <!-- Liên kết nhanh -->
+            <div class="col-md-3">
+                <h5 class="text-primary mb-3 fw-bold">Liên kết nhanh</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Trang chủ</a></li>
+                    <li><a href="#" class="footer-link">Khuyến mãi</a></li>
+                    <li><a href="#" class="footer-link">Chính sách</a></li>
+                    <li><a href="#" class="footer-link">Bảo mật</a></li>
+                    <li><a href="#" class="footer-link">Điều khoản</a></li>
+                </ul>
+            </div>
+
+            <!-- Mạng xã hội + nhận tin -->
+            <div class="col-md-5">
+                <h5 class="text-primary mb-3 fw-bold">Kết nối với chúng tôi</h5>
+                <div class="d-flex gap-3 fs-4 mb-3">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <form class="d-flex" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký nhận tin!');">
+                    <input type="email" class="form-control me-2 rounded-3" placeholder="Nhập email nhận tin" required>
+                    <button type="submit" class="btn btn-outline-primary rounded-3">Đăng ký</button>
+                </form>
             </div>
         </div>
-    </footer>
 
-    <!-- GIA SƯ BANNER -->
-    <div class="tutor-banner position-fixed" style="bottom: 20px; right: 20px; background:#007bff; color:#fff; border-radius: 30px; padding: 10px 15px; cursor:pointer; box-shadow: 0 0 10px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; z-index: 1050;">
-        <div class="label fw-semibold">Bạn cần tìm gia sư?</div>
-        <a href="/Tutor/ListTutors" class="icon text-white" style="font-size: 24px;">
-            <i class="fa fa-chalkboard-teacher"></i>
-        </a>
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center text-light small">
+            &copy; 2025 <span class="fw-semibold text-primary">RestudyStore</span> – Website học tập đa dịch vụ | Designed by Bạn
+        </div>
     </div>
+</footer>
 
-    <!-- SCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    .footer-link {
+        display: block;
+        color: #ccc;
+        padding: 6px 0;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        font-weight: 500;
+    }
 
-    <script>
-        // Carousel auto play
-        const carouselElement = document.querySelector('#mainBannerCarousel');
+    .footer-link:hover {
+        color: #ffffff;
+        text-decoration: underline;
+        transform: translateX(3px);
+    }
+
+    .social-icon {
+        color: #ccc;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .social-icon:hover {
+        color: #0d6efd;
+        transform: scale(1.1);
+    }
+
+    footer input.form-control {
+        background-color: #f1f1f1;
+        border: none;
+        padding: 10px 15px;
+    }
+
+    footer input.form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    }
+</style>
+
+<!-- GIA SƯ BANNER -->
+<div id="tutorBanner" class="tutor-banner position-fixed animate__animated animate__backInUp"
+     style="bottom: 20px; right: 20px; background: linear-gradient(45deg, #ff416c, #ff4b2b); color:#fff; border-radius: 50px; padding: 12px 24px; cursor:pointer; box-shadow: 0 12px 30px rgba(0,0,0,0.35); display: flex; align-items: center; gap: 15px; z-index: 1050; transition: all 0.4s ease;">
+    <div class="label fw-bold fs-6 text-uppercase" style="letter-spacing: 1px;">
+        <i class="fa fa-bolt me-2"></i>Gia sư siêu tốc
+    </div>
+    <a href="/Tutor/ListTutors" class="icon text-white fs-4 d-flex align-items-center justify-content-center"
+       style="background: rgba(255, 255, 255, 0.2); width: 42px; height: 42px; border-radius: 50%; transition: background 0.3s ease;">
+        <i class="fa fa-chalkboard-teacher"></i>
+    </a>
+</div>
+
+<!-- ANIMATE.CSS LIBRARY -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<!-- OPTIONAL ICONS (Font Awesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<!-- JavaScript -->
+<script>
+    // Carousel auto play
+    const carouselElement = document.querySelector('#mainBannerCarousel');
+    if (carouselElement) {
         const carousel = new bootstrap.Carousel(carouselElement, {
             interval: 5000,
             ride: 'carousel'
         });
+    }
 
-        // Toggle filter
-        function toggleAdvancedFilters() {
-            const filterDiv = document.getElementById("advanced-filters");
-            filterDiv.classList.toggle("d-none");
-            filterDiv.classList.toggle("d-flex");
+    // Toggle filter
+    function toggleAdvancedFilters() {
+        const filterDiv = document.getElementById("advanced-filters");
+        filterDiv.classList.toggle("d-none");
+        filterDiv.classList.toggle("d-flex");
+    }
+
+    // Rung banner định kỳ
+    setInterval(() => {
+        const banner = document.getElementById('tutorBanner');
+        if (banner) {
+            banner.classList.remove('animate__rubberBand');
+            void banner.offsetWidth;
+            banner.classList.add('animate__rubberBand');
         }
-    </script>
+    }, 8000);
+</script>
 
-    @RenderSection("Scripts", required: false)
+<!-- Extra CSS -->
+<style>
+    /* Hover effect cực ngầu */
+    .tutor-banner:hover {
+        transform: scale(1.08) rotate(-1deg);
+        box-shadow: 0 14px 35px rgba(255, 65, 108, 0.7);
+    }
 
-    <!-- Extra Inline Styles -->
-    <style>
-        #mainBannerCarousel {
-            max-height: 200px;
+    .tutor-banner .icon:hover {
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Responsive fix nếu cần */
+    @@media (max-width: 576px) {
+        #tutorBanner {
+            right: 10px;
+            left: 10px;
+            bottom: 10px;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 20px;
         }
+    }
+</style>
 
-        #mainBannerCarousel .carousel-inner {
-            max-height: 200px;
-        }
-
-        #mainBannerCarousel .carousel-item img {
-            height: 200px !important;
-            max-height: 200px !important;
-            width: 100%;
-            object-fit: cover;
-        }
-    </style>
+</style>
 </body>
 </html>

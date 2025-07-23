@@ -1,17 +1,59 @@
 @model SportsStore.Models.TutorBooking
 
-<h2>Thanh toán đặt lịch</h2>
+@{
+    ViewData["Title"] = "Thanh toán đặt lịch";
+}
 
-<p><strong>Gia sư:</strong> @Model.Tutor?.Name</p>
+<h2 class="mb-4">Thanh toán đặt lịch thuê gia sư</h2>
 
-<p><strong>Tổng giá:</strong> @string.Format("{0:N0} đ", Model.TotalPrice)
-</p>
+<!-- Thông tin đặt lịch -->
+<div class="card shadow-sm p-4 bg-light mb-4">
+    <h5 class="mb-3">Chi tiết lịch thuê</h5>
 
-<form asp-action="ProcessPayment" method="post">
+    <div class="row mb-2">
+        <div class="col-md-6"><strong>Gia sư:</strong> @(Model.Tutor?.Name ?? "Không rõ")</div>
+        <div class="col-md-6"><strong>Môn học:</strong> @(Model.Tutor?.Subject ?? "Không rõ")</div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6"><strong>Ngày bắt đầu:</strong> @(Model.StartTime?.ToString("dd/MM/yyyy") ?? "Không rõ")</div>
+        <div class="col-md-6"><strong>Số ngày thuê:</strong> @Model.NumberOfDays</div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6"><strong>Giờ mỗi ngày:</strong> @Model.DurationHours</div>
+        <div class="col-md-6"><strong>Giá theo giờ:</strong> 
+            @string.Format("{0:N0} đ", Model.Tutor?.HourlyRate ?? 0)
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-md-12">
+            <strong>Tổng giá:</strong> 
+            <span class="text-danger fw-bold">
+                @string.Format("{0:N0} đ", Model.TotalPrice)
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- Form thanh toán -->
+<form asp-action="ProcessPayment" method="post" class="card shadow-sm p-4">
     @Html.AntiForgeryToken()
     <input type="hidden" name="bookingId" value="@Model.TutorBookingId" />
 
-    <!-- Thêm các thông tin thanh toán tại đây, ví dụ chọn phương thức thanh toán -->
+    <div class="mb-3">
+        <label for="paymentMethod" class="form-label fw-semibold">Phương thức thanh toán</label>
+        <select class="form-select" id="paymentMethod" name="paymentMethod" required>
+            <option value="">-- Chọn phương thức --</option>
+            <option value="Tiền mặt">Tiền mặt</option>
+            <option value="Chuyển khoản">Chuyển khoản</option>
+            <option value="Momo">Momo</option>
+            <option value="VNPay">VNPay</option>
+        </select>
+    </div>
 
-    <button type="submit" class="btn btn-primary">Thanh toán</button>
+    <button type="submit" class="btn btn-primary">
+        <i class="fas fa-credit-card me-1"></i> Xác nhận thanh toán
+    </button>
 </form>

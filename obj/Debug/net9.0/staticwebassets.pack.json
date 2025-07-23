@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\Banner3.jpg"
     },
     {
+      "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\account.png",
+      "PackagePath": "staticwebassets\\images\\account.png"
+    },
+    {
       "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\images\\cart-custom.png",
       "PackagePath": "staticwebassets\\images\\cart-custom.png"
     },
