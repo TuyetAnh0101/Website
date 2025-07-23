@@ -76,7 +76,7 @@ body {
     border-radius: 4px;
 }
 .category-card {
-    font-size: 50px !important;  
+    font-size: 16px !important;  
     font-weight: 700 !important;
     color: #222 !important;
     background-color: #fdfdfd;
@@ -94,7 +94,7 @@ body {
 }
 
 .category-card::before {
-    content: "📘";
+    content: "";
     font-size: 1.3rem;
     transition: transform 0.3s ease;
 }
@@ -271,7 +271,7 @@ img[alt="user icon"] {
 
 @media (max-width: 768px) {
     .category-card {
-        font-size: 50px !important;
+        font-size: 16px !important;
         padding: 8px 12px;
     }
 }

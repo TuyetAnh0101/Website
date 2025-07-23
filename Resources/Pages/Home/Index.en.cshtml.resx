@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="CartTitle" xml:space="preserve">
+    <value>Your Shopping Cart</value>
+  </data>
+  <data name="CheckoutBtn" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="EmptyCartMessage" xml:space="preserve">
+    <value>Your cart is empty</value>
+  </data>
+  <data name="RemoveBtn" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+</root>

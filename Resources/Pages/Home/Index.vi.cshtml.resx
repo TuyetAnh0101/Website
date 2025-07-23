@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="CartTitle" xml:space="preserve">
+    <value>Giỏ hàng của bạn</value>
+  </data>
+  <data name="CheckoutBtn" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Tổng cộng</value>
+  </data>
+  <data name="EmptyCartMessage" xml:space="preserve">
+    <value>Giỏ hàng của bạn đang trống</value>
+  </data>
+  <data name="RemoveBtn" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+</root>

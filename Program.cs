@@ -10,8 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 // ===================
 
 // MVC, Razor, Blazor
+// ✅ Thêm localization service
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages()
+    .AddViewLocalization()
+    .AddDataAnnotationsLocalization();
 
 // ✅ Cấu hình Blazor Server với lỗi chi tiết
 builder.Services.AddServerSideBlazor()
@@ -54,6 +58,16 @@ builder.Services.AddScoped(sp =>
 });
 
 var app = builder.Build();
+// ✅ Cấu hình các ngôn ngữ hỗ trợ
+var supportedCultures = new[] { "vi", "en" };
+var localizationOptions = new RequestLocalizationOptions()
+    .SetDefaultCulture("vi") // Ngôn ngữ mặc định
+    .AddSupportedCultures(supportedCultures)
+    .AddSupportedUICultures(supportedCultures);
+
+// ✅ Áp dụng localization
+app.UseRequestLocalization(localizationOptions);
+
 
 // ===================
 // MIDDLEWARE

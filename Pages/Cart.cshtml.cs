@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using SportsStore.Infrastructure;
 using SportsStore.Models;
 using System.Linq;
+using Microsoft.AspNetCore.Mvc.Localization;
 
 namespace SportsStore.Pages
 {
