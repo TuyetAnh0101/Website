@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Xác nhận đăng xuất";
+    Layout = "_ProfileLayout"; 
+}
+
+<h4>Bạn có chắc chắn muốn đăng xuất?</h4>
+
+<form asp-action="Logout" method="post">
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-danger">Đăng xuất</button>
+    <a asp-controller="Account" asp-action="Profile" class="btn btn-secondary">Hủy</a>
+</form>

@@ -17,17 +17,19 @@ namespace SportsStore.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IEmailSender _emailSender;
+        private readonly ILogger<AccountController> _logger;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             RoleManager<IdentityRole> roleManager,
-            IEmailSender emailSender)
+            IEmailSender emailSender, ILogger<AccountController> logger)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
-           _emailSender = emailSender;
+            _emailSender = emailSender;
+             _logger = logger;
         }
 
         // ========== LOGIN ==========
@@ -67,20 +69,35 @@ namespace SportsStore.Controllers
                 ModelState.AddModelError("", "Mật khẩu không đúng.");
                 return View(model);
             }
+           // GET: Hiển thị xác nhận nếu cần (hoặc không dùng)
+            [HttpGet]
+            [Authorize]
+            public IActionResult LogoutConfirm()
+            {
+                _logger.LogInformation("Người dùng truy cập trang xác nhận đăng xuất.");
+                return View();
+            }
 
-                    // ========== LOGOUT ==========
-                    [Authorize]
-                    public async Task<IActionResult> Logout(string returnUrl = "/")
-                    {
-                        await _signInManager.SignOutAsync();
-                        return Redirect(returnUrl);
-                    }
+            // POST: Thực hiện logout
+            [HttpPost]
+            [Authorize]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> Logout()
+            {
+                _logger.LogInformation("Người dùng yêu cầu đăng xuất.");
 
-                    // ========== REGISTER ==========
-                    [HttpGet]
-                    [AllowAnonymous]
-                    public IActionResult Register() => View();
+                try
+                {
+                    await _signInManager.SignOutAsync();
+                    _logger.LogInformation("Đăng xuất thành công.");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Lỗi khi đăng xuất.");
+                }
 
+                return RedirectToAction("Index", "Home");
+            }
             [HttpPost]
             [AllowAnonymous]
             [ValidateAntiForgeryToken]

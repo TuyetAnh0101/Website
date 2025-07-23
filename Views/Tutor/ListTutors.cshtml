@@ -9,16 +9,23 @@
 <div class="row">
     @foreach (var tutor in Model)
     {
+        var imagePath = string.IsNullOrEmpty(tutor.Image) 
+            ? Url.Content("~/images/default-tutor.png") 
+            : Url.Content("~/images/" + tutor.Image);
+
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm">
                 <a href="/Tutor/Details/@tutor.TutorId" class="text-decoration-none text-dark">
-                    <img src="@(string.IsNullOrEmpty(tutor.Image) ? "/images/default-tutor.png" : tutor.Image)"
+                    <img src="@imagePath"
                          class="card-img-top"
+                         alt="Ảnh gia sư"
                          style="height: 200px; object-fit: cover;" />
                     <div class="card-body">
                         <h5 class="card-title">@tutor.Name</h5>
                         <p class="card-text">@tutor.Subject</p>
-                        <p class="card-text text-success fw-bold">@string.Format("{0:N0} đ/giờ", tutor.HourlyRate)</p>
+                        <p class="card-text text-success fw-bold">
+                            @string.Format("{0:N0} đ/giờ", tutor.HourlyRate)
+                        </p>
                     </div>
                 </a>
             </div>

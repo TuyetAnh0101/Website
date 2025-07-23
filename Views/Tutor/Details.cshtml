@@ -2,6 +2,9 @@
 
 @{
     ViewData["Title"] = "Chi tiết gia sư";
+    var imagePath = string.IsNullOrEmpty(Model.Image)
+        ? Url.Content("~/images/default-tutor.png")
+        : Url.Content("~/images/" + Model.Image);
 }
 
 <h2 class="mb-4">Chi tiết gia sư</h2>
@@ -17,14 +20,19 @@
 
 <div class="row">
     <div class="col-md-5">
-        <img src="@(string.IsNullOrEmpty(Model.Image) ? "/images/default-tutor.png" : Model.Image)"
-             class="img-fluid rounded shadow-sm" />
+        <img src="@imagePath"
+             class="img-fluid rounded shadow-sm"
+             alt="Ảnh gia sư" />
     </div>
     <div class="col-md-7">
         <h3 class="mb-3">@Model.Name</h3>
         <p><strong>Môn dạy:</strong> @Model.Subject</p>
         <p><strong>Kinh nghiệm:</strong> @Model.Experience</p>
-        <p><strong>Giá thuê:</strong> <span class="text-success fw-bold">@string.Format("{0:N0} đ/giờ", Model.HourlyRate)</span></p>
+        <p><strong>Giá thuê:</strong>
+            <span class="text-success fw-bold">
+                @string.Format("{0:N0} đ/giờ", Model.HourlyRate)
+            </span>
+        </p>
 
         <form asp-controller="Tutor" asp-action="Book" method="post" class="mt-4">
             @Html.AntiForgeryToken()
@@ -32,12 +40,14 @@
 
             <div class="form-group mb-3">
                 <label for="DurationHours">Số giờ thuê mỗi ngày</label>
-                <input type="number" name="DurationHours" class="form-control" required min="1" max="24" placeholder="Nhập số giờ thuê" />
+                <input type="number" name="DurationHours" class="form-control"
+                       required min="1" max="24" placeholder="Nhập số giờ thuê" />
             </div>
 
             <div class="form-group mb-3">
                 <label for="NumberOfDays">Số ngày thuê</label>
-                <input type="number" name="NumberOfDays" class="form-control" required min="1" max="365" value="1" />
+                <input type="number" name="NumberOfDays" class="form-control"
+                       required min="1" max="365" value="1" />
             </div>
 
             <div class="form-group mb-3">
@@ -47,7 +57,8 @@
 
             <div class="form-group mb-3">
                 <label for="Notes">Ghi chú (tuỳ chọn)</label>
-                <textarea name="Notes" class="form-control" rows="3" placeholder="Ví dụ: Cần dạy ôn thi đại học..."></textarea>
+                <textarea name="Notes" class="form-control" rows="3"
+                          placeholder="Ví dụ: Cần dạy ôn thi đại học..."></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Thuê ngay</button>
