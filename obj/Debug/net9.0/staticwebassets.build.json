@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p81SmzwCEA6HrW6SswX9S0rZ+eBp1eHsZ9kGs9f0H0w=",
+  "Hash": "NHlQGWkaOQ+Y8XFLkitmrhHeGOZx68mybf78w5Tpnt8=",
   "Source": "SportsStore",
   "BasePath": "_content/SportsStore",
   "Mode": "Default",
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "C:\\Users\\Lenovo\\.nuget\\packages\\chartjs.blazor\\1.1.0\\staticwebassets\\ChartJsBlazorInterop.js"
     },
     {
-      "Identity": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lkpf7f2g1n.gz",
+      "Identity": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lr8qktunvo.gz",
       "SourceId": "SportsStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/SportsStore",
-      "RelativePath": "CSS/site#[.{fingerprint=lkpf7f2g1n}]?.css.gz",
+      "RelativePath": "CSS/site#[.{fingerprint=lr8qktunvo}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -115,8 +115,8 @@
       "RelatedAsset": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\CSS\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "g8vk8buacl",
-      "Integrity": "4LAsd+xwGIqRshl7yAMmqdGjT0wgYaBuYZ7ZAlGmlSo=",
+      "Fingerprint": "s4rhlongi4",
+      "Integrity": "ZFc5QiSbE9vab3VDJ8cIMslI+tuos2kVJ9Ey/H1LTyM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\CSS\\site.css"
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lkpf7f2g1n",
-      "Integrity": "y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM=",
+      "Fingerprint": "lr8qktunvo",
+      "Integrity": "4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CSS\\site.css"
@@ -1594,12 +1594,12 @@
     },
     {
       "Route": "CSS/site.css",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lkpf7f2g1n.gz",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lr8qktunvo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000626566416"
+          "Quality": "0.000601684717"
         }
       ],
       "ResponseHeaders": [
@@ -1609,15 +1609,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1595"
+          "Value": "1661"
         },
         {
           "Name": "ETag",
-          "Value": "\"4LAsd+xwGIqRshl7yAMmqdGjT0wgYaBuYZ7ZAlGmlSo=\""
+          "Value": "\"ZFc5QiSbE9vab3VDJ8cIMslI+tuos2kVJ9Ey/H1LTyM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Jul 2025 07:14:56 GMT"
+          "Value": "Wed, 23 Jul 2025 07:36:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1637,13 +1637,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM=\""
+          "Value": "W/\"4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM="
+          "Value": "sha256-4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I="
         }
       ]
     },
@@ -1658,7 +1658,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5778"
+          "Value": "6119"
         },
         {
           "Name": "Content-Type",
@@ -1666,11 +1666,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM=\""
+          "Value": "\"4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Jul 2025 07:14:56 GMT"
+          "Value": "Wed, 23 Jul 2025 07:36:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1680,13 +1680,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM="
+          "Value": "sha256-4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I="
         }
       ]
     },
     {
       "Route": "CSS/site.css.gz",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lkpf7f2g1n.gz",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lr8qktunvo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1695,7 +1695,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1595"
+          "Value": "1661"
         },
         {
           "Name": "Content-Type",
@@ -1703,11 +1703,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4LAsd+xwGIqRshl7yAMmqdGjT0wgYaBuYZ7ZAlGmlSo=\""
+          "Value": "\"ZFc5QiSbE9vab3VDJ8cIMslI+tuos2kVJ9Ey/H1LTyM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Jul 2025 07:14:56 GMT"
+          "Value": "Wed, 23 Jul 2025 07:36:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1725,18 +1725,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4LAsd+xwGIqRshl7yAMmqdGjT0wgYaBuYZ7ZAlGmlSo="
+          "Value": "sha256-ZFc5QiSbE9vab3VDJ8cIMslI+tuos2kVJ9Ey/H1LTyM="
         }
       ]
     },
     {
-      "Route": "CSS/site.lkpf7f2g1n.css",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lkpf7f2g1n.gz",
+      "Route": "CSS/site.lr8qktunvo.css",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lr8qktunvo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000626566416"
+          "Quality": "0.000601684717"
         }
       ],
       "ResponseHeaders": [
@@ -1746,15 +1746,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1595"
+          "Value": "1661"
         },
         {
           "Name": "ETag",
-          "Value": "\"4LAsd+xwGIqRshl7yAMmqdGjT0wgYaBuYZ7ZAlGmlSo=\""
+          "Value": "\"ZFc5QiSbE9vab3VDJ8cIMslI+tuos2kVJ9Ey/H1LTyM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Jul 2025 07:14:56 GMT"
+          "Value": "Wed, 23 Jul 2025 07:36:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1774,13 +1774,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM=\""
+          "Value": "W/\"4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lkpf7f2g1n"
+          "Value": "lr8qktunvo"
         },
         {
           "Name": "label",
@@ -1788,12 +1788,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM="
+          "Value": "sha256-4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I="
         }
       ]
     },
     {
-      "Route": "CSS/site.lkpf7f2g1n.css",
+      "Route": "CSS/site.lr8qktunvo.css",
       "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\CSS\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1803,7 +1803,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5778"
+          "Value": "6119"
         },
         {
           "Name": "Content-Type",
@@ -1811,11 +1811,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM=\""
+          "Value": "\"4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Jul 2025 07:14:56 GMT"
+          "Value": "Wed, 23 Jul 2025 07:36:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1825,7 +1825,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lkpf7f2g1n"
+          "Value": "lr8qktunvo"
         },
         {
           "Name": "label",
@@ -1833,13 +1833,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg+YJ62kXdM="
+          "Value": "sha256-4XaC2D3nalt2wAYTtYxmbn+wS3zDOOjqO5aVdzs1O3I="
         }
       ]
     },
     {
-      "Route": "CSS/site.lkpf7f2g1n.css.gz",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lkpf7f2g1n.gz",
+      "Route": "CSS/site.lr8qktunvo.css.gz",
+      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\obj\\Debug\\net9.0\\compressed\\lrlmqv6ncz-lr8qktunvo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1848,7 +1848,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1595"
+          "Value": "1661"
         },
         {
           "Name": "Content-Type",
@@ -1856,11 +1856,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4LAsd+xwGIqRshl7yAMmqdGjT0wgYaBuYZ7ZAlGmlSo=\""
+          "Value": "\"ZFc5QiSbE9vab3VDJ8cIMslI+tuos2kVJ9Ey/H1LTyM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Jul 2025 07:14:56 GMT"
+          "Value": "Wed, 23 Jul 2025 07:36:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1878,7 +1878,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lkpf7f2g1n"
+          "Value": "lr8qktunvo"
         },
         {
           "Name": "label",
@@ -1886,7 +1886,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4LAsd+xwGIqRshl7yAMmqdGjT0wgYaBuYZ7ZAlGmlSo="
+          "Value": "sha256-ZFc5QiSbE9vab3VDJ8cIMslI+tuos2kVJ9Ey/H1LTyM="
         }
       ]
     },

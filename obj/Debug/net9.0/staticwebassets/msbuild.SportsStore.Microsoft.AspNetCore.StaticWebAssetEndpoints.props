@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/SportsStore/CSS/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg\u002BYJ62kXdM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5778"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg\u002BYJ62kXdM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Jul 2025 07:14:56 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4XaC2D3nalt2wAYTtYxmbn\u002BwS3zDOOjqO5aVdzs1O3I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6119"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224XaC2D3nalt2wAYTtYxmbn\u002BwS3zDOOjqO5aVdzs1O3I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Jul 2025 07:36:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SportsStore/CSS/site.lkpf7f2g1n.css">
+    <StaticWebAssetEndpoint Include="_content/SportsStore/CSS/site.lr8qktunvo.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CSS\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lkpf7f2g1n"},{"Name":"integrity","Value":"sha256-y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg\u002BYJ62kXdM="},{"Name":"label","Value":"_content/SportsStore/CSS/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5778"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022y60S5f5F8dbxYpI/AKsUnb6cstUHvUlxWg\u002BYJ62kXdM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Jul 2025 07:14:56 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lr8qktunvo"},{"Name":"integrity","Value":"sha256-4XaC2D3nalt2wAYTtYxmbn\u002BwS3zDOOjqO5aVdzs1O3I="},{"Name":"label","Value":"_content/SportsStore/CSS/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6119"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224XaC2D3nalt2wAYTtYxmbn\u002BwS3zDOOjqO5aVdzs1O3I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Jul 2025 07:36:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/account.c10i7mxh46.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\account.png'))</AssetFile>
