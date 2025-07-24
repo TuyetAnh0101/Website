@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using SportsStore.Models;
 using Microsoft.AspNetCore.Identity;
 using SportsStore.Services;
+using Microsoft.AspNetCore.Authentication.Facebook;
+using Microsoft.AspNetCore.Authentication.Google;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,10 +33,33 @@ builder.Services.AddDbContext<StoreDbContext>(opts =>
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<StoreDbContext>()
     .AddDefaultTokenProviders();
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = IdentityConstants.ApplicationScheme;
+    options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+    options.DefaultChallengeScheme = IdentityConstants.ExternalScheme;
+})
+.AddGoogle(options =>
+{
+    options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+})
+.AddFacebook(options =>
+{
+    options.AppId = builder.Configuration["Authentication:Facebook:AppId"];
+    options.AppSecret = builder.Configuration["Authentication:Facebook:AppSecret"];
+});
 
 // Session và Cart
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession();
+builder.Services.AddSession(options =>
+{
+    options.Cookie.Name = ".SportsStore.Session";
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
 
@@ -77,7 +102,6 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/error");
 }
 
-app.UseStaticFiles();
 app.UseSession();
 
 app.UseAuthentication();

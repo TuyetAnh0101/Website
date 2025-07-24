@@ -108,8 +108,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGxldGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Restudy/RestudySln/SportsSln/SportsStore/Pages/DeleteData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Restudy/RestudySln/SportsSln/SportsStore/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Restudy/RestudySln/SportsSln/SportsStore/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Restudy/RestudySln/SportsSln/SportsStore/Pages/Terms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVybXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Restudy/RestudySln/SportsSln/SportsStore/Pages/TermsConfirmation.cshtml]
