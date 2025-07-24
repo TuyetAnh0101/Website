@@ -3,31 +3,34 @@
 
 <table class="table table-sm table-striped table-bordered">
     <thead>
+        <tr class="text-center bg-light">
+            <th colspan="6">@TableTitle</th>
+        </tr>
         <tr>
-            <th colspan="5" class="text-center">@TableTitle</th>
+            <th>Người nhận</th>
+            <th>Mã bưu điện</th>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Hình thức</th>
+            <th>Cập nhật</th>
         </tr>
     </thead>
     <tbody>
         @if (Orders?.Any() == true)
         {
-            @foreach (Order o in Orders)
+            @foreach (var order in Orders)
             {
-                <tr>
-                    <td>@o.Name</td>
-                    <td>@o.Zip</td>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <td>
-                        <button class="btn btn-sm btn-danger"
-                                @onclick="() => OrderSelected.InvokeAsync(o.OrderID)">
-                            @ButtonLabel
-                        </button>
-                    </td>
-                </tr>
-                @foreach (CartLine line in o.Lines)
+                bool isFirstRow = true;
+
+                foreach (var line in order.Lines)
                 {
                     <tr>
-                        <td colspan="2"></td>
+                        @if (isFirstRow)
+                        {
+                            <td rowspan="@order.Lines.Count">@order.Name</td>
+                            <td rowspan="@order.Lines.Count">@order.Zip</td>
+                            isFirstRow = false;
+                        }
                         <td>@line.Product?.Name</td>
                         <td>@line.Quantity</td>
                         <td>
@@ -40,6 +43,19 @@
                                 <span class="badge bg-secondary">Mua</span>
                             }
                         </td>
+                        @if (line == order.Lines.Last())
+                        {
+                            <td rowspan="@order.Lines.Count" class="text-center">
+                                <span class="badge bg-@GetBadgeColor(order.Status)">
+                                    @GetStatusText(order.Status)
+                                </span>
+                                <br />
+                                <button class="btn btn-sm btn-danger mt-2"
+                                        @onclick="() => OrderSelected.InvokeAsync(order.OrderID)">
+                                    @ButtonLabel
+                                </button>
+                            </td>
+                        }
                     </tr>
                 }
             }
@@ -47,7 +63,7 @@
         else
         {
             <tr>
-                <td colspan="5" class="text-center">Không có đơn hàng</td>
+                <td colspan="6" class="text-center">Không có đơn hàng</td>
             </tr>
         }
     </tbody>
@@ -61,8 +77,32 @@
     public IEnumerable<Order> Orders { get; set; } = Enumerable.Empty<Order>();
 
     [Parameter]
-    public string ButtonLabel { get; set; } = "Ship";
+    public string ButtonLabel { get; set; } = "Cập nhật";
 
     [Parameter]
     public EventCallback<int> OrderSelected { get; set; }
+
+    private string GetStatusText(OrderStatus status) => status switch
+    {
+        OrderStatus.ChoXacNhan => "Chờ xác nhận",
+        OrderStatus.ChoGiaoHang => "Chờ giao hàng",
+        OrderStatus.DangVanChuyen => "Đang vận chuyển",
+        OrderStatus.DaNhanHang => "Đã nhận hàng",
+        OrderStatus.DaHuy => "Đã hủy",
+        OrderStatus.YeuCauHoanTien => "Yêu cầu hoàn tiền",
+        OrderStatus.HoanTienThanhCong => "Hoàn tiền thành công",
+        _ => "Không xác định"
+    };
+
+    private string GetBadgeColor(OrderStatus status) => status switch
+    {
+        OrderStatus.ChoXacNhan => "secondary",
+        OrderStatus.ChoGiaoHang => "info",
+        OrderStatus.DangVanChuyen => "warning",
+        OrderStatus.DaNhanHang => "success",
+        OrderStatus.DaHuy => "danger",
+        OrderStatus.YeuCauHoanTien => "warning",
+        OrderStatus.HoanTienThanhCong => "success",
+        _ => "secondary"
+    };
 }

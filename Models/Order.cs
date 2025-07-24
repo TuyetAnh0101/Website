@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using SportsStore.Models;
 
 namespace SportsStore.Models
 {
@@ -49,7 +50,7 @@ namespace SportsStore.Models
         /// Ngày tạo đơn.
         /// </summary>
         public DateTime OrderDate { get; set; } = DateTime.Now;
-
+        public OrderStatus Status { get; set; } = OrderStatus.ChoXacNhan;
         /// <summary>
         /// Trạng thái đã giao hàng hay chưa.
         /// </summary>

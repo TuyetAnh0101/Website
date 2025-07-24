@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NHlQGWkaOQ+Y8XFLkitmrhHeGOZx68mybf78w5Tpnt8=",
+  "Hash": "wF8bqUSESj1FdIPIxW1cG04FaOa9R4ifzgTS8DL+7jw=",
   "Source": "SportsStore",
   "BasePath": "_content/SportsStore",
   "Mode": "Default",
@@ -330,27 +330,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\chart-utils.js"
-    },
-    {
-      "Identity": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\uploads\\3ae651ac-fa5d-4262-9671-e4686c5d57a5.png",
-      "SourceId": "SportsStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\",
-      "BasePath": "_content/SportsStore",
-      "RelativePath": "uploads/3ae651ac-fa5d-4262-9671-e4686c5d57a5#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "u0x759pt17",
-      "Integrity": "EqTH9IMautCpVz/jTi15D7truGqZay/E8B7Dh67u8yA=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\3ae651ac-fa5d-4262-9671-e4686c5d57a5.png"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\.nuget\\packages\\chartjs.blazor\\1.1.0\\staticwebassets\\Chart.min.js",
@@ -2595,88 +2574,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-BFoBJIj9UA8KrCdtqsi85kSYbqlnnUGmxOmYod9x1NA="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/3ae651ac-fa5d-4262-9671-e4686c5d57a5.png",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\uploads\\3ae651ac-fa5d-4262-9671-e4686c5d57a5.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "704626"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EqTH9IMautCpVz/jTi15D7truGqZay/E8B7Dh67u8yA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 14:53:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EqTH9IMautCpVz/jTi15D7truGqZay/E8B7Dh67u8yA="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/3ae651ac-fa5d-4262-9671-e4686c5d57a5.u0x759pt17.png",
-      "AssetFile": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\uploads\\3ae651ac-fa5d-4262-9671-e4686c5d57a5.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "704626"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EqTH9IMautCpVz/jTi15D7truGqZay/E8B7Dh67u8yA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Jul 2025 14:53:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u0x759pt17"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/3ae651ac-fa5d-4262-9671-e4686c5d57a5.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EqTH9IMautCpVz/jTi15D7truGqZay/E8B7Dh67u8yA="
         }
       ]
     }

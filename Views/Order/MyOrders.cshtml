@@ -1,15 +1,36 @@
 @model IEnumerable<SportsStore.Models.Order>
+@using SportsStore.Models
 @{
     ViewData["Title"] = "Đơn hàng của tôi";
     Layout = "_ProfileLayout";
+
+    var currentStatus = Context.Request.Query["status"];
 }
 
 <div class="container-fluid">
-    <h4 class="text-success mb-4"><i class="fa fa-box me-2"></i>Đơn hàng của tôi</h4>
+    <h4 class="text-success mb-4">
+        <i class="fa fa-box me-2"></i>Đơn hàng của tôi
+    </h4>
+
+    <!-- Tabs trạng thái đơn hàng -->
+    <ul class="nav nav-pills mb-4 gap-2 flex-wrap">
+        @foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus)))
+        {
+            var isActive = currentStatus == status.ToString();
+            <li class="nav-item">
+                <a class="nav-link fw-semibold px-4 py-2 border 
+                          @(isActive ? "active text-white bg-primary" : "text-dark bg-light")"
+                   href="@Url.Action("MyOrders", new { status = status })"
+                   style="border-radius: 30px; transition: all 0.3s ease;">
+                    @GetStatusText(status)
+                </a>
+            </li>
+        }
+    </ul>
 
     @if (!Model.Any())
     {
-        <div class="alert alert-info">Bạn chưa có đơn hàng nào.</div>
+        <div class="alert alert-info">Bạn chưa có đơn hàng nào ở trạng thái này.</div>
     }
     else
     {
@@ -22,8 +43,8 @@
                         <div><strong>Ngày đặt:</strong> @order.OrderDate.ToString("dd/MM/yyyy HH:mm")</div>
                     </div>
                     <div class="text-end">
-                        <span class="badge bg-@(order.Shipped ? "success" : "warning")">
-                            @(order.Shipped ? "Đã giao" : "Đang xử lý")
+                        <span class="badge bg-@GetBadgeColor(order.Status)">
+                            @GetStatusText(order.Status)
                         </span>
                         <div class="mt-2">
                             <a href="@Url.Action("Details", "Order", new { id = order.OrderID })"
@@ -31,13 +52,36 @@
                                 <i class="fa fa-eye me-1"></i>Chi tiết
                             </a>
 
-                            @if (!order.Shipped)
+                            <!-- Nút hành động tùy trạng thái -->
+                            @if (order.Status == OrderStatus.ChoXacNhan)
                             {
                                 <form asp-action="Cancel" asp-controller="Order" method="post" class="d-inline">
                                     <input type="hidden" name="id" value="@order.OrderID" />
                                     <button type="submit" class="btn btn-sm btn-outline-danger ms-2"
                                             onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?')">
                                         <i class="fa fa-times me-1"></i>Hủy đơn
+                                    </button>
+                                </form>
+                            }
+                            else if (order.Status == OrderStatus.DangVanChuyen)
+                            {
+                                <form asp-action="UpdateStatus" asp-controller="Order" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@order.OrderID" />
+                                    <input type="hidden" name="newStatus" value="DaNhanHang" />
+                                    <button type="submit" class="btn btn-sm btn-success ms-2"
+                                            onclick="return confirm('Bạn đã nhận được hàng?')">
+                                        <i class="fa fa-check me-1"></i>Đã nhận hàng
+                                    </button>
+                                </form>
+                            }
+                            else if (order.Status == OrderStatus.DaNhanHang)
+                            {
+                                <form asp-action="UpdateStatus" asp-controller="Order" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@order.OrderID" />
+                                    <input type="hidden" name="newStatus" value="YeuCauHoanTien" />
+                                    <button type="submit" class="btn btn-sm btn-warning ms-2"
+                                            onclick="return confirm('Bạn muốn yêu cầu hoàn tiền?')">
+                                        <i class="fa fa-undo me-1"></i>Yêu cầu hoàn tiền
                                     </button>
                                 </form>
                             }
@@ -72,3 +116,43 @@
         }
     }
 </div>
+
+<style>
+    .nav-pills .nav-link:hover {
+        background-color: #0d6efd !important;
+        color: #fff !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+</style>
+
+@functions {
+    string GetStatusText(OrderStatus status)
+    {
+        return status switch
+        {
+            OrderStatus.ChoXacNhan => "Chờ xác nhận",
+            OrderStatus.ChoGiaoHang => "Chờ giao hàng",
+            OrderStatus.DangVanChuyen => "Đang vận chuyển",
+            OrderStatus.DaNhanHang => "Đã nhận hàng",
+            OrderStatus.DaHuy => "Đã hủy",
+            OrderStatus.YeuCauHoanTien => "Yêu cầu hoàn tiền",
+            OrderStatus.HoanTienThanhCong => "Hoàn tiền thành công",
+            _ => status.ToString()
+        };
+    }
+
+    string GetBadgeColor(OrderStatus status)
+    {
+        return status switch
+        {
+            OrderStatus.ChoXacNhan => "secondary",
+            OrderStatus.ChoGiaoHang => "info",
+            OrderStatus.DangVanChuyen => "warning",
+            OrderStatus.DaNhanHang => "success",
+            OrderStatus.DaHuy => "danger",
+            OrderStatus.YeuCauHoanTien => "warning",
+            OrderStatus.HoanTienThanhCong => "success",
+            _ => "secondary"
+        };
+    }
+}

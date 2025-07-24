@@ -29,10 +29,6 @@
       "PackagePath": "staticwebassets\\js\\chart-utils.js"
     },
     {
-      "Id": "C:\\Restudy\\RestudySln\\SportsSln\\SportsStore\\wwwroot\\uploads\\3ae651ac-fa5d-4262-9671-e4686c5d57a5.png",
-      "PackagePath": "staticwebassets\\uploads\\3ae651ac-fa5d-4262-9671-e4686c5d57a5.png"
-    },
-    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.SportsStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

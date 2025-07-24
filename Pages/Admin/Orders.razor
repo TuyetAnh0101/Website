@@ -5,17 +5,50 @@
 
 <h3 class="mb-4">Quản lý đơn hàng</h3>
 
-<OrderTable TableTitle="Đơn chưa giao" Orders="UnshippedOrders" ButtonLabel="Giao hàng" OrderSelected="ShipOrder" />
-<OrderTable TableTitle="Đơn đã giao" Orders="ShippedOrders" ButtonLabel="Hoàn tác" OrderSelected="ResetOrder" />
+<!-- Bảng theo từng trạng thái -->
+<OrderTable TableTitle="Chờ xác nhận"
+            Orders="PendingOrders"
+            ButtonLabel="Chuyển sang Chờ giao hàng"
+            OrderSelected="orderId => UpdateOrderStatus(orderId, OrderStatus.ChoGiaoHang)" />
 
-<button class="btn btn-info mt-3" @onclick="UpdateData">Làm mới danh sách</button>
+<OrderTable TableTitle="Chờ giao hàng"
+            Orders="WaitingOrders"
+            ButtonLabel="Chuyển sang Đang vận chuyển"
+            OrderSelected="orderId => UpdateOrderStatus(orderId, OrderStatus.DangVanChuyen)" />
+
+<OrderTable TableTitle="Đang vận chuyển"
+            Orders="DeliveringOrders"
+            ButtonLabel="Chuyển sang Đã nhận hàng"
+            OrderSelected="orderId => UpdateOrderStatus(orderId, OrderStatus.DaNhanHang)" />
+
+<OrderTable TableTitle="Yêu cầu hoàn tiền"
+            Orders="RefundRequestedOrders"
+            ButtonLabel="Hoàn tiền thành công"
+            OrderSelected="orderId => UpdateOrderStatus(orderId, OrderStatus.HoanTienThanhCong)" />
+
+<OrderTable TableTitle="Đơn đã nhận"
+            Orders="CompletedOrders"
+            ButtonLabel="Không thao tác"
+            OrderSelected="@(id => Task.CompletedTask)" />
+
+<OrderTable TableTitle="Đơn đã hủy"
+            Orders="CancelledOrders"
+            ButtonLabel="Không thao tác"
+            OrderSelected="@(id => Task.CompletedTask)" />
+
+<button class="btn btn-info mt-4" @onclick="UpdateData">Làm mới danh sách</button>
 
 @code {
     public IOrderRepository Repository => Service;
 
     public IEnumerable<Order> AllOrders { get; set; } = Enumerable.Empty<Order>();
-    public IEnumerable<Order> UnshippedOrders { get; set; } = Enumerable.Empty<Order>();
-    public IEnumerable<Order> ShippedOrders { get; set; } = Enumerable.Empty<Order>();
+
+    public IEnumerable<Order> PendingOrders { get; set; } = Enumerable.Empty<Order>();
+    public IEnumerable<Order> WaitingOrders { get; set; } = Enumerable.Empty<Order>();
+    public IEnumerable<Order> DeliveringOrders { get; set; } = Enumerable.Empty<Order>();
+    public IEnumerable<Order> CompletedOrders { get; set; } = Enumerable.Empty<Order>();
+    public IEnumerable<Order> CancelledOrders { get; set; } = Enumerable.Empty<Order>();
+    public IEnumerable<Order> RefundRequestedOrders { get; set; } = Enumerable.Empty<Order>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -30,19 +63,20 @@
             .AsNoTracking()
             .ToListAsync();
 
-        UnshippedOrders = AllOrders.Where(o => !o.Shipped).OrderByDescending(o => o.OrderID);
-        ShippedOrders = AllOrders.Where(o => o.Shipped).OrderByDescending(o => o.OrderID);
+        PendingOrders = AllOrders.Where(o => o.Status == OrderStatus.ChoXacNhan).OrderByDescending(o => o.OrderID);
+        WaitingOrders = AllOrders.Where(o => o.Status == OrderStatus.ChoGiaoHang).OrderByDescending(o => o.OrderID);
+        DeliveringOrders = AllOrders.Where(o => o.Status == OrderStatus.DangVanChuyen).OrderByDescending(o => o.OrderID);
+        CompletedOrders = AllOrders.Where(o => o.Status == OrderStatus.DaNhanHang).OrderByDescending(o => o.OrderID);
+        CancelledOrders = AllOrders.Where(o => o.Status == OrderStatus.DaHuy).OrderByDescending(o => o.OrderID);
+        RefundRequestedOrders = AllOrders.Where(o => o.Status == OrderStatus.YeuCauHoanTien).OrderByDescending(o => o.OrderID);
     }
 
-    public async Task ShipOrder(int id) => await UpdateOrder(id, true);
-    public async Task ResetOrder(int id) => await UpdateOrder(id, false);
-
-    private async Task UpdateOrder(int id, bool shipValue)
+    public async Task UpdateOrderStatus(int id, OrderStatus newStatus)
     {
         var order = await Repository.Orders.FirstOrDefaultAsync(o => o.OrderID == id);
         if (order != null)
         {
-            order.Shipped = shipValue;
+            order.Status = newStatus;
             Repository.SaveOrder(order);
             await UpdateData();
         }
