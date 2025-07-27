@@ -1,10 +1,13 @@
 @model IEnumerable<SportsStore.Models.Order>
 @using SportsStore.Models
+@using System.Security.Claims
+
 @{
     ViewData["Title"] = "Đơn hàng của tôi";
     Layout = "_ProfileLayout";
 
     var currentStatus = Context.Request.Query["status"];
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 }
 
 <div class="container-fluid">
@@ -18,8 +21,7 @@
         {
             var isActive = currentStatus == status.ToString();
             <li class="nav-item">
-                <a class="nav-link fw-semibold px-4 py-2 border 
-                          @(isActive ? "active text-white bg-primary" : "text-dark bg-light")"
+                <a class="nav-link fw-semibold px-4 py-2 border @(isActive ? "active text-white bg-primary" : "text-dark bg-light")"
                    href="@Url.Action("MyOrders", new { status = status })"
                    style="border-radius: 30px; transition: all 0.3s ease;">
                     @GetStatusText(status)
@@ -52,7 +54,6 @@
                                 <i class="fa fa-eye me-1"></i>Chi tiết
                             </a>
 
-                            <!-- Nút hành động tùy trạng thái -->
                             @if (order.Status == OrderStatus.ChoXacNhan)
                             {
                                 <form asp-action="Cancel" asp-controller="Order" method="post" class="d-inline">
@@ -98,6 +99,26 @@
                             <div class="ms-3 flex-grow-1">
                                 <h6 class="mb-1">@line.Product.Name</h6>
                                 <small class="text-muted">Số lượng: @line.Quantity</small>
+
+                                @if (order.Status == OrderStatus.DaNhanHang)
+                                {
+                                    var isReviewed = line.Product.Reviews?.Any(r => r.UserId == userId) ?? false;
+
+                                    @if (!isReviewed)
+                                    {
+                                        <div class="mt-1">
+                                            <a asp-controller="Reviews" asp-action="Add"
+                                               asp-route-productId="@line.Product.ProductID"
+                                               class="btn btn-sm btn-outline-primary">
+                                                <i class="fa fa-star me-1"></i>Viết đánh giá
+                                            </a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-success mt-1">Đã đánh giá</span>
+                                    }
+                                }
                             </div>
                             <div class="text-end fw-bold text-success">
                                 @string.Format("{0:N0} đ", line.Product.Price * line.Quantity)
@@ -126,33 +147,27 @@
 </style>
 
 @functions {
-    string GetStatusText(OrderStatus status)
+    string GetStatusText(OrderStatus status) => status switch
     {
-        return status switch
-        {
-            OrderStatus.ChoXacNhan => "Chờ xác nhận",
-            OrderStatus.ChoGiaoHang => "Chờ giao hàng",
-            OrderStatus.DangVanChuyen => "Đang vận chuyển",
-            OrderStatus.DaNhanHang => "Đã nhận hàng",
-            OrderStatus.DaHuy => "Đã hủy",
-            OrderStatus.YeuCauHoanTien => "Yêu cầu hoàn tiền",
-            OrderStatus.HoanTienThanhCong => "Hoàn tiền thành công",
-            _ => status.ToString()
-        };
-    }
+        OrderStatus.ChoXacNhan => "Chờ xác nhận",
+        OrderStatus.ChoGiaoHang => "Chờ giao hàng",
+        OrderStatus.DangVanChuyen => "Đang vận chuyển",
+        OrderStatus.DaNhanHang => "Đã nhận hàng",
+        OrderStatus.DaHuy => "Đã hủy",
+        OrderStatus.YeuCauHoanTien => "Yêu cầu hoàn tiền",
+        OrderStatus.HoanTienThanhCong => "Hoàn tiền thành công",
+        _ => status.ToString()
+    };
 
-    string GetBadgeColor(OrderStatus status)
+    string GetBadgeColor(OrderStatus status) => status switch
     {
-        return status switch
-        {
-            OrderStatus.ChoXacNhan => "secondary",
-            OrderStatus.ChoGiaoHang => "info",
-            OrderStatus.DangVanChuyen => "warning",
-            OrderStatus.DaNhanHang => "success",
-            OrderStatus.DaHuy => "danger",
-            OrderStatus.YeuCauHoanTien => "warning",
-            OrderStatus.HoanTienThanhCong => "success",
-            _ => "secondary"
-        };
-    }
+        OrderStatus.ChoXacNhan => "secondary",
+        OrderStatus.ChoGiaoHang => "info",
+        OrderStatus.DangVanChuyen => "warning",
+        OrderStatus.DaNhanHang => "success",
+        OrderStatus.DaHuy => "danger",
+        OrderStatus.YeuCauHoanTien => "warning",
+        OrderStatus.HoanTienThanhCong => "success",
+        _ => "secondary"
+    };
 }

@@ -93,19 +93,21 @@ var localizationOptions = new RequestLocalizationOptions()
 // ✅ Áp dụng localization
 app.UseRequestLocalization(localizationOptions);
 
-
 // ===================
-// MIDDLEWARE
+// MIDDLEWARE (ĐÚNG THỨ TỰ)
 // ===================
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/error");
 }
 
-app.UseSession();
+app.UseStaticFiles();       
+app.UseRouting();           
 
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseSession();           
+
+app.UseAuthentication();   
+app.UseAuthorization();     
 
 // ===================
 // ĐỊNH TUYẾN

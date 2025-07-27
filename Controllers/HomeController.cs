@@ -122,5 +122,74 @@ namespace SportsStore.Controllers
 
             return View(viewModel);
         }
+        public async Task<IActionResult> ReviewProduct(int productId)
+        {
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null) return NotFound();
+
+            var viewModel = new ProductReviewViewModel
+            {
+                ProductID = (int)(product.ProductID ?? 0),
+                ProductName = product.Name,
+                ExistingReviews = await _context.ProductReviews
+                    .Where(r => r.ProductID == product.ProductID)
+                    .OrderByDescending(r => r.Date)
+                    .ToListAsync()
+            };
+
+            return View(viewModel);
+        }
+    [HttpPost]
+    public async Task<IActionResult> SubmitReview(ProductReviewViewModel model)
+    {
+        if (!User.Identity.IsAuthenticated)
+        {
+            // Yêu cầu đăng nhập
+            return RedirectToAction("Login", "Account");
+        }
+
+        var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+       var hasPurchased = await _context.Orders
+        .Include(o => o.Lines) // ← đúng tên property
+        .AnyAsync(o =>
+            o.UserId == userId &&
+            o.Shipped && // hoặc kiểm tra trạng thái phù hợp
+            o.Lines.Any(l => l.Product.ProductID == model.ProductID));
+
+        if (!hasPurchased)
+        {
+            ModelState.AddModelError("", "Bạn chỉ có thể đánh giá sản phẩm đã mua và đã được giao.");
+        }
+
+        if (ModelState.IsValid)
+        {
+            var review = new ProductReview
+            {
+                ProductID = model.ProductID,
+                CustomerName = model.CustomerName,
+                Comment = model.Comment,
+                Date = DateTime.Now,
+                UserId = userId // nếu bảng có cột này
+            };
+
+            _context.ProductReviews.Add(review);
+            await _context.SaveChangesAsync();
+
+            // Sau khi đánh giá -> quay lại trang chi tiết sản phẩm
+            return RedirectToAction("Details", "Home", new { id = model.ProductID });
+        }
+
+        // Load lại dữ liệu nếu có lỗi
+        var product = await _context.Products.FindAsync(model.ProductID);
+        model.ProductName = product?.Name;
+        model.ExistingReviews = await _context.ProductReviews
+            .Where(r => r.ProductID == model.ProductID)
+            .OrderByDescending(r => r.Date)
+            .ToListAsync();
+
+        return View("ReviewProduct", model);
+    }
+
     }
 }

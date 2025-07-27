@@ -438,15 +438,25 @@ namespace SportsStore.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ProductID")
+                    b.Property<long>("ProductID")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("Rating")
                         .HasColumnType("int");
 
-                    b.Property<long?>("ProductID1")
-                        .HasColumnType("bigint");
+                    b.Property<string>("ReviewText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("ProductReviewId");
 
-                    b.HasIndex("ProductID1");
+                    b.HasIndex("ProductID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("ProductReviews");
                 });
@@ -701,10 +711,20 @@ namespace SportsStore.Migrations
             modelBuilder.Entity("SportsStore.Models.ProductReview", b =>
                 {
                     b.HasOne("SportsStore.Models.Product", "Product")
+                        .WithMany("Reviews")
+                        .HasForeignKey("ProductID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SportsStore.Models.ApplicationUser", "User")
                         .WithMany()
-                        .HasForeignKey("ProductID1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Product");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("SportsStore.Models.Rental", b =>
@@ -763,6 +783,8 @@ namespace SportsStore.Migrations
             modelBuilder.Entity("SportsStore.Models.Product", b =>
                 {
                     b.Navigation("ProductImages");
+
+                    b.Navigation("Reviews");
                 });
 
             modelBuilder.Entity("SportsStore.Models.Tutor", b =>

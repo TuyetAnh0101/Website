@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Linq;
 using System;
 using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace SportsStore.Controllers
 {
@@ -364,11 +366,35 @@ namespace SportsStore.Controllers
 
             // 🔽 Nếu chưa có user, tạo user mới từ thông tin Google/Facebook
             var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+            var existingUser = await _userManager.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (existingUser != null)
+            {
+                // Gán provider login vào user cũ
+                await _userManager.AddLoginAsync(existingUser, info);
+
+                if (!await _userManager.IsEmailConfirmedAsync(existingUser))
+                {
+                    var token = await _userManager.GenerateEmailConfirmationTokenAsync(existingUser);
+                    var confirmationLink = Url.Action("ConfirmEmail", "Account",
+                        new { userId = existingUser.Id, token }, Request.Scheme);
+
+                    await _emailSender.SendEmailAsync(existingUser.Email, "Xác nhận Email",
+                        $"Bạn cần xác nhận tài khoản bằng cách bấm vào liên kết sau: <a href='{confirmationLink}'>Xác nhận Email</a>");
+
+                    return View("RegisterConfirmation");
+                }
+
+                // ✅ Nếu email đã xác nhận, đăng nhập luôn
+                await _signInManager.SignInAsync(existingUser, isPersistent: false);
+                return LocalRedirect(returnUrl);
+            }
+
+            // Nếu chưa có user, tạo mới như trước
             var newUser = new ApplicationUser
             {
                 UserName = email,
                 Email = email,
-                EmailConfirmed = false // ⚠️ bắt buộc xác nhận email sau khi tạo
+                EmailConfirmed = false
             };
 
             var createResult = await _userManager.CreateAsync(newUser);
