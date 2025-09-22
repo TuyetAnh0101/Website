@@ -24,6 +24,30 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wx6se0cf8s"},{"Name":"integrity","Value":"sha256-JGBdLjcAUAFpBQPZF52UrVNusT03oYm3Oh0alUg8xZ8="},{"Name":"label","Value":"_content/SportsStore/images/000f93f4-27b2-43b3-aa8b-bea069819c38.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8711"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022JGBdLjcAUAFpBQPZF52UrVNusT03oYm3Oh0alUg8xZ8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:40:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/014a1913-926d-40ef-b6b4-a6bfea4920a9.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\014a1913-926d-40ef-b6b4-a6bfea4920a9.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LXaCI7rbGGQlKWF\u002BEH5lxqKJ8hpd70x\u002BoHmczL5ayI0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8474"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022LXaCI7rbGGQlKWF\u002BEH5lxqKJ8hpd70x\u002BoHmczL5ayI0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/014a1913-926d-40ef-b6b4-a6bfea4920a9.l25et6duq6.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\014a1913-926d-40ef-b6b4-a6bfea4920a9.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l25et6duq6"},{"Name":"integrity","Value":"sha256-LXaCI7rbGGQlKWF\u002BEH5lxqKJ8hpd70x\u002BoHmczL5ayI0="},{"Name":"label","Value":"_content/SportsStore/images/014a1913-926d-40ef-b6b4-a6bfea4920a9.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8474"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022LXaCI7rbGGQlKWF\u002BEH5lxqKJ8hpd70x\u002BoHmczL5ayI0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/022fc80e-0777-4aea-9e9b-da2cd8f66630.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\022fc80e-0777-4aea-9e9b-da2cd8f66630.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GWyszhYYr8/Mr4JGdrsKE63Drlul3Z0xgTHsfef0FGU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"18057"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022GWyszhYYr8/Mr4JGdrsKE63Drlul3Z0xgTHsfef0FGU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/022fc80e-0777-4aea-9e9b-da2cd8f66630.jtco9lmj24.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\022fc80e-0777-4aea-9e9b-da2cd8f66630.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jtco9lmj24"},{"Name":"integrity","Value":"sha256-GWyszhYYr8/Mr4JGdrsKE63Drlul3Z0xgTHsfef0FGU="},{"Name":"label","Value":"_content/SportsStore/images/022fc80e-0777-4aea-9e9b-da2cd8f66630.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18057"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022GWyszhYYr8/Mr4JGdrsKE63Drlul3Z0xgTHsfef0FGU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/03624c03-ea74-480f-acaf-4fc8c4a43f22.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\03624c03-ea74-480f-acaf-4fc8c4a43f22.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -84,6 +108,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ty86zl7ia3"},{"Name":"integrity","Value":"sha256-5dn0yJVxP7RHAJ9oM3jawPWXY3rlCKoWqQIqzdmI7FA="},{"Name":"label","Value":"_content/SportsStore/images/0bfe78e3-2b06-4c13-80e7-512c9d7779a0.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4287"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00225dn0yJVxP7RHAJ9oM3jawPWXY3rlCKoWqQIqzdmI7FA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:38:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/0f008510-a645-436d-8c32-23c3562b5f26.0p05etaj1r.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f008510-a645-436d-8c32-23c3562b5f26.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0p05etaj1r"},{"Name":"integrity","Value":"sha256-xFRRiSC9\u002B2cBeNnyEIJHa2G9FIEwM9SxM9QY01w6wXg="},{"Name":"label","Value":"_content/SportsStore/images/0f008510-a645-436d-8c32-23c3562b5f26.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5028"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xFRRiSC9\u002B2cBeNnyEIJHa2G9FIEwM9SxM9QY01w6wXg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/0f008510-a645-436d-8c32-23c3562b5f26.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f008510-a645-436d-8c32-23c3562b5f26.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xFRRiSC9\u002B2cBeNnyEIJHa2G9FIEwM9SxM9QY01w6wXg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5028"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xFRRiSC9\u002B2cBeNnyEIJHa2G9FIEwM9SxM9QY01w6wXg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/0f9a5f9a-2c2e-4dfc-a94e-b1d5789c4129.d43jo63awn.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0f9a5f9a-2c2e-4dfc-a94e-b1d5789c4129.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -96,6 +132,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jTZ880cQKWcbRVYg6k\u002Bla7EBgOFE5/CEmX7B1t\u002BOsgQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"85475"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022jTZ880cQKWcbRVYg6k\u002Bla7EBgOFE5/CEmX7B1t\u002BOsgQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:20:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/10687ca4-0cb6-4912-acb1-9ce26df4aac8.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\10687ca4-0cb6-4912-acb1-9ce26df4aac8.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pPM/QcQjIs6FiqsNchIGUAG5n6hhaMsa\u002B5YJwONEWdg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9232"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pPM/QcQjIs6FiqsNchIGUAG5n6hhaMsa\u002B5YJwONEWdg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:43:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/10687ca4-0cb6-4912-acb1-9ce26df4aac8.w7kochyk9c.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\10687ca4-0cb6-4912-acb1-9ce26df4aac8.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w7kochyk9c"},{"Name":"integrity","Value":"sha256-pPM/QcQjIs6FiqsNchIGUAG5n6hhaMsa\u002B5YJwONEWdg="},{"Name":"label","Value":"_content/SportsStore/images/10687ca4-0cb6-4912-acb1-9ce26df4aac8.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9232"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pPM/QcQjIs6FiqsNchIGUAG5n6hhaMsa\u002B5YJwONEWdg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:43:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/146e15ec-18c9-4561-b36a-b8ba2124d4ed.cke412c3jm.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\146e15ec-18c9-4561-b36a-b8ba2124d4ed.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cke412c3jm"},{"Name":"integrity","Value":"sha256-vIuMqPrZf610kA95iatSQqZwwcyEv7SObeAg7mS06j8="},{"Name":"label","Value":"_content/SportsStore/images/146e15ec-18c9-4561-b36a-b8ba2124d4ed.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5187"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vIuMqPrZf610kA95iatSQqZwwcyEv7SObeAg7mS06j8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:58:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/146e15ec-18c9-4561-b36a-b8ba2124d4ed.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\146e15ec-18c9-4561-b36a-b8ba2124d4ed.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vIuMqPrZf610kA95iatSQqZwwcyEv7SObeAg7mS06j8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5187"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vIuMqPrZf610kA95iatSQqZwwcyEv7SObeAg7mS06j8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:58:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/15ea4fa9-2063-4885-b573-271953b26966.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\15ea4fa9-2063-4885-b573-271953b26966.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -107,6 +167,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oui1b5gmvp"},{"Name":"integrity","Value":"sha256-sLQdMIFmQyo9eUK5HgeglF7tqOyvaPNixg7ES8Vz8hc="},{"Name":"label","Value":"_content/SportsStore/images/15ea4fa9-2063-4885-b573-271953b26966.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"78134"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022sLQdMIFmQyo9eUK5HgeglF7tqOyvaPNixg7ES8Vz8hc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:47:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/17ae76aa-47af-4fca-8f8a-fe231b70fd64.36gswb1nun.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\17ae76aa-47af-4fca-8f8a-fe231b70fd64.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"36gswb1nun"},{"Name":"integrity","Value":"sha256-2zye\u002BLVhUjRt7kOkfV9x1qtMGQf/tLBExVqkWbf4sbo="},{"Name":"label","Value":"_content/SportsStore/images/17ae76aa-47af-4fca-8f8a-fe231b70fd64.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2731"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222zye\u002BLVhUjRt7kOkfV9x1qtMGQf/tLBExVqkWbf4sbo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/17ae76aa-47af-4fca-8f8a-fe231b70fd64.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\17ae76aa-47af-4fca-8f8a-fe231b70fd64.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2zye\u002BLVhUjRt7kOkfV9x1qtMGQf/tLBExVqkWbf4sbo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2731"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222zye\u002BLVhUjRt7kOkfV9x1qtMGQf/tLBExVqkWbf4sbo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/18679eeb-9976-4140-975a-513c10424265.1wyssdw23v.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\18679eeb-9976-4140-975a-513c10424265.jpg'))</AssetFile>
@@ -240,6 +312,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 15:47:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/24ec3a3a-7ca9-4520-9c1b-091b4a879dca.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\24ec3a3a-7ca9-4520-9c1b-091b4a879dca.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-w6N3yh7\u002BhZoPYIVPItlIMGRqhXGsvmj1FJRgqt8U7D0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8628"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022w6N3yh7\u002BhZoPYIVPItlIMGRqhXGsvmj1FJRgqt8U7D0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:58:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/24ec3a3a-7ca9-4520-9c1b-091b4a879dca.zszm5gif0a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\24ec3a3a-7ca9-4520-9c1b-091b4a879dca.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zszm5gif0a"},{"Name":"integrity","Value":"sha256-w6N3yh7\u002BhZoPYIVPItlIMGRqhXGsvmj1FJRgqt8U7D0="},{"Name":"label","Value":"_content/SportsStore/images/24ec3a3a-7ca9-4520-9c1b-091b4a879dca.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8628"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022w6N3yh7\u002BhZoPYIVPItlIMGRqhXGsvmj1FJRgqt8U7D0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:58:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/25d96a74-bf75-44a6-8e6e-eaa215d52226.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\25d96a74-bf75-44a6-8e6e-eaa215d52226.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NByvCFZ\u002BFCAnpVywFYMDxZgeAZ67eL7sWXrQ56Ht1X4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8820"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022NByvCFZ\u002BFCAnpVywFYMDxZgeAZ67eL7sWXrQ56Ht1X4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/25d96a74-bf75-44a6-8e6e-eaa215d52226.kwubr8906g.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\25d96a74-bf75-44a6-8e6e-eaa215d52226.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kwubr8906g"},{"Name":"integrity","Value":"sha256-NByvCFZ\u002BFCAnpVywFYMDxZgeAZ67eL7sWXrQ56Ht1X4="},{"Name":"label","Value":"_content/SportsStore/images/25d96a74-bf75-44a6-8e6e-eaa215d52226.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8820"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022NByvCFZ\u002BFCAnpVywFYMDxZgeAZ67eL7sWXrQ56Ht1X4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/26a6d493-4c63-4d3f-b9c0-8415e58facd1.h8khluusyn.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\26a6d493-4c63-4d3f-b9c0-8415e58facd1.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -263,6 +359,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:41:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/2a78d17c-35ce-4d5e-ba5d-a33e0c508c2f.5ipweew5fc.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2a78d17c-35ce-4d5e-ba5d-a33e0c508c2f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ipweew5fc"},{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="},{"Name":"label","Value":"_content/SportsStore/images/2a78d17c-35ce-4d5e-ba5d-a33e0c508c2f.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:51:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/2a78d17c-35ce-4d5e-ba5d-a33e0c508c2f.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2a78d17c-35ce-4d5e-ba5d-a33e0c508c2f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:51:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/2bf50c17-a2f9-4545-91d0-f698eab8cbb7.6c3hznslga.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2bf50c17-a2f9-4545-91d0-f698eab8cbb7.jpg'))</AssetFile>
@@ -288,6 +396,30 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r7tu7c5i3o"},{"Name":"integrity","Value":"sha256-mSloiCj7jCiSKBliJbQAkbgCWP2DtFuKsA8pJIBxVMc="},{"Name":"label","Value":"_content/SportsStore/images/2d2c72dd-0b2b-4021-bbdc-b324e28a3c7d.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11222"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mSloiCj7jCiSKBliJbQAkbgCWP2DtFuKsA8pJIBxVMc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:36:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/2fb4c469-639a-4e4f-b421-e27b7d43233f.izk3tbddyl.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2fb4c469-639a-4e4f-b421-e27b7d43233f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"izk3tbddyl"},{"Name":"integrity","Value":"sha256-/uXhTFnoZIsYYIpsa068ofpQqHfUEAXIfqtrKHVY7SI="},{"Name":"label","Value":"_content/SportsStore/images/2fb4c469-639a-4e4f-b421-e27b7d43233f.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"53996"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/uXhTFnoZIsYYIpsa068ofpQqHfUEAXIfqtrKHVY7SI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:36:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/2fb4c469-639a-4e4f-b421-e27b7d43233f.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2fb4c469-639a-4e4f-b421-e27b7d43233f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/uXhTFnoZIsYYIpsa068ofpQqHfUEAXIfqtrKHVY7SI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"53996"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/uXhTFnoZIsYYIpsa068ofpQqHfUEAXIfqtrKHVY7SI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:36:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/316dd8eb-7b72-4043-b5d6-bc1f4781caa2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\316dd8eb-7b72-4043-b5d6-bc1f4781caa2.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fN0OV5pg1KPFb1HiWtMmslUPTD/ubZlOVQ1yiq\u002BBlAM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"22969"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fN0OV5pg1KPFb1HiWtMmslUPTD/ubZlOVQ1yiq\u002BBlAM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/316dd8eb-7b72-4043-b5d6-bc1f4781caa2.k4ewnfsda5.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\316dd8eb-7b72-4043-b5d6-bc1f4781caa2.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k4ewnfsda5"},{"Name":"integrity","Value":"sha256-fN0OV5pg1KPFb1HiWtMmslUPTD/ubZlOVQ1yiq\u002BBlAM="},{"Name":"label","Value":"_content/SportsStore/images/316dd8eb-7b72-4043-b5d6-bc1f4781caa2.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22969"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fN0OV5pg1KPFb1HiWtMmslUPTD/ubZlOVQ1yiq\u002BBlAM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/31cfd8d5-e48b-42de-be38-bda8139269b5.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\31cfd8d5-e48b-42de-be38-bda8139269b5.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -299,6 +431,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"llnw1s9mcx"},{"Name":"integrity","Value":"sha256-hx/0zCkbzauAhqgDFFdRhZ8p6A5RAHvygeVJln6fcak="},{"Name":"label","Value":"_content/SportsStore/images/31cfd8d5-e48b-42de-be38-bda8139269b5.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6938"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022hx/0zCkbzauAhqgDFFdRhZ8p6A5RAHvygeVJln6fcak=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:38:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/34a158c1-5535-43f2-a32c-04ee92c7cc63.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\34a158c1-5535-43f2-a32c-04ee92c7cc63.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wy7w\u002BzXitjUswi2YHQYpDJp9gtDIHy1Y/Arg823CnNU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3066"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022wy7w\u002BzXitjUswi2YHQYpDJp9gtDIHy1Y/Arg823CnNU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/34a158c1-5535-43f2-a32c-04ee92c7cc63.ryijkdqj1s.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\34a158c1-5535-43f2-a32c-04ee92c7cc63.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ryijkdqj1s"},{"Name":"integrity","Value":"sha256-wy7w\u002BzXitjUswi2YHQYpDJp9gtDIHy1Y/Arg823CnNU="},{"Name":"label","Value":"_content/SportsStore/images/34a158c1-5535-43f2-a32c-04ee92c7cc63.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3066"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022wy7w\u002BzXitjUswi2YHQYpDJp9gtDIHy1Y/Arg823CnNU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/3685ff13-0761-4db1-b106-3965a2b7a73a.8bp5uknyb3.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3685ff13-0761-4db1-b106-3965a2b7a73a.jpg'))</AssetFile>
@@ -324,6 +468,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-j7\u002BOR5wpaPSIPsRoTV\u002BK0yzuQbjqbMu3rdCSldV0/os="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"15142"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022j7\u002BOR5wpaPSIPsRoTV\u002BK0yzuQbjqbMu3rdCSldV0/os=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:37:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/378e92ce-c2b8-4fad-bc34-78f8ea4f2ac8.hb2eqsgohi.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\378e92ce-c2b8-4fad-bc34-78f8ea4f2ac8.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hb2eqsgohi"},{"Name":"integrity","Value":"sha256-w7Lx0CgeWlmqdXO11lZM\u002Ba7E9M9d7Us7G8EZwgWoZx8="},{"Name":"label","Value":"_content/SportsStore/images/378e92ce-c2b8-4fad-bc34-78f8ea4f2ac8.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8648"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022w7Lx0CgeWlmqdXO11lZM\u002Ba7E9M9d7Us7G8EZwgWoZx8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:58:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/378e92ce-c2b8-4fad-bc34-78f8ea4f2ac8.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\378e92ce-c2b8-4fad-bc34-78f8ea4f2ac8.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-w7Lx0CgeWlmqdXO11lZM\u002Ba7E9M9d7Us7G8EZwgWoZx8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8648"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022w7Lx0CgeWlmqdXO11lZM\u002Ba7E9M9d7Us7G8EZwgWoZx8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:58:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/37fe04c7-97d2-4921-b2cd-42acd2b7e594.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\37fe04c7-97d2-4921-b2cd-42acd2b7e594.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -336,6 +492,30 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"waq6ftfhdd"},{"Name":"integrity","Value":"sha256-WAJBejBolO7JItmeAssHYYjH3gShT3XzrtWFthgk5Z0="},{"Name":"label","Value":"_content/SportsStore/images/37fe04c7-97d2-4921-b2cd-42acd2b7e594.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"141545"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022WAJBejBolO7JItmeAssHYYjH3gShT3XzrtWFthgk5Z0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:47:12 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3825e3c4-55c3-4d46-8d42-3a33c63e588a.3dexoc915d.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3825e3c4-55c3-4d46-8d42-3a33c63e588a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3dexoc915d"},{"Name":"integrity","Value":"sha256-916tEWdCHU4PjlKzEs8BVvtNvtK2MuJ0QHgLYxkmGO4="},{"Name":"label","Value":"_content/SportsStore/images/3825e3c4-55c3-4d46-8d42-3a33c63e588a.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9999"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022916tEWdCHU4PjlKzEs8BVvtNvtK2MuJ0QHgLYxkmGO4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:55:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3825e3c4-55c3-4d46-8d42-3a33c63e588a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3825e3c4-55c3-4d46-8d42-3a33c63e588a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-916tEWdCHU4PjlKzEs8BVvtNvtK2MuJ0QHgLYxkmGO4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9999"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022916tEWdCHU4PjlKzEs8BVvtNvtK2MuJ0QHgLYxkmGO4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:55:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/390d59f5-e723-4ec7-8b4d-ea5710b7b902.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\390d59f5-e723-4ec7-8b4d-ea5710b7b902.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kjoDBgMG99uOaawQH5y5We7/udbwHfxtN5GEXdeRQmk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11559"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022kjoDBgMG99uOaawQH5y5We7/udbwHfxtN5GEXdeRQmk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 07:55:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/390d59f5-e723-4ec7-8b4d-ea5710b7b902.q9dhgm48e8.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\390d59f5-e723-4ec7-8b4d-ea5710b7b902.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q9dhgm48e8"},{"Name":"integrity","Value":"sha256-kjoDBgMG99uOaawQH5y5We7/udbwHfxtN5GEXdeRQmk="},{"Name":"label","Value":"_content/SportsStore/images/390d59f5-e723-4ec7-8b4d-ea5710b7b902.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11559"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022kjoDBgMG99uOaawQH5y5We7/udbwHfxtN5GEXdeRQmk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 07:55:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/39eb97b9-913f-4822-bf64-ab550584e3b7.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\39eb97b9-913f-4822-bf64-ab550584e3b7.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -347,6 +527,54 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xy7mino0pr"},{"Name":"integrity","Value":"sha256-2V\u002Bgmlzyc1VMbgptqmL1cuECmLJfxjdj2d24eeNa6aU="},{"Name":"label","Value":"_content/SportsStore/images/39eb97b9-913f-4822-bf64-ab550584e3b7.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5194"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222V\u002Bgmlzyc1VMbgptqmL1cuECmLJfxjdj2d24eeNa6aU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:33:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3af7f133-def7-4d34-bc6d-697a3cd2e8b3.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3af7f133-def7-4d34-bc6d-697a3cd2e8b3.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-K95tDuCOhKl\u002B\u002BBLo2TQy8bUKL8fmWDmKvol\u002BJU0CJbQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5056"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022K95tDuCOhKl\u002B\u002BBLo2TQy8bUKL8fmWDmKvol\u002BJU0CJbQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3af7f133-def7-4d34-bc6d-697a3cd2e8b3.n13fddiut1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3af7f133-def7-4d34-bc6d-697a3cd2e8b3.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n13fddiut1"},{"Name":"integrity","Value":"sha256-K95tDuCOhKl\u002B\u002BBLo2TQy8bUKL8fmWDmKvol\u002BJU0CJbQ="},{"Name":"label","Value":"_content/SportsStore/images/3af7f133-def7-4d34-bc6d-697a3cd2e8b3.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5056"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022K95tDuCOhKl\u002B\u002BBLo2TQy8bUKL8fmWDmKvol\u002BJU0CJbQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3cdce504-a9eb-4db8-9e4a-2d80ab425bc2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3cdce504-a9eb-4db8-9e4a-2d80ab425bc2.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-D/mnFTyIiKUHem\u002B3Whw1x0AMzdu2kcCI1yw5ZlcJiIA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11336"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022D/mnFTyIiKUHem\u002B3Whw1x0AMzdu2kcCI1yw5ZlcJiIA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3cdce504-a9eb-4db8-9e4a-2d80ab425bc2.z7nqhcmpe5.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3cdce504-a9eb-4db8-9e4a-2d80ab425bc2.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z7nqhcmpe5"},{"Name":"integrity","Value":"sha256-D/mnFTyIiKUHem\u002B3Whw1x0AMzdu2kcCI1yw5ZlcJiIA="},{"Name":"label","Value":"_content/SportsStore/images/3cdce504-a9eb-4db8-9e4a-2d80ab425bc2.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11336"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022D/mnFTyIiKUHem\u002B3Whw1x0AMzdu2kcCI1yw5ZlcJiIA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3df05301-b7e3-41a2-9030-006c646b7c5b.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3df05301-b7e3-41a2-9030-006c646b7c5b.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-q\u002B8BtVwtQJ5efc/Dzj4X\u002BW0bFvpnRuzKeUslR8ACPRM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9027"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022q\u002B8BtVwtQJ5efc/Dzj4X\u002BW0bFvpnRuzKeUslR8ACPRM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3df05301-b7e3-41a2-9030-006c646b7c5b.vn1dmob3ti.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3df05301-b7e3-41a2-9030-006c646b7c5b.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vn1dmob3ti"},{"Name":"integrity","Value":"sha256-q\u002B8BtVwtQJ5efc/Dzj4X\u002BW0bFvpnRuzKeUslR8ACPRM="},{"Name":"label","Value":"_content/SportsStore/images/3df05301-b7e3-41a2-9030-006c646b7c5b.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9027"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022q\u002B8BtVwtQJ5efc/Dzj4X\u002BW0bFvpnRuzKeUslR8ACPRM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3e5391bd-d1d3-4fa5-9266-8cf4c7056784.izk3tbddyl.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3e5391bd-d1d3-4fa5-9266-8cf4c7056784.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"izk3tbddyl"},{"Name":"integrity","Value":"sha256-/uXhTFnoZIsYYIpsa068ofpQqHfUEAXIfqtrKHVY7SI="},{"Name":"label","Value":"_content/SportsStore/images/3e5391bd-d1d3-4fa5-9266-8cf4c7056784.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"53996"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/uXhTFnoZIsYYIpsa068ofpQqHfUEAXIfqtrKHVY7SI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:36:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/3e5391bd-d1d3-4fa5-9266-8cf4c7056784.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3e5391bd-d1d3-4fa5-9266-8cf4c7056784.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/uXhTFnoZIsYYIpsa068ofpQqHfUEAXIfqtrKHVY7SI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"53996"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/uXhTFnoZIsYYIpsa068ofpQqHfUEAXIfqtrKHVY7SI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:36:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/3eb5fdfa-7155-4a72-a903-35691f6d88ee.azdb2d45lk.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3eb5fdfa-7155-4a72-a903-35691f6d88ee.jpg'))</AssetFile>
@@ -372,6 +600,30 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tobjcuqkm1"},{"Name":"integrity","Value":"sha256-E9ogFbSI1dmjJ5JSGKfRo893/oQhm2kT073HLA3u7vM="},{"Name":"label","Value":"_content/SportsStore/images/406e8967-0122-417d-92d5-8da89c9edb38.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10574"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022E9ogFbSI1dmjJ5JSGKfRo893/oQhm2kT073HLA3u7vM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 15:45:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/4242058e-6065-47b3-a67f-cc7c771d191e.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4242058e-6065-47b3-a67f-cc7c771d191e.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-c7q4u2AOvLXsv\u002BHnaf9bLj55vo3XbbXw9qiXW5OBeQQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4450"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022c7q4u2AOvLXsv\u002BHnaf9bLj55vo3XbbXw9qiXW5OBeQQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:43:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/4242058e-6065-47b3-a67f-cc7c771d191e.lyv7s7hqf2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4242058e-6065-47b3-a67f-cc7c771d191e.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lyv7s7hqf2"},{"Name":"integrity","Value":"sha256-c7q4u2AOvLXsv\u002BHnaf9bLj55vo3XbbXw9qiXW5OBeQQ="},{"Name":"label","Value":"_content/SportsStore/images/4242058e-6065-47b3-a67f-cc7c771d191e.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4450"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022c7q4u2AOvLXsv\u002BHnaf9bLj55vo3XbbXw9qiXW5OBeQQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:43:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/431fb7a2-e5af-49f4-ac33-14470b11d30f.7ai9dlyzdi.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\431fb7a2-e5af-49f4-ac33-14470b11d30f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7ai9dlyzdi"},{"Name":"integrity","Value":"sha256-MboEvFj\u002BFFr2vIgk1D/9JD5Wi3YKj5RjxXIaIEoekm0="},{"Name":"label","Value":"_content/SportsStore/images/431fb7a2-e5af-49f4-ac33-14470b11d30f.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2653"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MboEvFj\u002BFFr2vIgk1D/9JD5Wi3YKj5RjxXIaIEoekm0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/431fb7a2-e5af-49f4-ac33-14470b11d30f.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\431fb7a2-e5af-49f4-ac33-14470b11d30f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MboEvFj\u002BFFr2vIgk1D/9JD5Wi3YKj5RjxXIaIEoekm0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2653"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MboEvFj\u002BFFr2vIgk1D/9JD5Wi3YKj5RjxXIaIEoekm0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/437127ae-91bd-4f01-9496-76008e0bd2d6.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\437127ae-91bd-4f01-9496-76008e0bd2d6.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -384,6 +636,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r4zeelp9ln"},{"Name":"integrity","Value":"sha256-pUQ10a4Jtoa01ZleCAvHiixfaz0GfnhrIyzFvN\u002BbEf0="},{"Name":"label","Value":"_content/SportsStore/images/437127ae-91bd-4f01-9496-76008e0bd2d6.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"189488"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pUQ10a4Jtoa01ZleCAvHiixfaz0GfnhrIyzFvN\u002BbEf0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:36:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/44834ede-56f8-4ea1-9d7d-10197a232df3.3oaxdvajj6.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\44834ede-56f8-4ea1-9d7d-10197a232df3.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3oaxdvajj6"},{"Name":"integrity","Value":"sha256-Qx3Pqbo4DnxLhzmnWfYa/Qk\u002BAnwV1gN7JjnkDPZQRSE="},{"Name":"label","Value":"_content/SportsStore/images/44834ede-56f8-4ea1-9d7d-10197a232df3.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3425"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Qx3Pqbo4DnxLhzmnWfYa/Qk\u002BAnwV1gN7JjnkDPZQRSE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:45:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/44834ede-56f8-4ea1-9d7d-10197a232df3.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\44834ede-56f8-4ea1-9d7d-10197a232df3.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Qx3Pqbo4DnxLhzmnWfYa/Qk\u002BAnwV1gN7JjnkDPZQRSE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3425"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Qx3Pqbo4DnxLhzmnWfYa/Qk\u002BAnwV1gN7JjnkDPZQRSE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:45:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/44ab0b31-738b-4387-a408-bfa5bc6b606f.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\44ab0b31-738b-4387-a408-bfa5bc6b606f.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -395,6 +659,30 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z2qmki0qrh"},{"Name":"integrity","Value":"sha256-dTbuO0nvgTqLwdJhJ3HXHQJYg\u002Be1BCmDHUTrBO3qZY4="},{"Name":"label","Value":"_content/SportsStore/images/44ab0b31-738b-4387-a408-bfa5bc6b606f.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"196363"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022dTbuO0nvgTqLwdJhJ3HXHQJYg\u002Be1BCmDHUTrBO3qZY4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:44:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/4628cc59-3618-4adc-a06b-32680756bf50.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4628cc59-3618-4adc-a06b-32680756bf50.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OiTj7kQt59D8IdvDEB9X2BAKX72Q4S8lgbNGUbU8eFU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9172"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OiTj7kQt59D8IdvDEB9X2BAKX72Q4S8lgbNGUbU8eFU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:57:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/4628cc59-3618-4adc-a06b-32680756bf50.uefr9js7rd.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4628cc59-3618-4adc-a06b-32680756bf50.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uefr9js7rd"},{"Name":"integrity","Value":"sha256-OiTj7kQt59D8IdvDEB9X2BAKX72Q4S8lgbNGUbU8eFU="},{"Name":"label","Value":"_content/SportsStore/images/4628cc59-3618-4adc-a06b-32680756bf50.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9172"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OiTj7kQt59D8IdvDEB9X2BAKX72Q4S8lgbNGUbU8eFU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:57:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/4868289f-0030-45d2-9820-998545e62130.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4868289f-0030-45d2-9820-998545e62130.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jMd5Zgu0ShnOvMLbpntQinms2A0e7xTxYiQvqrpWAIo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8130"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022jMd5Zgu0ShnOvMLbpntQinms2A0e7xTxYiQvqrpWAIo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:51:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/4868289f-0030-45d2-9820-998545e62130.kcfby1puo0.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4868289f-0030-45d2-9820-998545e62130.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kcfby1puo0"},{"Name":"integrity","Value":"sha256-jMd5Zgu0ShnOvMLbpntQinms2A0e7xTxYiQvqrpWAIo="},{"Name":"label","Value":"_content/SportsStore/images/4868289f-0030-45d2-9820-998545e62130.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8130"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022jMd5Zgu0ShnOvMLbpntQinms2A0e7xTxYiQvqrpWAIo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:51:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/488323d0-8c88-4491-b096-f19d7066a865.elmhmhcr5j.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\488323d0-8c88-4491-b096-f19d7066a865.jpg'))</AssetFile>
@@ -444,6 +732,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ChKtWgGf3OnZ\u002BKwlilJS0jyu\u002BuqV31SUD1XXrAZG1ak="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"82166"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ChKtWgGf3OnZ\u002BKwlilJS0jyu\u002BuqV31SUD1XXrAZG1ak=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:23:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/49feb944-4a5a-4061-92b0-abc7c4ecc7de.p2vmdp2hg2.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\49feb944-4a5a-4061-92b0-abc7c4ecc7de.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p2vmdp2hg2"},{"Name":"integrity","Value":"sha256-0defpx\u002B/bggzw7GNNTAIzXF\u002BHZwL1WgVKyTgfoAYQ5s="},{"Name":"label","Value":"_content/SportsStore/images/49feb944-4a5a-4061-92b0-abc7c4ecc7de.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54044"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00220defpx\u002B/bggzw7GNNTAIzXF\u002BHZwL1WgVKyTgfoAYQ5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:45:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/49feb944-4a5a-4061-92b0-abc7c4ecc7de.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\49feb944-4a5a-4061-92b0-abc7c4ecc7de.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0defpx\u002B/bggzw7GNNTAIzXF\u002BHZwL1WgVKyTgfoAYQ5s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54044"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00220defpx\u002B/bggzw7GNNTAIzXF\u002BHZwL1WgVKyTgfoAYQ5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:45:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/4bffd9f3-4ed2-4cfc-999f-218fcdad796f.9we26ty3zi.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4bffd9f3-4ed2-4cfc-999f-218fcdad796f.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -468,6 +768,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WCIhd5K6DrKTgmFOtdtgS7FFmKZvoAMV4Zv8mY28GFw="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"280247"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WCIhd5K6DrKTgmFOtdtgS7FFmKZvoAMV4Zv8mY28GFw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 15:47:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/51ddaffb-aca3-4dc2-98a8-cdb38161fcda.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\51ddaffb-aca3-4dc2-98a8-cdb38161fcda.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9p0SAiJRR6FPYV7U5a/iO/mnXAZCPSaPXbjByoPA8gg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5994"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229p0SAiJRR6FPYV7U5a/iO/mnXAZCPSaPXbjByoPA8gg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:43:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/51ddaffb-aca3-4dc2-98a8-cdb38161fcda.uqv1b3bvoc.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\51ddaffb-aca3-4dc2-98a8-cdb38161fcda.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uqv1b3bvoc"},{"Name":"integrity","Value":"sha256-9p0SAiJRR6FPYV7U5a/iO/mnXAZCPSaPXbjByoPA8gg="},{"Name":"label","Value":"_content/SportsStore/images/51ddaffb-aca3-4dc2-98a8-cdb38161fcda.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5994"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229p0SAiJRR6FPYV7U5a/iO/mnXAZCPSaPXbjByoPA8gg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:43:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/5321fa26-d74d-4769-ad4b-a6a3523e8fff.g7xoqtiw23.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5321fa26-d74d-4769-ad4b-a6a3523e8fff.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -479,6 +791,30 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HMzFUdcrGx8kUb\u002BHUeTVjlqwIE9JAlgsOSyqmriWGIw="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"31255"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022HMzFUdcrGx8kUb\u002BHUeTVjlqwIE9JAlgsOSyqmriWGIw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 15:44:45 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/5516cc81-e806-4d6b-ab72-fc59e4ab5d56.fvg5n2z2wp.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5516cc81-e806-4d6b-ab72-fc59e4ab5d56.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fvg5n2z2wp"},{"Name":"integrity","Value":"sha256-VaxpakD0/3fn5HUhj2jjvVPovB7ILNW95o27zjPIpzM="},{"Name":"label","Value":"_content/SportsStore/images/5516cc81-e806-4d6b-ab72-fc59e4ab5d56.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8228"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022VaxpakD0/3fn5HUhj2jjvVPovB7ILNW95o27zjPIpzM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:57:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/5516cc81-e806-4d6b-ab72-fc59e4ab5d56.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5516cc81-e806-4d6b-ab72-fc59e4ab5d56.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VaxpakD0/3fn5HUhj2jjvVPovB7ILNW95o27zjPIpzM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8228"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022VaxpakD0/3fn5HUhj2jjvVPovB7ILNW95o27zjPIpzM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:57:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/5573efa0-4357-4303-ad22-66baed172b3b.dd11ycosiz.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5573efa0-4357-4303-ad22-66baed172b3b.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dd11ycosiz"},{"Name":"integrity","Value":"sha256-MU9e2Ujrsx0oSc\u002B64WrEKgavYUflp1r97t\u002By2w4rxFc="},{"Name":"label","Value":"_content/SportsStore/images/5573efa0-4357-4303-ad22-66baed172b3b.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10859"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MU9e2Ujrsx0oSc\u002B64WrEKgavYUflp1r97t\u002By2w4rxFc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:36:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/5573efa0-4357-4303-ad22-66baed172b3b.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5573efa0-4357-4303-ad22-66baed172b3b.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MU9e2Ujrsx0oSc\u002B64WrEKgavYUflp1r97t\u002By2w4rxFc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10859"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MU9e2Ujrsx0oSc\u002B64WrEKgavYUflp1r97t\u002By2w4rxFc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:36:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/58925312-0d60-469c-b79a-f190a3b92545.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\58925312-0d60-469c-b79a-f190a3b92545.jpg'))</AssetFile>
@@ -492,6 +828,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"shpeasesbk"},{"Name":"integrity","Value":"sha256-kJIRrmBVUXohv\u002BdGIWbxyf\u002BmGxeN84e46MkRPaTb0jU="},{"Name":"label","Value":"_content/SportsStore/images/58925312-0d60-469c-b79a-f190a3b92545.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"21172"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022kJIRrmBVUXohv\u002BdGIWbxyf\u002BmGxeN84e46MkRPaTb0jU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 15:44:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/58a60ae8-80e1-470d-b08a-c4298ed954ed.0p05etaj1r.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\58a60ae8-80e1-470d-b08a-c4298ed954ed.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0p05etaj1r"},{"Name":"integrity","Value":"sha256-xFRRiSC9\u002B2cBeNnyEIJHa2G9FIEwM9SxM9QY01w6wXg="},{"Name":"label","Value":"_content/SportsStore/images/58a60ae8-80e1-470d-b08a-c4298ed954ed.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5028"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xFRRiSC9\u002B2cBeNnyEIJHa2G9FIEwM9SxM9QY01w6wXg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/58a60ae8-80e1-470d-b08a-c4298ed954ed.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\58a60ae8-80e1-470d-b08a-c4298ed954ed.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xFRRiSC9\u002B2cBeNnyEIJHa2G9FIEwM9SxM9QY01w6wXg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5028"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xFRRiSC9\u002B2cBeNnyEIJHa2G9FIEwM9SxM9QY01w6wXg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/5c267051-03ec-49e0-a248-e9da9356966d.5ipweew5fc.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5c267051-03ec-49e0-a248-e9da9356966d.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -503,6 +851,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 15:44:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/5dd08015-71c5-48c5-974d-7734947671c8.ep7ihv2hys.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5dd08015-71c5-48c5-974d-7734947671c8.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ep7ihv2hys"},{"Name":"integrity","Value":"sha256-fhtDtGS2ckO98OTJz2oI3mZ4qky6Fsup4N749ZH3Kj4="},{"Name":"label","Value":"_content/SportsStore/images/5dd08015-71c5-48c5-974d-7734947671c8.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4878"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fhtDtGS2ckO98OTJz2oI3mZ4qky6Fsup4N749ZH3Kj4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/5dd08015-71c5-48c5-974d-7734947671c8.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5dd08015-71c5-48c5-974d-7734947671c8.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fhtDtGS2ckO98OTJz2oI3mZ4qky6Fsup4N749ZH3Kj4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4878"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fhtDtGS2ckO98OTJz2oI3mZ4qky6Fsup4N749ZH3Kj4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:46 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/5ddf594b-7d84-46cf-92c2-c48580f45897.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5ddf594b-7d84-46cf-92c2-c48580f45897.jpg'))</AssetFile>
@@ -540,6 +900,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t1pxdll49l"},{"Name":"integrity","Value":"sha256-Ee4GOrcPFsI3gcx92UQRB/4sJrxPusXpAPHbNrLcmzA="},{"Name":"label","Value":"_content/SportsStore/images/5e73d9e3-c3b3-4e6d-a10f-243f5f062e0f.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6500"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Ee4GOrcPFsI3gcx92UQRB/4sJrxPusXpAPHbNrLcmzA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:20:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/6049a556-f3db-448f-950b-070ea676a208.7tl4zg6vo6.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\6049a556-f3db-448f-950b-070ea676a208.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7tl4zg6vo6"},{"Name":"integrity","Value":"sha256-a6oywLcM8vBEgtTxAxkDNwc\u002BUf6w00Kei/8y/Vt7fuQ="},{"Name":"label","Value":"_content/SportsStore/images/6049a556-f3db-448f-950b-070ea676a208.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8166"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022a6oywLcM8vBEgtTxAxkDNwc\u002BUf6w00Kei/8y/Vt7fuQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:36:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/6049a556-f3db-448f-950b-070ea676a208.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\6049a556-f3db-448f-950b-070ea676a208.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-a6oywLcM8vBEgtTxAxkDNwc\u002BUf6w00Kei/8y/Vt7fuQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8166"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022a6oywLcM8vBEgtTxAxkDNwc\u002BUf6w00Kei/8y/Vt7fuQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:36:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/606b60fc-0028-4a11-9387-21c9c4726ca8.etw5r9cpra.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\606b60fc-0028-4a11-9387-21c9c4726ca8.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -564,6 +936,42 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:34:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/61fac48f-b518-4f00-8ae6-359b47a020f2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\61fac48f-b518-4f00-8ae6-359b47a020f2.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lqT8jO/8FiughJUgg2Y2KEqOUcCHDDCibDyfFqB//Co="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9535"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lqT8jO/8FiughJUgg2Y2KEqOUcCHDDCibDyfFqB//Co=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/61fac48f-b518-4f00-8ae6-359b47a020f2.yulj2pux66.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\61fac48f-b518-4f00-8ae6-359b47a020f2.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yulj2pux66"},{"Name":"integrity","Value":"sha256-lqT8jO/8FiughJUgg2Y2KEqOUcCHDDCibDyfFqB//Co="},{"Name":"label","Value":"_content/SportsStore/images/61fac48f-b518-4f00-8ae6-359b47a020f2.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9535"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lqT8jO/8FiughJUgg2Y2KEqOUcCHDDCibDyfFqB//Co=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/621df7ef-1059-4906-a236-cee2a061af33.kggvmyvwaj.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\621df7ef-1059-4906-a236-cee2a061af33.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kggvmyvwaj"},{"Name":"integrity","Value":"sha256-FPOUDy1CX/8beFZCW7N7GbykrHZNx3GJC8lHpFpEYyw="},{"Name":"label","Value":"_content/SportsStore/images/621df7ef-1059-4906-a236-cee2a061af33.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6645"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022FPOUDy1CX/8beFZCW7N7GbykrHZNx3GJC8lHpFpEYyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/621df7ef-1059-4906-a236-cee2a061af33.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\621df7ef-1059-4906-a236-cee2a061af33.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FPOUDy1CX/8beFZCW7N7GbykrHZNx3GJC8lHpFpEYyw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6645"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022FPOUDy1CX/8beFZCW7N7GbykrHZNx3GJC8lHpFpEYyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/631a6b10-1348-425d-8fe6-b72f45083914.7ai9dlyzdi.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\631a6b10-1348-425d-8fe6-b72f45083914.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7ai9dlyzdi"},{"Name":"integrity","Value":"sha256-MboEvFj\u002BFFr2vIgk1D/9JD5Wi3YKj5RjxXIaIEoekm0="},{"Name":"label","Value":"_content/SportsStore/images/631a6b10-1348-425d-8fe6-b72f45083914.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2653"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MboEvFj\u002BFFr2vIgk1D/9JD5Wi3YKj5RjxXIaIEoekm0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/631a6b10-1348-425d-8fe6-b72f45083914.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\631a6b10-1348-425d-8fe6-b72f45083914.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MboEvFj\u002BFFr2vIgk1D/9JD5Wi3YKj5RjxXIaIEoekm0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2653"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MboEvFj\u002BFFr2vIgk1D/9JD5Wi3YKj5RjxXIaIEoekm0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/63d37253-4e0d-40fb-ab41-30ae63fd48eb.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\63d37253-4e0d-40fb-ab41-30ae63fd48eb.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -575,6 +983,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qbexwzhszm"},{"Name":"integrity","Value":"sha256-Op1FwbxQjOTFPdiBhAIQ7sTXHIyf/r9NahwzX9mZYYI="},{"Name":"label","Value":"_content/SportsStore/images/63d37253-4e0d-40fb-ab41-30ae63fd48eb.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4736"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Op1FwbxQjOTFPdiBhAIQ7sTXHIyf/r9NahwzX9mZYYI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:33:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/68a95ccd-3362-4767-8d7e-367612865681.9u1wjjzw0k.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\68a95ccd-3362-4767-8d7e-367612865681.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9u1wjjzw0k"},{"Name":"integrity","Value":"sha256-r9\u002BgwYJw8bm1Rc\u002BTslLL05A5/8EoL5NC4OW3hcXsB0Y="},{"Name":"label","Value":"_content/SportsStore/images/68a95ccd-3362-4767-8d7e-367612865681.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10077"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022r9\u002BgwYJw8bm1Rc\u002BTslLL05A5/8EoL5NC4OW3hcXsB0Y=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/68a95ccd-3362-4767-8d7e-367612865681.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\68a95ccd-3362-4767-8d7e-367612865681.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-r9\u002BgwYJw8bm1Rc\u002BTslLL05A5/8EoL5NC4OW3hcXsB0Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10077"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022r9\u002BgwYJw8bm1Rc\u002BTslLL05A5/8EoL5NC4OW3hcXsB0Y=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/6d8e3500-5cc1-4fde-928b-6d869596d2c3.6tjhqmp2er.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\6d8e3500-5cc1-4fde-928b-6d869596d2c3.jpg'))</AssetFile>
@@ -611,6 +1031,30 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:42:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/70da0a2c-5919-467f-8932-738310e6cb7c.i85514jh4r.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\70da0a2c-5919-467f-8932-738310e6cb7c.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"i85514jh4r"},{"Name":"integrity","Value":"sha256-PrXnpcf8\u002BlmZrKgVT0LEBZcoWZ8bjtfuXS1zjNOyTbA="},{"Name":"label","Value":"_content/SportsStore/images/70da0a2c-5919-467f-8932-738310e6cb7c.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4692"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PrXnpcf8\u002BlmZrKgVT0LEBZcoWZ8bjtfuXS1zjNOyTbA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/70da0a2c-5919-467f-8932-738310e6cb7c.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\70da0a2c-5919-467f-8932-738310e6cb7c.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PrXnpcf8\u002BlmZrKgVT0LEBZcoWZ8bjtfuXS1zjNOyTbA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4692"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PrXnpcf8\u002BlmZrKgVT0LEBZcoWZ8bjtfuXS1zjNOyTbA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/7331408d-317c-42e2-a340-06f79c07228d.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7331408d-317c-42e2-a340-06f79c07228d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H95f2ZckWWx4RrDEPqapQDXINBDgKd7/tvfRaPW08DA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9725"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022H95f2ZckWWx4RrDEPqapQDXINBDgKd7/tvfRaPW08DA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:55:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/7331408d-317c-42e2-a340-06f79c07228d.vcd26qgjc5.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7331408d-317c-42e2-a340-06f79c07228d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vcd26qgjc5"},{"Name":"integrity","Value":"sha256-H95f2ZckWWx4RrDEPqapQDXINBDgKd7/tvfRaPW08DA="},{"Name":"label","Value":"_content/SportsStore/images/7331408d-317c-42e2-a340-06f79c07228d.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9725"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022H95f2ZckWWx4RrDEPqapQDXINBDgKd7/tvfRaPW08DA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:55:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/75394e48-b90f-4f9c-b1fa-e405fcae28fe.8kpoyfacjo.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75394e48-b90f-4f9c-b1fa-e405fcae28fe.jpg'))</AssetFile>
@@ -684,6 +1128,30 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lq3ef7cbp8"},{"Name":"integrity","Value":"sha256-k4pgSr9xZXCgBMi6CKNR92aA8Nib9VR7A9Hd3v9XPYc="},{"Name":"label","Value":"_content/SportsStore/images/786c5c97-041d-44cf-a26a-5c10636417f5.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12723"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022k4pgSr9xZXCgBMi6CKNR92aA8Nib9VR7A9Hd3v9XPYc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:40:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/7a93b980-7873-4966-bad8-b50f0a43d393.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7a93b980-7873-4966-bad8-b50f0a43d393.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CsgfxFJUZN0ZC1zgdsQWFlSJwG72pc6wHKbLoUq84II="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9075"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022CsgfxFJUZN0ZC1zgdsQWFlSJwG72pc6wHKbLoUq84II=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:59:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/7a93b980-7873-4966-bad8-b50f0a43d393.m1d4hvm312.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7a93b980-7873-4966-bad8-b50f0a43d393.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m1d4hvm312"},{"Name":"integrity","Value":"sha256-CsgfxFJUZN0ZC1zgdsQWFlSJwG72pc6wHKbLoUq84II="},{"Name":"label","Value":"_content/SportsStore/images/7a93b980-7873-4966-bad8-b50f0a43d393.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9075"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022CsgfxFJUZN0ZC1zgdsQWFlSJwG72pc6wHKbLoUq84II=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:59:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/7cf1c522-4158-475a-9d39-c549b35b434c.efawlu6o83.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7cf1c522-4158-475a-9d39-c549b35b434c.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"efawlu6o83"},{"Name":"integrity","Value":"sha256-ysl0kyFveepAQns1vzxlVUjpiqQLp1E8ICitIJlNBL8="},{"Name":"label","Value":"_content/SportsStore/images/7cf1c522-4158-475a-9d39-c549b35b434c.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15683"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ysl0kyFveepAQns1vzxlVUjpiqQLp1E8ICitIJlNBL8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/7cf1c522-4158-475a-9d39-c549b35b434c.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7cf1c522-4158-475a-9d39-c549b35b434c.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ysl0kyFveepAQns1vzxlVUjpiqQLp1E8ICitIJlNBL8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"15683"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ysl0kyFveepAQns1vzxlVUjpiqQLp1E8ICitIJlNBL8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/7ef03ae3-b940-4093-a925-0b360a68c4c5.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7ef03ae3-b940-4093-a925-0b360a68c4c5.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -707,6 +1175,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Xwp7Jwq3ePLxmRRlYz\u002B6H6bvcXxFud7J0rDSKHyqR08="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"323019"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Xwp7Jwq3ePLxmRRlYz\u002B6H6bvcXxFud7J0rDSKHyqR08=\u0022"},{"Name":"Last-Modified","Value":"Fri, 25 Jul 2025 02:39:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/8330b91b-a328-4714-9fda-25625ff09c91.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8330b91b-a328-4714-9fda-25625ff09c91.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9p0SAiJRR6FPYV7U5a/iO/mnXAZCPSaPXbjByoPA8gg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5994"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229p0SAiJRR6FPYV7U5a/iO/mnXAZCPSaPXbjByoPA8gg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/8330b91b-a328-4714-9fda-25625ff09c91.uqv1b3bvoc.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8330b91b-a328-4714-9fda-25625ff09c91.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uqv1b3bvoc"},{"Name":"integrity","Value":"sha256-9p0SAiJRR6FPYV7U5a/iO/mnXAZCPSaPXbjByoPA8gg="},{"Name":"label","Value":"_content/SportsStore/images/8330b91b-a328-4714-9fda-25625ff09c91.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5994"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229p0SAiJRR6FPYV7U5a/iO/mnXAZCPSaPXbjByoPA8gg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/8525c505-ed0f-4eae-bf29-2fa82c8cffcd.aybre2utsf.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8525c505-ed0f-4eae-bf29-2fa82c8cffcd.jpg'))</AssetFile>
@@ -732,6 +1212,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-G6AgkAube6iq0lLNrNxWK69gOGmedILaSyhd6aYXOKs="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"502790"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022G6AgkAube6iq0lLNrNxWK69gOGmedILaSyhd6aYXOKs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 15:44:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/8c193f22-3b96-4cd5-b19b-c904b80a6422.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8c193f22-3b96-4cd5-b19b-c904b80a6422.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HF7n4\u002BtcPTlkigkma7lRVtLuazuQudlYcVN3kwxBWY8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10884"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022HF7n4\u002BtcPTlkigkma7lRVtLuazuQudlYcVN3kwxBWY8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/8c193f22-3b96-4cd5-b19b-c904b80a6422.op8wuz2ov2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8c193f22-3b96-4cd5-b19b-c904b80a6422.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"op8wuz2ov2"},{"Name":"integrity","Value":"sha256-HF7n4\u002BtcPTlkigkma7lRVtLuazuQudlYcVN3kwxBWY8="},{"Name":"label","Value":"_content/SportsStore/images/8c193f22-3b96-4cd5-b19b-c904b80a6422.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10884"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022HF7n4\u002BtcPTlkigkma7lRVtLuazuQudlYcVN3kwxBWY8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/8d0b3efa-5cc4-45ac-80c7-60c56bcbc40f.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8d0b3efa-5cc4-45ac-80c7-60c56bcbc40f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8\u002BeHMi6hQnGnnlVhYYd8ui41J7tcM7HRlvFTarROUlg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9918"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228\u002BeHMi6hQnGnnlVhYYd8ui41J7tcM7HRlvFTarROUlg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:55:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/8d0b3efa-5cc4-45ac-80c7-60c56bcbc40f.ptucd12ghh.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8d0b3efa-5cc4-45ac-80c7-60c56bcbc40f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ptucd12ghh"},{"Name":"integrity","Value":"sha256-8\u002BeHMi6hQnGnnlVhYYd8ui41J7tcM7HRlvFTarROUlg="},{"Name":"label","Value":"_content/SportsStore/images/8d0b3efa-5cc4-45ac-80c7-60c56bcbc40f.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9918"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228\u002BeHMi6hQnGnnlVhYYd8ui41J7tcM7HRlvFTarROUlg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:55:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/8d6519af-736f-4877-826e-147979720ac1.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8d6519af-736f-4877-826e-147979720ac1.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -744,6 +1248,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uvlugh1atv"},{"Name":"integrity","Value":"sha256-trF03f0ni4uU2x6rLW83EiyzBypXR2dfwD7a\u002Bw9TFvw="},{"Name":"label","Value":"_content/SportsStore/images/8d6519af-736f-4877-826e-147979720ac1.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"239341"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022trF03f0ni4uU2x6rLW83EiyzBypXR2dfwD7a\u002Bw9TFvw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 25 Jul 2025 02:39:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/8fca7871-a14b-44a5-b365-ef7f5708eacb.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8fca7871-a14b-44a5-b365-ef7f5708eacb.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lqT8jO/8FiughJUgg2Y2KEqOUcCHDDCibDyfFqB//Co="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9535"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lqT8jO/8FiughJUgg2Y2KEqOUcCHDDCibDyfFqB//Co=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:41:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/8fca7871-a14b-44a5-b365-ef7f5708eacb.yulj2pux66.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8fca7871-a14b-44a5-b365-ef7f5708eacb.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yulj2pux66"},{"Name":"integrity","Value":"sha256-lqT8jO/8FiughJUgg2Y2KEqOUcCHDDCibDyfFqB//Co="},{"Name":"label","Value":"_content/SportsStore/images/8fca7871-a14b-44a5-b365-ef7f5708eacb.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9535"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lqT8jO/8FiughJUgg2Y2KEqOUcCHDDCibDyfFqB//Co=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:41:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/91da101d-a187-4c49-bc0f-dacf52866b21.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\91da101d-a187-4c49-bc0f-dacf52866b21.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -755,6 +1271,42 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kkkx9ps8gd"},{"Name":"integrity","Value":"sha256-ZFMktjHZHLs1ftqIDgXjAqOsaQG5yM24TL6nCtxMA/s="},{"Name":"label","Value":"_content/SportsStore/images/91da101d-a187-4c49-bc0f-dacf52866b21.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3343"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ZFMktjHZHLs1ftqIDgXjAqOsaQG5yM24TL6nCtxMA/s=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:44:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/91e76345-1638-40db-b6d9-196066d2a4b9.ajb9x6u3gw.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\91e76345-1638-40db-b6d9-196066d2a4b9.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ajb9x6u3gw"},{"Name":"integrity","Value":"sha256-ptsCnFC3wFNvwIPf75pkqpvHpJGvgBCqcnO3mFWBBUI="},{"Name":"label","Value":"_content/SportsStore/images/91e76345-1638-40db-b6d9-196066d2a4b9.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6140"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ptsCnFC3wFNvwIPf75pkqpvHpJGvgBCqcnO3mFWBBUI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:59:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/91e76345-1638-40db-b6d9-196066d2a4b9.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\91e76345-1638-40db-b6d9-196066d2a4b9.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ptsCnFC3wFNvwIPf75pkqpvHpJGvgBCqcnO3mFWBBUI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6140"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ptsCnFC3wFNvwIPf75pkqpvHpJGvgBCqcnO3mFWBBUI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:59:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/939b8264-f842-44bf-902f-f9691b1463f2.40o91n7yiw.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\939b8264-f842-44bf-902f-f9691b1463f2.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"40o91n7yiw"},{"Name":"integrity","Value":"sha256-PNHKl2GHY7jAashssS7SYURIPJ\u002Blo6W/KTyt79\u002B7bf4="},{"Name":"label","Value":"_content/SportsStore/images/939b8264-f842-44bf-902f-f9691b1463f2.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12389"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PNHKl2GHY7jAashssS7SYURIPJ\u002Blo6W/KTyt79\u002B7bf4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/939b8264-f842-44bf-902f-f9691b1463f2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\939b8264-f842-44bf-902f-f9691b1463f2.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PNHKl2GHY7jAashssS7SYURIPJ\u002Blo6W/KTyt79\u002B7bf4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"12389"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PNHKl2GHY7jAashssS7SYURIPJ\u002Blo6W/KTyt79\u002B7bf4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/9607ee08-e0c4-4584-9936-e750019dbe42.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9607ee08-e0c4-4584-9936-e750019dbe42.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PPy0sG3DWxLxCy6WTrndH/57D6MCpAQ4iQS9jnjJ27w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8208"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PPy0sG3DWxLxCy6WTrndH/57D6MCpAQ4iQS9jnjJ27w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:51:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/9607ee08-e0c4-4584-9936-e750019dbe42.kwryyklny0.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9607ee08-e0c4-4584-9936-e750019dbe42.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kwryyklny0"},{"Name":"integrity","Value":"sha256-PPy0sG3DWxLxCy6WTrndH/57D6MCpAQ4iQS9jnjJ27w="},{"Name":"label","Value":"_content/SportsStore/images/9607ee08-e0c4-4584-9936-e750019dbe42.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8208"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PPy0sG3DWxLxCy6WTrndH/57D6MCpAQ4iQS9jnjJ27w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:51:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/96e14da7-180b-466b-a1ec-8fad69350780.5ipweew5fc.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\96e14da7-180b-466b-a1ec-8fad69350780.png'))</AssetFile>
@@ -828,6 +1380,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lrSTnKy2d\u002BiKiioaVYoV\u002BokDMe6MxmbacWuwzb9l6a0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8667"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lrSTnKy2d\u002BiKiioaVYoV\u002BokDMe6MxmbacWuwzb9l6a0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:40:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/9e0c2497-7909-4f90-aced-90cee072630e.fm8h9fgy0x.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9e0c2497-7909-4f90-aced-90cee072630e.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fm8h9fgy0x"},{"Name":"integrity","Value":"sha256-5wr8a5fMl2h6kYc84vj\u002B/JKAvkH7RK8WBaJ/IOQZuSA="},{"Name":"label","Value":"_content/SportsStore/images/9e0c2497-7909-4f90-aced-90cee072630e.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4397"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00225wr8a5fMl2h6kYc84vj\u002B/JKAvkH7RK8WBaJ/IOQZuSA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/9e0c2497-7909-4f90-aced-90cee072630e.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9e0c2497-7909-4f90-aced-90cee072630e.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5wr8a5fMl2h6kYc84vj\u002B/JKAvkH7RK8WBaJ/IOQZuSA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4397"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00225wr8a5fMl2h6kYc84vj\u002B/JKAvkH7RK8WBaJ/IOQZuSA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/a05d34e3-3d95-4aa1-9401-5c241365df62.tgw15frngr.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a05d34e3-3d95-4aa1-9401-5c241365df62.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -851,6 +1415,42 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wWwsOi8PzXTdIlkOpicyZnErZaFzkIbuMU1sxM6HwKs="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"74429"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022wWwsOi8PzXTdIlkOpicyZnErZaFzkIbuMU1sxM6HwKs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:34:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/a20c8d77-27ac-4bb2-8f9b-aee707ff5bab.kggvmyvwaj.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a20c8d77-27ac-4bb2-8f9b-aee707ff5bab.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kggvmyvwaj"},{"Name":"integrity","Value":"sha256-FPOUDy1CX/8beFZCW7N7GbykrHZNx3GJC8lHpFpEYyw="},{"Name":"label","Value":"_content/SportsStore/images/a20c8d77-27ac-4bb2-8f9b-aee707ff5bab.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6645"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022FPOUDy1CX/8beFZCW7N7GbykrHZNx3GJC8lHpFpEYyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/a20c8d77-27ac-4bb2-8f9b-aee707ff5bab.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a20c8d77-27ac-4bb2-8f9b-aee707ff5bab.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FPOUDy1CX/8beFZCW7N7GbykrHZNx3GJC8lHpFpEYyw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6645"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022FPOUDy1CX/8beFZCW7N7GbykrHZNx3GJC8lHpFpEYyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/a69c372a-e8a1-47b7-9584-8d930121fa7c.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a69c372a-e8a1-47b7-9584-8d930121fa7c.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-28ti3NNZYvIyGkmbyiV0ac5pTQDF03USVXDt/ZeB3ts="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9828"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002228ti3NNZYvIyGkmbyiV0ac5pTQDF03USVXDt/ZeB3ts=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:38:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/a69c372a-e8a1-47b7-9584-8d930121fa7c.n5dl2p9fxi.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a69c372a-e8a1-47b7-9584-8d930121fa7c.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n5dl2p9fxi"},{"Name":"integrity","Value":"sha256-28ti3NNZYvIyGkmbyiV0ac5pTQDF03USVXDt/ZeB3ts="},{"Name":"label","Value":"_content/SportsStore/images/a69c372a-e8a1-47b7-9584-8d930121fa7c.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9828"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002228ti3NNZYvIyGkmbyiV0ac5pTQDF03USVXDt/ZeB3ts=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:38:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/a76bba61-6fd9-4cdd-bef9-dd51bc689d0f.p2vmdp2hg2.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a76bba61-6fd9-4cdd-bef9-dd51bc689d0f.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p2vmdp2hg2"},{"Name":"integrity","Value":"sha256-0defpx\u002B/bggzw7GNNTAIzXF\u002BHZwL1WgVKyTgfoAYQ5s="},{"Name":"label","Value":"_content/SportsStore/images/a76bba61-6fd9-4cdd-bef9-dd51bc689d0f.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54044"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00220defpx\u002B/bggzw7GNNTAIzXF\u002BHZwL1WgVKyTgfoAYQ5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:45:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/a76bba61-6fd9-4cdd-bef9-dd51bc689d0f.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a76bba61-6fd9-4cdd-bef9-dd51bc689d0f.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0defpx\u002B/bggzw7GNNTAIzXF\u002BHZwL1WgVKyTgfoAYQ5s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54044"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00220defpx\u002B/bggzw7GNNTAIzXF\u002BHZwL1WgVKyTgfoAYQ5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:45:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/a966791f-fe4a-447a-b42f-68e9aaed5e16.anmqo6ao2u.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a966791f-fe4a-447a-b42f-68e9aaed5e16.jpg'))</AssetFile>
@@ -935,6 +1535,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-t6uYoRaN7PFG0agCteS1ZGTbqUiMapI9pp8fAkscw0o="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10850"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022t6uYoRaN7PFG0agCteS1ZGTbqUiMapI9pp8fAkscw0o=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:44:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/b8a83242-49bf-4e96-8cf4-f12c4c03df69.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b8a83242-49bf-4e96-8cf4-f12c4c03df69.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NByvCFZ\u002BFCAnpVywFYMDxZgeAZ67eL7sWXrQ56Ht1X4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8820"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022NByvCFZ\u002BFCAnpVywFYMDxZgeAZ67eL7sWXrQ56Ht1X4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/b8a83242-49bf-4e96-8cf4-f12c4c03df69.kwubr8906g.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b8a83242-49bf-4e96-8cf4-f12c4c03df69.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kwubr8906g"},{"Name":"integrity","Value":"sha256-NByvCFZ\u002BFCAnpVywFYMDxZgeAZ67eL7sWXrQ56Ht1X4="},{"Name":"label","Value":"_content/SportsStore/images/b8a83242-49bf-4e96-8cf4-f12c4c03df69.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8820"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022NByvCFZ\u002BFCAnpVywFYMDxZgeAZ67eL7sWXrQ56Ht1X4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/b904563c-7a28-40d4-b2c9-d2ecfa2e625f.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b904563c-7a28-40d4-b2c9-d2ecfa2e625f.jpg'))</AssetFile>
@@ -1044,6 +1656,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NGm1PnOUrJ/Mt\u002BHc9Efy5g/Z9RF0bF9BXJa3BxPwgl0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"69822"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022NGm1PnOUrJ/Mt\u002BHc9Efy5g/Z9RF0bF9BXJa3BxPwgl0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 15:47:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/c646158c-4eb2-407a-8b32-8fc6eee6f9e7.3dexoc915d.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c646158c-4eb2-407a-8b32-8fc6eee6f9e7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3dexoc915d"},{"Name":"integrity","Value":"sha256-916tEWdCHU4PjlKzEs8BVvtNvtK2MuJ0QHgLYxkmGO4="},{"Name":"label","Value":"_content/SportsStore/images/c646158c-4eb2-407a-8b32-8fc6eee6f9e7.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9999"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022916tEWdCHU4PjlKzEs8BVvtNvtK2MuJ0QHgLYxkmGO4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:55:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/c646158c-4eb2-407a-8b32-8fc6eee6f9e7.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c646158c-4eb2-407a-8b32-8fc6eee6f9e7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-916tEWdCHU4PjlKzEs8BVvtNvtK2MuJ0QHgLYxkmGO4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9999"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022916tEWdCHU4PjlKzEs8BVvtNvtK2MuJ0QHgLYxkmGO4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:55:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/c65b6bb7-6131-454b-ba60-900c3137d0a7.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c65b6bb7-6131-454b-ba60-900c3137d0a7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-W44OxPt7A\u002BRMkxHxCQ2AENQYbO3XEZZloxAPMF7nIMQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8512"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022W44OxPt7A\u002BRMkxHxCQ2AENQYbO3XEZZloxAPMF7nIMQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/c65b6bb7-6131-454b-ba60-900c3137d0a7.zmqirrbxmf.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c65b6bb7-6131-454b-ba60-900c3137d0a7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zmqirrbxmf"},{"Name":"integrity","Value":"sha256-W44OxPt7A\u002BRMkxHxCQ2AENQYbO3XEZZloxAPMF7nIMQ="},{"Name":"label","Value":"_content/SportsStore/images/c65b6bb7-6131-454b-ba60-900c3137d0a7.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8512"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022W44OxPt7A\u002BRMkxHxCQ2AENQYbO3XEZZloxAPMF7nIMQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/c7721e92-36ef-4a64-bea5-5d07d85a983c.hppgk9inn4.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c7721e92-36ef-4a64-bea5-5d07d85a983c.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1055,6 +1691,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JR5K1rRFTRUd9LthyGvJ73iSGTgGybn6KuFDk5wMMfo="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"263898"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022JR5K1rRFTRUd9LthyGvJ73iSGTgGybn6KuFDk5wMMfo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:44:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/c7821ae9-e77f-45bc-b4a2-4191baa2d96f.8wjpeawcdy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c7821ae9-e77f-45bc-b4a2-4191baa2d96f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8wjpeawcdy"},{"Name":"integrity","Value":"sha256-CJmK5CJvzIWF/9wn1zjWBwCmPZZPvvbxIhkwk0iBmqU="},{"Name":"label","Value":"_content/SportsStore/images/c7821ae9-e77f-45bc-b4a2-4191baa2d96f.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7899"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022CJmK5CJvzIWF/9wn1zjWBwCmPZZPvvbxIhkwk0iBmqU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:57:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/c7821ae9-e77f-45bc-b4a2-4191baa2d96f.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c7821ae9-e77f-45bc-b4a2-4191baa2d96f.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CJmK5CJvzIWF/9wn1zjWBwCmPZZPvvbxIhkwk0iBmqU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7899"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022CJmK5CJvzIWF/9wn1zjWBwCmPZZPvvbxIhkwk0iBmqU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:57:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/c9d89d3f-ad21-4481-b1cb-e7759e49ecb8.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c9d89d3f-ad21-4481-b1cb-e7759e49ecb8.jpg'))</AssetFile>
@@ -1116,6 +1764,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 25 Jul 2025 02:39:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/ce85c127-5dc4-454b-91e0-72b84e19692d.98euhdsd1i.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ce85c127-5dc4-454b-91e0-72b84e19692d.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"98euhdsd1i"},{"Name":"integrity","Value":"sha256-d1fED3Gw0kfcIM/pFMsWtb/c3NYWg6EA0MnGc1iNwJY="},{"Name":"label","Value":"_content/SportsStore/images/ce85c127-5dc4-454b-91e0-72b84e19692d.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2685"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022d1fED3Gw0kfcIM/pFMsWtb/c3NYWg6EA0MnGc1iNwJY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/ce85c127-5dc4-454b-91e0-72b84e19692d.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ce85c127-5dc4-454b-91e0-72b84e19692d.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-d1fED3Gw0kfcIM/pFMsWtb/c3NYWg6EA0MnGc1iNwJY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2685"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022d1fED3Gw0kfcIM/pFMsWtb/c3NYWg6EA0MnGc1iNwJY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/d2697b62-1b4d-4c99-b5bc-3e744c776502.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d2697b62-1b4d-4c99-b5bc-3e744c776502.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1128,6 +1788,42 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yixajsdh74"},{"Name":"integrity","Value":"sha256-xkQqGMRCCa2gUizF/De81/6Eu5IGb3dHZRI3TOhRHJQ="},{"Name":"label","Value":"_content/SportsStore/images/d2697b62-1b4d-4c99-b5bc-3e744c776502.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"183985"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xkQqGMRCCa2gUizF/De81/6Eu5IGb3dHZRI3TOhRHJQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:36:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/d4cbc13b-0f36-426d-952a-efe355ea9405.45k0moicde.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d4cbc13b-0f36-426d-952a-efe355ea9405.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"45k0moicde"},{"Name":"integrity","Value":"sha256-CEQ9GS9svZva6aQQcZFbFMBGKZ3X/w7V1weBfk2hd5s="},{"Name":"label","Value":"_content/SportsStore/images/d4cbc13b-0f36-426d-952a-efe355ea9405.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8994"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022CEQ9GS9svZva6aQQcZFbFMBGKZ3X/w7V1weBfk2hd5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/d4cbc13b-0f36-426d-952a-efe355ea9405.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d4cbc13b-0f36-426d-952a-efe355ea9405.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CEQ9GS9svZva6aQQcZFbFMBGKZ3X/w7V1weBfk2hd5s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8994"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022CEQ9GS9svZva6aQQcZFbFMBGKZ3X/w7V1weBfk2hd5s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/d6bdf606-9d47-42ff-a336-0497df7655b7.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d6bdf606-9d47-42ff-a336-0497df7655b7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fN0OV5pg1KPFb1HiWtMmslUPTD/ubZlOVQ1yiq\u002BBlAM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"22969"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fN0OV5pg1KPFb1HiWtMmslUPTD/ubZlOVQ1yiq\u002BBlAM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:37:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/d6bdf606-9d47-42ff-a336-0497df7655b7.k4ewnfsda5.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d6bdf606-9d47-42ff-a336-0497df7655b7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k4ewnfsda5"},{"Name":"integrity","Value":"sha256-fN0OV5pg1KPFb1HiWtMmslUPTD/ubZlOVQ1yiq\u002BBlAM="},{"Name":"label","Value":"_content/SportsStore/images/d6bdf606-9d47-42ff-a336-0497df7655b7.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22969"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fN0OV5pg1KPFb1HiWtMmslUPTD/ubZlOVQ1yiq\u002BBlAM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:37:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/d76787b4-53f5-4e95-ab0b-d41d1e7c966d.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d76787b4-53f5-4e95-ab0b-d41d1e7c966d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sYUGMRVAJEuwzcXNQXuY0O3/Hsi7Qq5GPkDp3DaYBDc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7808"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022sYUGMRVAJEuwzcXNQXuY0O3/Hsi7Qq5GPkDp3DaYBDc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/d76787b4-53f5-4e95-ab0b-d41d1e7c966d.zfx010n3q8.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d76787b4-53f5-4e95-ab0b-d41d1e7c966d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zfx010n3q8"},{"Name":"integrity","Value":"sha256-sYUGMRVAJEuwzcXNQXuY0O3/Hsi7Qq5GPkDp3DaYBDc="},{"Name":"label","Value":"_content/SportsStore/images/d76787b4-53f5-4e95-ab0b-d41d1e7c966d.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7808"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022sYUGMRVAJEuwzcXNQXuY0O3/Hsi7Qq5GPkDp3DaYBDc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/dae66c45-56f3-410e-b30b-059b833bb52a.avicsxd47q.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dae66c45-56f3-410e-b30b-059b833bb52a.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1139,6 +1835,30 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hnqhmHHAgqgRivRMJFsmXJc1/TpegVl2uhSfquKuHc4="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"239380"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022hnqhmHHAgqgRivRMJFsmXJc1/TpegVl2uhSfquKuHc4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:21:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/dbccafa5-9163-4b39-b1f2-006a6828754b.ia4wqwmaa1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dbccafa5-9163-4b39-b1f2-006a6828754b.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ia4wqwmaa1"},{"Name":"integrity","Value":"sha256-RmhyyHETrRb7dQUsVuk4Tg21j\u002BiIrAcUeEwE9ymn2KY="},{"Name":"label","Value":"_content/SportsStore/images/dbccafa5-9163-4b39-b1f2-006a6828754b.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2931"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022RmhyyHETrRb7dQUsVuk4Tg21j\u002BiIrAcUeEwE9ymn2KY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/dbccafa5-9163-4b39-b1f2-006a6828754b.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dbccafa5-9163-4b39-b1f2-006a6828754b.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RmhyyHETrRb7dQUsVuk4Tg21j\u002BiIrAcUeEwE9ymn2KY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2931"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022RmhyyHETrRb7dQUsVuk4Tg21j\u002BiIrAcUeEwE9ymn2KY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/dc2b7f5a-2c75-4c23-9179-e37d0b7f11b3.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dc2b7f5a-2c75-4c23-9179-e37d0b7f11b3.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-D/mnFTyIiKUHem\u002B3Whw1x0AMzdu2kcCI1yw5ZlcJiIA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11336"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022D/mnFTyIiKUHem\u002B3Whw1x0AMzdu2kcCI1yw5ZlcJiIA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/dc2b7f5a-2c75-4c23-9179-e37d0b7f11b3.z7nqhcmpe5.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dc2b7f5a-2c75-4c23-9179-e37d0b7f11b3.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z7nqhcmpe5"},{"Name":"integrity","Value":"sha256-D/mnFTyIiKUHem\u002B3Whw1x0AMzdu2kcCI1yw5ZlcJiIA="},{"Name":"label","Value":"_content/SportsStore/images/dc2b7f5a-2c75-4c23-9179-e37d0b7f11b3.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11336"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022D/mnFTyIiKUHem\u002B3Whw1x0AMzdu2kcCI1yw5ZlcJiIA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/dde30d8d-c2fd-45f7-a423-90da5a16ff00.8b62ma8ze6.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dde30d8d-c2fd-45f7-a423-90da5a16ff00.webp'))</AssetFile>
@@ -1164,6 +1884,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hnqhmHHAgqgRivRMJFsmXJc1/TpegVl2uhSfquKuHc4="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"239380"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022hnqhmHHAgqgRivRMJFsmXJc1/TpegVl2uhSfquKuHc4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:22:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/e11a56f6-b0e4-438a-a47c-a0a4e9654eb7.jmcm32uquy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e11a56f6-b0e4-438a-a47c-a0a4e9654eb7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jmcm32uquy"},{"Name":"integrity","Value":"sha256-lYsB7OLJqkeOkwCEj5kns3o7GKC6kKXdHO27Cl583WY="},{"Name":"label","Value":"_content/SportsStore/images/e11a56f6-b0e4-438a-a47c-a0a4e9654eb7.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8132"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lYsB7OLJqkeOkwCEj5kns3o7GKC6kKXdHO27Cl583WY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/e11a56f6-b0e4-438a-a47c-a0a4e9654eb7.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e11a56f6-b0e4-438a-a47c-a0a4e9654eb7.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lYsB7OLJqkeOkwCEj5kns3o7GKC6kKXdHO27Cl583WY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8132"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lYsB7OLJqkeOkwCEj5kns3o7GKC6kKXdHO27Cl583WY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/e135f83f-464a-43a2-bbb8-4e3d759da1d7.awus86axqd.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e135f83f-464a-43a2-bbb8-4e3d759da1d7.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1175,6 +1907,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lrSTnKy2d\u002BiKiioaVYoV\u002BokDMe6MxmbacWuwzb9l6a0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8667"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lrSTnKy2d\u002BiKiioaVYoV\u002BokDMe6MxmbacWuwzb9l6a0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:39:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/e149d750-d83b-48cf-867c-38b8eb314697.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e149d750-d83b-48cf-867c-38b8eb314697.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-q8C628B3VoMZageMLO2J/\u002B8Mu1jIzMifIHx6Kb8FcME="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6366"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022q8C628B3VoMZageMLO2J/\u002B8Mu1jIzMifIHx6Kb8FcME=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/e149d750-d83b-48cf-867c-38b8eb314697.v3utvd3ew7.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e149d750-d83b-48cf-867c-38b8eb314697.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v3utvd3ew7"},{"Name":"integrity","Value":"sha256-q8C628B3VoMZageMLO2J/\u002B8Mu1jIzMifIHx6Kb8FcME="},{"Name":"label","Value":"_content/SportsStore/images/e149d750-d83b-48cf-867c-38b8eb314697.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6366"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022q8C628B3VoMZageMLO2J/\u002B8Mu1jIzMifIHx6Kb8FcME=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:42:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/e174facf-76bd-42c7-8aef-5167f9d3dc3c.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e174facf-76bd-42c7-8aef-5167f9d3dc3c.jpg'))</AssetFile>
@@ -1212,6 +1956,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3H/4YVluq2/eW5hRbSZzaliv7gdpIMSvixFVtZdu1jo="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"379655"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223H/4YVluq2/eW5hRbSZzaliv7gdpIMSvixFVtZdu1jo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:20:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/e4369bd5-f530-4f99-88a6-8a9d7fff178d.hijzq73sjn.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e4369bd5-f530-4f99-88a6-8a9d7fff178d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hijzq73sjn"},{"Name":"integrity","Value":"sha256-iVO5pkk/y/BSo/1IbwBgHkB4PHrBRUPwgjQhJamXax4="},{"Name":"label","Value":"_content/SportsStore/images/e4369bd5-f530-4f99-88a6-8a9d7fff178d.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7024"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022iVO5pkk/y/BSo/1IbwBgHkB4PHrBRUPwgjQhJamXax4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/e4369bd5-f530-4f99-88a6-8a9d7fff178d.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e4369bd5-f530-4f99-88a6-8a9d7fff178d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iVO5pkk/y/BSo/1IbwBgHkB4PHrBRUPwgjQhJamXax4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7024"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022iVO5pkk/y/BSo/1IbwBgHkB4PHrBRUPwgjQhJamXax4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:54:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/e73e8550-7c98-4e6b-a171-2f02f2085062.5ipweew5fc.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e73e8550-7c98-4e6b-a171-2f02f2085062.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1235,6 +1991,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-14mZrkigGFqWLAs3W4ghP0Q9fYBfvyYQv3BCwV3/7EI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"72614"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u002214mZrkigGFqWLAs3W4ghP0Q9fYBfvyYQv3BCwV3/7EI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:47:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/e8b39b60-1166-44de-8884-db98cc21c5ac.4e66zqx0xv.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e8b39b60-1166-44de-8884-db98cc21c5ac.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4e66zqx0xv"},{"Name":"integrity","Value":"sha256-JN\u002B3vpldZ9frt9k5XBoCK5OChLv/anRsgdYTAp1s4EA="},{"Name":"label","Value":"_content/SportsStore/images/e8b39b60-1166-44de-8884-db98cc21c5ac.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7765"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022JN\u002B3vpldZ9frt9k5XBoCK5OChLv/anRsgdYTAp1s4EA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/e8b39b60-1166-44de-8884-db98cc21c5ac.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e8b39b60-1166-44de-8884-db98cc21c5ac.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JN\u002B3vpldZ9frt9k5XBoCK5OChLv/anRsgdYTAp1s4EA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7765"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022JN\u002B3vpldZ9frt9k5XBoCK5OChLv/anRsgdYTAp1s4EA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/e97829a1-a13f-455c-b9f6-d524fd85f6e4.5ipweew5fc.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e97829a1-a13f-455c-b9f6-d524fd85f6e4.webp'))</AssetFile>
@@ -1272,6 +2040,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H4faCO1Gi11WD8any//Vf\u002BhK1ruMWtBm1EM\u002BGX7mRuY="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5551"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022H4faCO1Gi11WD8any//Vf\u002BhK1ruMWtBm1EM\u002BGX7mRuY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:32:30 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/efccb742-ec27-43d1-933e-48f1a0630f37.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\efccb742-ec27-43d1-933e-48f1a0630f37.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BmiOabi0a9dl\u002BolQgOtuSTYA7e1Yi5CCPmUf\u002B7k19J4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5606"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022BmiOabi0a9dl\u002BolQgOtuSTYA7e1Yi5CCPmUf\u002B7k19J4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:45:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/efccb742-ec27-43d1-933e-48f1a0630f37.y9iew9bmlz.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\efccb742-ec27-43d1-933e-48f1a0630f37.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y9iew9bmlz"},{"Name":"integrity","Value":"sha256-BmiOabi0a9dl\u002BolQgOtuSTYA7e1Yi5CCPmUf\u002B7k19J4="},{"Name":"label","Value":"_content/SportsStore/images/efccb742-ec27-43d1-933e-48f1a0630f37.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5606"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022BmiOabi0a9dl\u002BolQgOtuSTYA7e1Yi5CCPmUf\u002B7k19J4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:45:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/f049ca3e-f40a-4830-9fa5-3da8568d7086.5ipweew5fc.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f049ca3e-f40a-4830-9fa5-3da8568d7086.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1295,6 +2075,30 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ybv8CAqEF6n71s9fWiQEW7hlMQd7u9NGC/1keCmaJlk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5379"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ybv8CAqEF6n71s9fWiQEW7hlMQd7u9NGC/1keCmaJlk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:32:45 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f1d2e8bf-4179-4ac2-8849-c11f140eaf6a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f1d2e8bf-4179-4ac2-8849-c11f140eaf6a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YGImYOrTMCeN7aAYfYHnPjRH/HKvBbYMvceWL4gDttU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9426"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YGImYOrTMCeN7aAYfYHnPjRH/HKvBbYMvceWL4gDttU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 07:55:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f1d2e8bf-4179-4ac2-8849-c11f140eaf6a.kjiva5nh5f.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f1d2e8bf-4179-4ac2-8849-c11f140eaf6a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kjiva5nh5f"},{"Name":"integrity","Value":"sha256-YGImYOrTMCeN7aAYfYHnPjRH/HKvBbYMvceWL4gDttU="},{"Name":"label","Value":"_content/SportsStore/images/f1d2e8bf-4179-4ac2-8849-c11f140eaf6a.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9426"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YGImYOrTMCeN7aAYfYHnPjRH/HKvBbYMvceWL4gDttU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 07:55:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f242c2cf-81cb-417c-98e5-7b28cfc6193e.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f242c2cf-81cb-417c-98e5-7b28cfc6193e.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-As/6XrZhpIc3Yn6CXI7AV8k77jXIxFiYVJDA6mIEX/w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"8505"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022As/6XrZhpIc3Yn6CXI7AV8k77jXIxFiYVJDA6mIEX/w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f242c2cf-81cb-417c-98e5-7b28cfc6193e.mzgsm5o8qq.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f242c2cf-81cb-417c-98e5-7b28cfc6193e.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mzgsm5o8qq"},{"Name":"integrity","Value":"sha256-As/6XrZhpIc3Yn6CXI7AV8k77jXIxFiYVJDA6mIEX/w="},{"Name":"label","Value":"_content/SportsStore/images/f242c2cf-81cb-417c-98e5-7b28cfc6193e.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8505"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022As/6XrZhpIc3Yn6CXI7AV8k77jXIxFiYVJDA6mIEX/w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:53:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/f4485af0-4c55-4481-8b2c-83ebe3509ad6.3ng1z8flpn.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f4485af0-4c55-4481-8b2c-83ebe3509ad6.jpg'))</AssetFile>
@@ -1332,6 +2136,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xqdhjaotcs"},{"Name":"integrity","Value":"sha256-J4U/5U717inwQe4j6024uAz/04ROjgVlLaW5HscZHKg="},{"Name":"label","Value":"_content/SportsStore/images/f48e5567-45dc-4b28-af55-a605db418c39.webp"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"37830"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022J4U/5U717inwQe4j6024uAz/04ROjgVlLaW5HscZHKg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:44:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f5d45588-50d4-4a07-9d23-b2e8a57ac36b.geq0u0u7ho.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f5d45588-50d4-4a07-9d23-b2e8a57ac36b.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"geq0u0u7ho"},{"Name":"integrity","Value":"sha256-qANKRnbXo8wbKrUSO7YgyT6BxcgYA8QG0NUGpA/SwXI="},{"Name":"label","Value":"_content/SportsStore/images/f5d45588-50d4-4a07-9d23-b2e8a57ac36b.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2617"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qANKRnbXo8wbKrUSO7YgyT6BxcgYA8QG0NUGpA/SwXI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f5d45588-50d4-4a07-9d23-b2e8a57ac36b.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f5d45588-50d4-4a07-9d23-b2e8a57ac36b.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qANKRnbXo8wbKrUSO7YgyT6BxcgYA8QG0NUGpA/SwXI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2617"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qANKRnbXo8wbKrUSO7YgyT6BxcgYA8QG0NUGpA/SwXI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:44:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/f67639bf-6463-4d39-9fe2-c91a5755791f.5ipweew5fc.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f67639bf-6463-4d39-9fe2-c91a5755791f.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1344,17 +2160,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:34:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f846af85-6b50-4ae6-a58e-72433f6c6e9d.94gglh0jjz.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f846af85-6b50-4ae6-a58e-72433f6c6e9d.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f893fe39-e652-45d8-985b-a51c6f047f20.362b7o60vl.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f893fe39-e652-45d8-985b-a51c6f047f20.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"94gglh0jjz"},{"Name":"integrity","Value":"sha256-mY54LGO3PAhw7libbKG7D3ZTEYaJ4iVhr76409tKhmI="},{"Name":"label","Value":"_content/SportsStore/images/f846af85-6b50-4ae6-a58e-72433f6c6e9d.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"480596"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mY54LGO3PAhw7libbKG7D3ZTEYaJ4iVhr76409tKhmI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:34:11 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"362b7o60vl"},{"Name":"integrity","Value":"sha256-RfmXYG3D7/LTqt4X4Wn2RmotXKhgNSOQ94FSAG3AE38="},{"Name":"label","Value":"_content/SportsStore/images/f893fe39-e652-45d8-985b-a51c6f047f20.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5737"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022RfmXYG3D7/LTqt4X4Wn2RmotXKhgNSOQ94FSAG3AE38=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f846af85-6b50-4ae6-a58e-72433f6c6e9d.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f846af85-6b50-4ae6-a58e-72433f6c6e9d.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/f893fe39-e652-45d8-985b-a51c6f047f20.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f893fe39-e652-45d8-985b-a51c6f047f20.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mY54LGO3PAhw7libbKG7D3ZTEYaJ4iVhr76409tKhmI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"480596"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mY54LGO3PAhw7libbKG7D3ZTEYaJ4iVhr76409tKhmI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Jul 2025 13:34:11 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RfmXYG3D7/LTqt4X4Wn2RmotXKhgNSOQ94FSAG3AE38="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5737"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022RfmXYG3D7/LTqt4X4Wn2RmotXKhgNSOQ94FSAG3AE38=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:52:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/images/fb373bd8-2e5e-4312-904d-b154653fdcc9.1fhl3q9a4f.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fb373bd8-2e5e-4312-904d-b154653fdcc9.jpg'))</AssetFile>
@@ -1380,6 +2196,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nJFPXHUBR\u002BnB2TTrdX1ynQt7nsa7FgFLbVjZlCKEReM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"344226"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022nJFPXHUBR\u002BnB2TTrdX1ynQt7nsa7FgFLbVjZlCKEReM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 25 Jul 2025 02:38:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/ffd45b6f-e223-43f4-a7ff-eae5ac17a3e5.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ffd45b6f-e223-43f4-a7ff-eae5ac17a3e5.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wy7w\u002BzXitjUswi2YHQYpDJp9gtDIHy1Y/Arg823CnNU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3066"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022wy7w\u002BzXitjUswi2YHQYpDJp9gtDIHy1Y/Arg823CnNU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/images/ffd45b6f-e223-43f4-a7ff-eae5ac17a3e5.ryijkdqj1s.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ffd45b6f-e223-43f4-a7ff-eae5ac17a3e5.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ryijkdqj1s"},{"Name":"integrity","Value":"sha256-wy7w\u002BzXitjUswi2YHQYpDJp9gtDIHy1Y/Arg823CnNU="},{"Name":"label","Value":"_content/SportsStore/images/ffd45b6f-e223-43f4-a7ff-eae5ac17a3e5.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3066"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022wy7w\u002BzXitjUswi2YHQYpDJp9gtDIHy1Y/Arg823CnNU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Jul 2025 03:48:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SportsStore/js/chart-utils.gng8gkrtyj.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chart-utils.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1391,6 +2219,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-TNYmtakffvUigahXziqvhOrmNRZ8\u002BEjia1k8Bm9xbMo="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3183"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022TNYmtakffvUigahXziqvhOrmNRZ8\u002BEjia1k8Bm9xbMo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Jul 2025 03:05:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/uploads/fee4ba20-d85b-4b5f-b49c-a8010a15f4a1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\fee4ba20-d85b-4b5f-b49c-a8010a15f4a1.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kjoDBgMG99uOaawQH5y5We7/udbwHfxtN5GEXdeRQmk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11559"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022kjoDBgMG99uOaawQH5y5We7/udbwHfxtN5GEXdeRQmk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Jul 2025 01:23:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportsStore/uploads/fee4ba20-d85b-4b5f-b49c-a8010a15f4a1.q9dhgm48e8.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\fee4ba20-d85b-4b5f-b49c-a8010a15f4a1.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q9dhgm48e8"},{"Name":"integrity","Value":"sha256-kjoDBgMG99uOaawQH5y5We7/udbwHfxtN5GEXdeRQmk="},{"Name":"label","Value":"_content/SportsStore/uploads/fee4ba20-d85b-4b5f-b49c-a8010a15f4a1.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11559"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022kjoDBgMG99uOaawQH5y5We7/udbwHfxtN5GEXdeRQmk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Jul 2025 01:23:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

@@ -1,42 +1,38 @@
 @model SportsStore.Models.ProductReview
 
 @{
-    ViewData["Title"] = "Đánh giá sản phẩm";
+    ViewData["Title"] = "Viết đánh giá";
 }
 
-<h2 class="mb-4">
-    Đánh giá sản phẩm: <span class="text-primary">@ViewBag.ProductName</span>
-</h2>
+<h2>Đánh giá sản phẩm: @ViewBag.ProductName</h2>
 
-<form asp-action="Add" method="post">
-    @Html.AntiForgeryToken()
-    <input type="hidden" asp-for="ProductID" />
-    <!-- Rating -->
-    <div class="mb-3">
-        <label asp-for="Rating" class="form-label">Số sao</label>
-        <select asp-for="Rating" class="form-select" required>
-    <option value="">-- Chọn số sao --</option>
-    @for (int i = 1; i <= 5; i++)
-    {
-        <option value="@i">@i sao</option>
-    }
-</select>
+<form asp-action="Add" asp-controller="Reviews" method="post">
+    <div class="form-group">
+        <label asp-for="Rating">Đánh giá (sao)</label>
+        <select asp-for="Rating" class="form-control" asp-validation-for="Rating">
+            <option value="">-- Chọn số sao --</option>
+            @for (int i = 1; i <= 5; i++)
+            {
+                <option value="@i">@i sao</option>
+            }
+        </select>
         <span asp-validation-for="Rating" class="text-danger"></span>
     </div>
 
-    <!-- Review Text -->
-    <div class="mb-3">
-        <label asp-for="ReviewText" class="form-label">Nhận xét</label>
-        <textarea asp-for="ReviewText" class="form-control" rows="4" placeholder="Hãy chia sẻ cảm nhận của bạn..." required></textarea>
-        <span asp-validation-for="ReviewText" class="text-danger"></span>
+    <div class="form-group">
+        <label asp-for="Comment">Bình luận</label>
+        <textarea asp-for="Comment" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Comment" class="text-danger"></span>
     </div>
 
-    <!-- Submit -->
-    <button type="submit" class="btn btn-success">
-        <i class="bi bi-send"></i> Gửi đánh giá
-    </button>
+       <input type="hidden" asp-for="ProductID" />
+    <input type="hidden" asp-for="UserId" />   
+    <input type="hidden" asp-for="CustomerName" />
+
+    <button type="submit" class="btn btn-primary mt-3">Gửi đánh giá</button>
+    <a asp-action="Details" asp-controller="Home" asp-route-id="@Model.ProductID" class="btn btn-secondary mt-3">Hủy</a>
 </form>
 
 @section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
 }

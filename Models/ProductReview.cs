@@ -12,9 +12,6 @@ namespace SportsStore.Models
         [Required]
         public int Rating { get; set; }
 
-        [Required]
-        public string ReviewText { get; set; } = string.Empty;
-
         public DateTime Date { get; set; } = DateTime.Now;
 
         public long ProductID { get; set; }
@@ -22,7 +19,7 @@ namespace SportsStore.Models
         [ForeignKey("ProductID")]
         public Product? Product { get; set; }
 
-    [Required]
+    
     public string UserId { get; set; } = default!;
 
         [ForeignKey("UserId")]

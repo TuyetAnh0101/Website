@@ -47,7 +47,7 @@ namespace SportsStore.Models
             context.SaveChanges();
         }
 
-        // ✅ Quản lý ảnh phụ
+        //  Quản lý ảnh phụ
         public void AddProductImage(ProductImage image)
         {
             context.ProductImages.Add(image);
