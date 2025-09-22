@@ -32,7 +32,7 @@ namespace SportsStore.Models
                     new Category { Name = "Bách Hóa Online", AllowRent = false },
                     new Category { Name = "Quà Tặng - Đồ Chơi", AllowRent = false }
                 );
-
+            context.SaveChanges();
             }
 
             if (!context.Products.Any())
