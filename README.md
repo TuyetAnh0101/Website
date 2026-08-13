@@ -23,13 +23,15 @@ The platform supports the buying, selling, and renting of used books, while also
 
 ## Application Preview
 
-| Home Page | Book Management |
+| Home Page | Statistics & Dashboard |
 | :---: | :---: |
-| <img src="docs/screenshots/home.png" width="400" alt="Home Page"/> | <img src="docs/screenshots/books.png" width="400" alt="Book Management"/> |
-| **Shopping Cart** | **Tutor Services** |
-| <img src="docs/screenshots/cart.png" width="400" alt="Shopping Cart"/> | <img src="docs/screenshots/tutor.png" width="400" alt="Tutor Services"/> |
+| <img src="trangchu.jpg" width="400" alt="Home Page"/> | <img src="thongke.jpg" width="400" alt="Statistics"/> |
+| **Product Management** | **Tutor Management** |
+| <img src="ql_sanpham.jpg" width="400" alt="Product Management"/> | <img src="ql_giasu.jpg" width="400" alt="Tutor Management"/> |
+| **Order Management** | **Rental History** |
+| <img src="ql_donhang.jpg" width="400" alt="Order Management"/> | <img src="lichsu_thue.jpg" width="400" alt="Rental History"/> |
 
-> *Note: Ensure the images are placed in the `docs/screenshots/` directory for proper rendering.*
+> *Note: Ensure the image paths correctly point to the directory where you uploaded the files on GitHub.*
 
 ---
 
