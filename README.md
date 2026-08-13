@@ -2,18 +2,14 @@
 
 # Used Books & Tutor Platform
 
-### A Web Application for Used Books and Tutor Services
+A web application for buying and renting used books, combined with tutor search and rental features. Developed to practice building a database-driven web system with practical business workflows.
 
-A web application for buying and renting used books, combined with tutor search and rental features. The project was developed to practice building a database-driven web system with practical business workflows.
+[![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
+[![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/apps/aspnet)
+[![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://learn.microsoft.com/en-us/ef/core/)
+[![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)](https://www.microsoft.com/sql-server)
 
-<br>
-
-<p>
-  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/Entity%20Framework%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
-</p>
+[View Repository](https://github.com/TuyetAnh0101/Website) • [Report Bug](https://github.com/TuyetAnh0101/Website/issues)
 
 </div>
 
@@ -21,273 +17,63 @@ A web application for buying and renting used books, combined with tutor search 
 
 ## Overview
 
-The platform supports the buying, selling, and renting of used books, while also providing features for searching and renting tutors.
-
-The project focuses on developing a practical web application with a relational database and common business operations such as account management, shopping, order processing, reviews, and user authorization.
+The platform supports the buying, selling, and renting of used books, while also providing features for searching and renting tutors. The project focuses on developing a practical web application with a relational database and common business operations such as account management, shopping, order processing, reviews, and user authorization.
 
 ---
 
-## Screenshots
+## Application Preview
 
-<div align="center">
+| Home Page | Book Management |
+| :---: | :---: |
+| <img src="docs/screenshots/home.png" width="400" alt="Home Page"/> | <img src="docs/screenshots/books.png" width="400" alt="Book Management"/> |
+| **Shopping Cart** | **Tutor Services** |
+| <img src="docs/screenshots/cart.png" width="400" alt="Shopping Cart"/> | <img src="docs/screenshots/tutor.png" width="400" alt="Tutor Services"/> |
 
-<table>
-<tr>
-
-<td align="center" width="50%">
-<img src="./docs/screenshots/home.png" width="92%">
-<br><br>
-<b>Home Page</b>
-</td>
-
-<td align="center" width="50%">
-<img src="./docs/screenshots/books.png" width="92%">
-<br><br>
-<b>Book Management</b>
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center" width="50%">
-<img src="./docs/screenshots/cart.png" width="92%">
-<br><br>
-<b>Shopping Cart</b>
-</td>
-
-<td align="center" width="50%">
-<img src="./docs/screenshots/tutor.png" width="92%">
-<br><br>
-<b>Tutor Services</b>
-</td>
-
-</tr>
-</table>
-
-</div>
-
-> Replace the image paths above with the actual filenames in your `docs/screenshots` folder.
+> *Note: Ensure the images are placed in the `docs/screenshots/` directory for proper rendering.*
 
 ---
 
-## Tech Stack
+## Tech Stack & Architecture
 
-<table>
-<tr>
+### Technologies
 
-<td align="center" width="25%">
-
-### Backend
-
-C#  
-ASP.NET Core
-
-</td>
-
-<td align="center" width="25%">
-
-### ORM
-
-Entity Framework Core
-
-</td>
-
-<td align="center" width="25%">
-
-### Database
-
-SQL Server
-
-</td>
-
-<td align="center" width="25%">
-
-### Authentication
-
-ASP.NET Core Identity
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-| Category | Technologies |
+| Category | Technology |
 |---|---|
-| Backend | C#, ASP.NET Core |
-| ORM | Entity Framework Core |
-| Database | SQL Server |
-| Authentication | ASP.NET Core Identity |
-| Frontend | HTML, CSS, JavaScript |
-| Web Technologies | Razor Pages, MVC, Blazor |
+| **Backend** | C#, ASP.NET Core |
+| **ORM** | Entity Framework Core |
+| **Database** | SQL Server |
+| **Authentication** | ASP.NET Core Identity |
+| **Frontend** | HTML, CSS, JavaScript |
+| **Web Framework** | Razor Pages, MVC, Blazor |
+
+### Architecture Flow
+
+`Web Interface (ASP.NET Core)` ➔ `Application Layer (Controllers/Services)` ➔ `Data Access (EF Core)` ➔ `Database (SQL Server)`
 
 ---
 
 ## Main Features
 
-<table>
-<tr>
-
-<td width="50%" valign="top">
-
-### Used Books
-
-Manage, buy, sell, and rent used books through the platform.
-
-<br>
-
-### Shopping Cart
-
-Add books to the cart and manage selected items before placing an order.
-
-<br>
-
-### Order Management
-
-Create and manage customer orders throughout the purchasing process.
-
-<br>
-
-### Account Management
-
-Support user registration, login, and account management.
-
-</td>
-
-<td width="50%" valign="top">
-
-### Reviews
-
-Allow users to provide ratings and reviews for products and services.
-
-<br>
-
-### Tutor Services
-
-Search for tutors and manage tutor rental services.
-
-<br>
-
-### Authentication
-
-Provide user authentication and authorization through ASP.NET Core Identity.
-
-<br>
-
-### Data Management
-
-Manage and review application data through the connected relational database.
-
-</td>
-
-</tr>
-</table>
-
----
-
-## Application Architecture
-
-The application follows a layered approach connecting the web interface, application logic, ORM, and relational database.
-
-<div align="center">
-
-<table>
-<tr>
-
-<td align="center" width="25%">
-
-### Web Application
-
-ASP.NET Core
-
-</td>
-
-<td align="center" width="25%">
-
-### Application Layer
-
-Controllers  
-Services
-
-</td>
-
-<td align="center" width="25%">
-
-### Data Access
-
-Entity Framework Core
-
-</td>
-
-<td align="center" width="25%">
-
-### Database
-
-SQL Server
-
-</td>
-
-</tr>
-</table>
-
-</div>
-
----
-
-## Project Highlights
-
-<table>
-<tr>
-
-<td width="50%" valign="top">
-
-Designed and managed a relational database for a practical web application.
-
-<br><br>
-
-Implemented business workflows for buying, selling, renting, and order management.
-
-<br><br>
-
-Integrated authentication and user authorization using ASP.NET Core Identity.
-
-</td>
-
-<td width="50%" valign="top">
-
-Applied Entity Framework Core for database operations with SQL Server.
-
-<br><br>
-
-Worked with multiple application features within a database-driven web environment.
-
-<br><br>
-
-Organized the application structure to support maintainability and future development.
-
-</td>
-
-</tr>
-</table>
+- **Used Books Management:** Buy, sell, and rent used books through the platform.
+- **Tutor Services:** Search for tutors and manage tutor rental services.
+- **Shopping & Orders:** Add books to the cart, manage selected items, and process customer orders.
+- **User Authentication:** Secure user registration, login, and account management using ASP.NET Core Identity.
+- **Interactive Reviews:** Allow users to provide ratings and reviews for products and services.
+- **Data Handling:** Robust relational database management utilizing Entity Framework Core.
 
 ---
 
 ## Getting Started
 
-### Requirements
+### Prerequisites
 
-| Requirement | Version |
-|---|---|
-| .NET SDK | 9 |
-| Database | SQL Server |
-| IDE | Visual Studio 2022 or later |
+- **.NET SDK:** Version 9.0
+- **Database:** SQL Server
+- **IDE:** Visual Studio 2022 (or later)
 
-### Installation
+### Installation & Setup
 
-Clone the repository:
-
+**1. Clone the repository**
 ```bash
-git clone https://github.com/TuyetAnh0101/Website.git
+git clone [https://github.com/TuyetAnh0101/Website.git](https://github.com/TuyetAnh0101/Website.git)
 cd Website
