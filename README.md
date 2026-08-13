@@ -1,70 +1,139 @@
+<div align="center">
+
 # Used Books & Tutor Platform
 
-## 📌 Overview
+### A Web Application for Used Books and Tutor Services
 
-Web application hỗ trợ **mua bán và cho thuê sách cũ**, kết hợp chức năng **tìm kiếm và thuê gia sư**. Dự án được phát triển nhằm thực hành xây dựng một hệ thống web có cơ sở dữ liệu và các nghiệp vụ thực tế.
+A web application for buying and renting used books, combined with tutor search and rental features. The project was developed to practice building a database-driven web system with practical business workflows.
 
-## 🛠️ Tech Stack
+<p>
+  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/Entity%20Framework%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
+</p>
 
-* **C# / ASP.NET Core**
-* **Entity Framework Core**
-* **SQL Server**
-* **ASP.NET Core Identity**
-* **HTML / CSS / JavaScript**
-* **Razor Pages / MVC / Blazor**
+</div>
 
-## ✨ Main Features
+---
 
-* 📚 Quản lý, mua bán và cho thuê sách cũ
-* 🛒 Giỏ hàng và quản lý đơn hàng
-* 👤 Đăng ký, đăng nhập và quản lý tài khoản
-* ⭐ Đánh giá và nhận xét
-* 👨‍🏫 Tìm kiếm và thuê gia sư
-* 🔐 Xác thực và phân quyền người dùng
-* 📊 Quản lý và thống kê dữ liệu
+## Overview
 
-## 🏗️ Architecture
+The platform supports the buying, selling, and renting of used books, while also providing features for searching and renting tutors.
+
+The project focuses on developing a practical web application with a relational database and common business operations such as account management, shopping, orders, reviews, and user authorization.
+
+---
+
+## Tech Stack
+
+| Category         | Technologies             |
+| ---------------- | ------------------------ |
+| Backend          | C#, ASP.NET Core         |
+| ORM              | Entity Framework Core    |
+| Database         | SQL Server               |
+| Authentication   | ASP.NET Core Identity    |
+| Frontend         | HTML, CSS, JavaScript    |
+| Web Technologies | Razor Pages, MVC, Blazor |
+
+---
+
+## Main Features
+
+| Feature            | Description                                 |
+| ------------------ | ------------------------------------------- |
+| Used Books         | Manage, buy, sell, and rent used books      |
+| Shopping Cart      | Add books to cart and manage selected items |
+| Order Management   | Create and manage customer orders           |
+| Account Management | Registration, login, and account management |
+| Reviews            | Allow users to provide ratings and reviews  |
+| Tutor Services     | Search for and rent tutors                  |
+| Authentication     | User authentication and authorization       |
+| Data Management    | Manage and review system data               |
+
+---
+
+## Architecture
+
+The application follows a layered approach connecting the web application, business logic, ORM, and relational database.
 
 ```text
 User
-  ↓
+  |
+  v
 ASP.NET Core
-  ↓
+  |
+  v
 Controllers / Services
-  ↓
+  |
+  v
 Entity Framework Core
-  ↓
+  |
+  v
 SQL Server
 ```
 
-## 🎯 Project Highlights
+---
 
-* Thiết kế và quản lý cơ sở dữ liệu quan hệ.
-* Xây dựng các nghiệp vụ mua bán, cho thuê và quản lý đơn hàng.
-* Tích hợp xác thực và phân quyền người dùng.
-* Áp dụng Entity Framework Core trong thao tác với SQL Server.
-* Tổ chức mã nguồn theo hướng dễ bảo trì và mở rộng.
+## Project Highlights
 
-## 🚀 Getting Started
+* Designed and managed a relational database for a practical web application.
+* Implemented business workflows for buying, selling, renting, and order management.
+* Integrated authentication and user authorization using ASP.NET Core Identity.
+* Applied Entity Framework Core for database operations with SQL Server.
+* Organized the application structure to support maintainability and future development.
+
+---
+
+## Getting Started
 
 ### Requirements
 
 * .NET 9 SDK
 * SQL Server
-* Visual Studio 2022+
+* Visual Studio 2022 or later
 
-### Run
+### Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/TuyetAnh0101/Website.git
 cd Website
+```
+
+Restore the project dependencies:
+
+```bash
 dotnet restore
+```
+
+Run the application:
+
+```bash
 dotnet run
 ```
 
-> Cần cấu hình connection string và các thông tin xác thực trong `appsettings.json` trước khi chạy.
+Before running the application, configure the required connection string and authentication settings in `appsettings.json`.
 
-## 👩‍💻 Author
+---
+
+## Repository
+
+<p align="center">
+  <a href="https://github.com/TuyetAnh0101/Website">
+    <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+---
+
+## Author
+
+<div align="center">
 
 **Tuyết Anh**
-Information Systems Student
+
+Information Technology Student
+
+</div>
