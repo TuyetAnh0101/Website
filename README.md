@@ -1,10 +1,10 @@
-# Website – Used Books & Tutor Platform
+# Used Books & Tutor Platform
 
-## 📌 Giới thiệu
+## 📌 Overview
 
-Website hỗ trợ **mua bán và cho thuê sách cũ**, đồng thời cung cấp chức năng **tìm kiếm và thuê gia sư**. Dự án được xây dựng nhằm áp dụng kiến thức về phát triển web, cơ sở dữ liệu và xây dựng các chức năng nghiệp vụ trong một hệ thống thực tế.
+Web application hỗ trợ **mua bán và cho thuê sách cũ**, kết hợp chức năng **tìm kiếm và thuê gia sư**. Dự án được phát triển nhằm thực hành xây dựng một hệ thống web có cơ sở dữ liệu và các nghiệp vụ thực tế.
 
-## 🛠️ Công nghệ
+## 🛠️ Tech Stack
 
 * **C# / ASP.NET Core**
 * **Entity Framework Core**
@@ -13,41 +13,22 @@ Website hỗ trợ **mua bán và cho thuê sách cũ**, đồng thời cung c�
 * **HTML / CSS / JavaScript**
 * **Razor Pages / MVC / Blazor**
 
-## ✨ Chức năng chính
+## ✨ Main Features
 
-### 📚 Sách cũ
+* 📚 Quản lý, mua bán và cho thuê sách cũ
+* 🛒 Giỏ hàng và quản lý đơn hàng
+* 👤 Đăng ký, đăng nhập và quản lý tài khoản
+* ⭐ Đánh giá và nhận xét
+* 👨‍🏫 Tìm kiếm và thuê gia sư
+* 🔐 Xác thực và phân quyền người dùng
+* 📊 Quản lý và thống kê dữ liệu
 
-* Đăng bán và cho thuê sách
-* Tìm kiếm và lọc sách
-* Xem thông tin và đánh giá sách
-* Quản lý giỏ hàng và đơn hàng
-* Quản lý trạng thái sách
-
-### 👨‍🏫 Gia sư
-
-* Tìm kiếm và xem thông tin gia sư
-* Xem thông tin chuyên môn và đánh giá
-* Hỗ trợ đăng ký/thuê gia sư
-
-### 👤 Tài khoản
-
-* Đăng ký, đăng nhập và quản lý tài khoản
-* Phân quyền người dùng
-* Đăng nhập thông qua tài khoản bên thứ ba
-
-### ⚙️ Quản trị
-
-* Quản lý người dùng
-* Quản lý sách và danh mục
-* Quản lý đơn hàng
-* Theo dõi và thống kê dữ liệu
-
-## 🏗️ Kiến trúc
+## 🏗️ Architecture
 
 ```text
 User
   ↓
-ASP.NET Core MVC / Razor Pages / Blazor
+ASP.NET Core
   ↓
 Controllers / Services
   ↓
@@ -56,14 +37,34 @@ Entity Framework Core
 SQL Server
 ```
 
-## 🎯 Mục tiêu dự án
+## 🎯 Project Highlights
 
-* Thực hành phát triển ứng dụng web với ASP.NET Core.
-* Áp dụng Entity Framework Core trong thao tác với cơ sở dữ liệu.
-* Xây dựng các nghiệp vụ mua bán, cho thuê và quản lý người dùng.
-* Rèn luyện kỹ năng thiết kế và phát triển hệ thống web thực tế.
+* Thiết kế và quản lý cơ sở dữ liệu quan hệ.
+* Xây dựng các nghiệp vụ mua bán, cho thuê và quản lý đơn hàng.
+* Tích hợp xác thực và phân quyền người dùng.
+* Áp dụng Entity Framework Core trong thao tác với SQL Server.
+* Tổ chức mã nguồn theo hướng dễ bảo trì và mở rộng.
 
-## 👩‍💻 Tác giả
+## 🚀 Getting Started
+
+### Requirements
+
+* .NET 9 SDK
+* SQL Server
+* Visual Studio 2022+
+
+### Run
+
+```bash
+git clone https://github.com/TuyetAnh0101/Website.git
+cd Website
+dotnet restore
+dotnet run
+```
+
+> Cần cấu hình connection string và các thông tin xác thực trong `appsettings.json` trước khi chạy.
+
+## 👩‍💻 Author
 
 **Tuyết Anh**
-Sinh viên ngành Hệ thống Thông tin
+Information Systems Student
