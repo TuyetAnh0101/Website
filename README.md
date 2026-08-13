@@ -25,13 +25,11 @@ The platform supports the buying, selling, and renting of used books, while also
 
 | Home Page | Statistics & Dashboard |
 | :---: | :---: |
-| <img src="trangchu.jpg" width="400" alt="Home Page"/> | <img src="thongke.jpg" width="400" alt="Statistics"/> |
+| <img src="docs/screenshots/trangchu.jpg" width="400" alt="Home Page"/> | <img src="docs/screenshots/thongke.jpg" width="400" alt="Statistics"/> |
 | **Product Management** | **Tutor Management** |
-| <img src="ql_sanpham.jpg" width="400" alt="Product Management"/> | <img src="ql_giasu.jpg" width="400" alt="Tutor Management"/> |
+| <img src="docs/screenshots/ql_sanpham.jpg" width="400" alt="Product Management"/> | <img src="docs/screenshots/ql_giasu.jpg" width="400" alt="Tutor Management"/> |
 | **Order Management** | **Rental History** |
-| <img src="ql_donhang.jpg" width="400" alt="Order Management"/> | <img src="lichsu_thue.jpg" width="400" alt="Rental History"/> |
-
-> *Note: Ensure the image paths correctly point to the directory where you uploaded the files on GitHub.*
+| <img src="docs/screenshots/ql_donhang.jpg" width="400" alt="Order Management"/> | <img src="docs/screenshots/lichsu_thue.jpg" width="400" alt="Rental History"/> |
 
 ---
 
